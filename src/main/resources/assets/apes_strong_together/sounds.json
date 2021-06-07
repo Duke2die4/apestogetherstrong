@@ -1,0 +1,11 @@
+{
+  "gorilla_ambient": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "apes_strong_together:gorilla",
+        "stream": false
+      }
+    ]
+  }
+}

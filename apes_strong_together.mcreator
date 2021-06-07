@@ -1,0 +1,144 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Gorilla",
+      "type": "mob",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gorilla",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Ape2",
+      "type": "mob",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_2",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Ape",
+      "type": "mob",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Steak",
+      "type": "food",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steak",
+      "path": "~/Items"
+    },
+    {
+      "name": "Coconut",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coconut",
+      "path": "~/Items"
+    },
+    {
+      "name": "CrackedCoconut",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cracked_coconut",
+      "path": "~/Items"
+    },
+    {
+      "name": "Banana",
+      "type": "food",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "banana",
+      "path": "~/Items"
+    },
+    {
+      "name": "Mob2",
+      "type": "mob",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mob_2",
+      "path": "~/Mobs"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "gorilla_ambient",
+      "files": [
+        "gorilla"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.apes_strong_together.ape": "Ape",
+      "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
+      "item.apes_strong_together.steak": "Steak",
+      "item.apes_strong_together.coconut": "Coconut",
+      "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
+      "entity.apes_strong_together.gorilla": "Gorilla",
+      "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
+      "entity.apes_strong_together.mob_2": "Mob 2",
+      "item.apes_strong_together.banana": "Banana",
+      "subtitles.gorilla_ambient": "",
+      "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
+      "entity.apes_strong_together.ape_2": "Ape 2",
+      "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Mobs",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "apes_strong_together",
+    "modName": "apes strong together",
+    "version": "1.0.0",
+    "author": "Daniel Rosenberg, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.apesstrongtogether",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}
