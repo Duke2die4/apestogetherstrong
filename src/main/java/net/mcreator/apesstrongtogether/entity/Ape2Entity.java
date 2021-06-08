@@ -18,6 +18,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -34,6 +35,7 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.apesstrongtogether.item.ApemeatItem;
 import net.mcreator.apesstrongtogether.entity.renderer.Ape2Renderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
@@ -106,6 +108,11 @@ public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(ApemeatItem.block, (int) (1)));
 		}
 
 		@Override

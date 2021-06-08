@@ -80,6 +80,103 @@
       "ids": {},
       "registry_name": "mob_2",
       "path": "~/Mobs"
+    },
+    {
+      "name": "ApeRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Apemeat",
+      "type": "food",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apemeat",
+      "path": "~/Items"
+    },
+    {
+      "name": "Apemeatcooked",
+      "type": "food",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apemeatcooked",
+      "path": "~/Items"
+    },
+    {
+      "name": "Mortar",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mortar",
+      "path": "~/tools"
+    },
+    {
+      "name": "Mincedape",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mincedape",
+      "path": "~/Items"
+    },
+    {
+      "name": "Mort",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mort",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Mincedaperecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mincedaperecipe",
+      "path": "~/recipe"
     }
   ],
   "variable_elements": [],
@@ -96,16 +193,20 @@
   "language_map": {
     "en_us": {
       "entity.apes_strong_together.ape": "Ape",
+      "item.apes_strong_together.mincedape": "Mincedape",
+      "item.apes_strong_together.apemeatcooked": "Apemeatcooked",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
       "item.apes_strong_together.steak": "Steak",
       "item.apes_strong_together.coconut": "Coconut",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
       "entity.apes_strong_together.gorilla": "Gorilla",
       "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
+      "item.apes_strong_together.mortar": "Mortar",
       "entity.apes_strong_together.mob_2": "Mob 2",
       "item.apes_strong_together.banana": "Banana",
       "subtitles.gorilla_ambient": "",
       "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
+      "item.apes_strong_together.apemeat": "Ape meat",
       "entity.apes_strong_together.ape_2": "Ape 2",
       "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg"
     }
@@ -119,6 +220,14 @@
       },
       {
         "name": "Items",
+        "children": []
+      },
+      {
+        "name": "recipe",
+        "children": []
+      },
+      {
+        "name": "tools",
         "children": []
       }
     ]

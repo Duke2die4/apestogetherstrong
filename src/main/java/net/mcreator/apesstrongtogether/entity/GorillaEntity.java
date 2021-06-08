@@ -43,6 +43,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.apesstrongtogether.item.ApemeatItem;
 import net.mcreator.apesstrongtogether.entity.renderer.GorillaRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
@@ -123,6 +124,11 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		public double getMountedYOffset() {
 			return super.getMountedYOffset() + 0.2;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(ApemeatItem.block, (int) (1)));
 		}
 
 		@Override

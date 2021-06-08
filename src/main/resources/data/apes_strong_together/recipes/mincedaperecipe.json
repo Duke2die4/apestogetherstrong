@@ -1,0 +1,19 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apes_strong_together:mortar"
+    },
+    {
+      "item": "apes_strong_together:apemeat"
+    },
+    {
+      "item": "apes_strong_together:apemeat"
+    }
+  ],
+  "result": {
+    "item": "apes_strong_together:mincedape",
+    "count": 1
+  }
+}

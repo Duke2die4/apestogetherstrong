@@ -33,6 +33,7 @@ import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.goal.OwnerHurtTargetGoal;
 import net.minecraft.entity.ai.goal.OwnerHurtByTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
@@ -50,10 +51,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 
-import net.mcreator.apesstrongtogether.item.SteakItem;
+import net.mcreator.apesstrongtogether.procedures.ApeRightClickedOnEntityProcedure;
 import net.mcreator.apesstrongtogether.item.BananaItem;
+import net.mcreator.apesstrongtogether.item.ApemeatItem;
 import net.mcreator.apesstrongtogether.entity.renderer.ApeRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApeEntity extends ApesStrongTogetherModElements.ModElement {
@@ -114,14 +119,15 @@ public class ApeEntity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(BananaItem.block, (int) (1)).getItem()), false));
-			this.goalSelector.addGoal(2, new AvoidEntityGoal(this, GorillaEntity.CustomEntity.class, (float) 12, 2, 3.2));
-			this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
-			this.goalSelector.addGoal(5, new OwnerHurtByTargetGoal(this));
-			this.goalSelector.addGoal(6, new OwnerHurtTargetGoal(this));
-			this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(8, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
+			this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(BananaItem.block, (int) (1)).getItem()), false));
+			this.goalSelector.addGoal(3, new AvoidEntityGoal(this, GorillaEntity.CustomEntity.class, (float) 12, 2, 3.2));
+			this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false));
+			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(6, new OwnerHurtByTargetGoal(this));
+			this.goalSelector.addGoal(7, new OwnerHurtTargetGoal(this));
+			this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(9, new SwimGoal(this));
 		}
 
 		@Override
@@ -131,7 +137,7 @@ public class ApeEntity extends ApesStrongTogetherModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(SteakItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(ApemeatItem.block, (int) (1)));
 		}
 
 		@Override
@@ -190,6 +196,16 @@ public class ApeEntity extends ApesStrongTogetherModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ApeRightClickedOnEntityProcedure.executeProcedure($_dependencies);
+			}
 			return retval;
 		}
 

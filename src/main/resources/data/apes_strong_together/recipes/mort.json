@@ -1,0 +1,24 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 4 ",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stick"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:mortar",
+    "count": 1
+  }
+}
