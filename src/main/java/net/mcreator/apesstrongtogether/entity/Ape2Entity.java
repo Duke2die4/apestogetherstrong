@@ -24,6 +24,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
@@ -33,11 +34,16 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.apesstrongtogether.procedures.Ape2ThisEntityKillsAnotherapeProcedure;
 import net.mcreator.apesstrongtogether.item.ApemeatItem;
 import net.mcreator.apesstrongtogether.entity.renderer.Ape2Renderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
@@ -98,11 +104,12 @@ public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, ApeEntity.CustomEntity.class, true, false));
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(6, new SwimGoal(this));
 		}
 
 		@Override
@@ -123,6 +130,24 @@ public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public void awardKillScore(Entity entity, int score, DamageSource damageSource) {
+			super.awardKillScore(entity, score, damageSource);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity sourceentity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				Ape2ThisEntityKillsAnotherapeProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

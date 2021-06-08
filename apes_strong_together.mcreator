@@ -177,6 +177,49 @@
       "ids": {},
       "registry_name": "mincedaperecipe",
       "path": "~/recipe"
+    },
+    {
+      "name": "Ape2ThisEntityKillsAnotherape",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_2_this_entity_kills_anotherape",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cookedapemeatrecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cookedapemeatrecipe",
+      "path": "~/recipe"
     }
   ],
   "variable_elements": [],
