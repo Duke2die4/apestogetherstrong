@@ -17,7 +17,7 @@ public class ApemeatcookedItem extends ApesStrongTogetherModElements.ModElement 
 	@ObjectHolder("apes_strong_together:apemeatcooked")
 	public static final Item block = null;
 	public ApemeatcookedItem(ApesStrongTogetherModElements instance) {
-		super(instance, 12);
+		super(instance, 17);
 	}
 
 	@Override

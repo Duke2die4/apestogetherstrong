@@ -16,7 +16,7 @@ public class MortarItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:mortar")
 	public static final Item block = null;
 	public MortarItem(ApesStrongTogetherModElements instance) {
-		super(instance, 13);
+		super(instance, 8);
 	}
 
 	@Override

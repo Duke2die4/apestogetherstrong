@@ -16,7 +16,7 @@ public class SyringexItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:syringex")
 	public static final Item block = null;
 	public SyringexItem(ApesStrongTogetherModElements instance) {
-		super(instance, 23);
+		super(instance, 12);
 	}
 
 	@Override

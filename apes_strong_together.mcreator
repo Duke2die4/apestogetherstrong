@@ -4,7 +4,7 @@
     {
       "name": "Gorilla",
       "type": "mob",
-      "sortid": 2,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -14,7 +14,7 @@
     {
       "name": "Ape2",
       "type": "mob",
-      "sortid": 3,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -24,7 +24,7 @@
     {
       "name": "Ape",
       "type": "mob",
-      "sortid": 4,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -34,7 +34,7 @@
     {
       "name": "Steak",
       "type": "food",
-      "sortid": 5,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -64,7 +64,7 @@
     {
       "name": "Banana",
       "type": "food",
-      "sortid": 8,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -74,7 +74,7 @@
     {
       "name": "Mob2",
       "type": "mob",
-      "sortid": 9,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -84,7 +84,7 @@
     {
       "name": "ApeRightClickedOnEntity",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -121,7 +121,7 @@
     {
       "name": "Apemeat",
       "type": "food",
-      "sortid": 11,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -131,7 +131,7 @@
     {
       "name": "Apemeatcooked",
       "type": "food",
-      "sortid": 12,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -141,7 +141,7 @@
     {
       "name": "Mortar",
       "type": "item",
-      "sortid": 13,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -151,7 +151,7 @@
     {
       "name": "Mincedape",
       "type": "item",
-      "sortid": 14,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -161,7 +161,7 @@
     {
       "name": "Mort",
       "type": "recipe",
-      "sortid": 15,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -171,7 +171,7 @@
     {
       "name": "Mincedaperecipe",
       "type": "recipe",
-      "sortid": 16,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -181,7 +181,7 @@
     {
       "name": "Ape2ThisEntityKillsAnotherape",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -214,7 +214,7 @@
     {
       "name": "Cookedapemeatrecipe",
       "type": "recipe",
-      "sortid": 18,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -224,7 +224,7 @@
     {
       "name": "Syringe",
       "type": "item",
-      "sortid": 19,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -234,7 +234,7 @@
     {
       "name": "MinceZombie",
       "type": "item",
-      "sortid": 20,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -244,7 +244,7 @@
     {
       "name": "MincedZombirecipe",
       "type": "recipe",
-      "sortid": 21,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -254,7 +254,7 @@
     {
       "name": "Syringerecipe",
       "type": "recipe",
-      "sortid": 22,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -264,7 +264,7 @@
     {
       "name": "Syringex",
       "type": "item",
-      "sortid": 23,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -274,7 +274,7 @@
     {
       "name": "Syringexrecipe",
       "type": "recipe",
-      "sortid": 24,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -284,7 +284,7 @@
     {
       "name": "Ape3",
       "type": "mob",
-      "sortid": 25,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -301,10 +301,6 @@
       "registry_name": "ape_2_on_entity_tick_update",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -323,6 +319,36 @@
           }
         ]
       }
+    },
+    {
+      "name": "Apehair",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apehair",
+      "path": "~/Items"
+    },
+    {
+      "name": "Test",
+      "type": "mob",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "PestleAndMortar",
+      "type": "tag",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pestle_and_mortar",
+      "path": "~/tags"
     }
   ],
   "variable_elements": [],
@@ -339,27 +365,30 @@
   "language_map": {
     "en_us": {
       "entity.apes_strong_together.ape": "Ape",
-      "item.apes_strong_together.mincedape": "Mincedape",
-      "item.apes_strong_together.apemeatcooked": "Apemeatcooked",
-      "item.apes_strong_together.syringex": "Syringex",
+      "item.apes_strong_together.mincedape": "Minced ape",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
       "item.apes_strong_together.steak": "Steak",
-      "item.apes_strong_together.mince_zombie": "Mince Zombie",
-      "item.apes_strong_together.coconut": "Coconut",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
-      "entity.apes_strong_together.gorilla": "Gorilla",
-      "item.apes_strong_together.syringe": "Syringe",
       "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
-      "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
       "item.apes_strong_together.mortar": "Mortar",
       "entity.apes_strong_together.mob_2": "Mob 2",
       "item.apes_strong_together.banana": "Banana",
       "subtitles.gorilla_ambient": "",
-      "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
       "item.apes_strong_together.apemeat": "Ape meat",
+      "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg",
+      "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
+      "item.apes_strong_together.syringex": "Syringe X",
+      "item.apes_strong_together.mince_zombie": "Mince Zombie",
+      "item.apes_strong_together.apehair": "Ape hair",
+      "item.apes_strong_together.coconut": "Coconut",
+      "entity.apes_strong_together.gorilla": "Gorilla",
+      "item.apes_strong_together.syringe": "Syringe",
+      "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
+      "entity.apes_strong_together.test": "Test",
+      "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
       "entity.apes_strong_together.ape_3": "Ape 3",
       "entity.apes_strong_together.ape_2": "Ape 2",
-      "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg"
+      "item.apes_strong_together.test_spawn_egg": "Test Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -379,6 +408,10 @@
       },
       {
         "name": "tools",
+        "children": []
+      },
+      {
+        "name": "tags",
         "children": []
       }
     ]

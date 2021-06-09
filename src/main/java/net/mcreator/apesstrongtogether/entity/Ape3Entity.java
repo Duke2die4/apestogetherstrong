@@ -46,7 +46,7 @@ public class Ape3Entity extends ApesStrongTogetherModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(2f, 1.8f))
 					.build("ape_3").setRegistryName("ape_3");
 	public Ape3Entity(ApesStrongTogetherModElements instance) {
-		super(instance, 25);
+		super(instance, 4);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new Ape3Renderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -89,7 +89,7 @@ public class Ape3Entity extends ApesStrongTogetherModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 0;
+			experienceValue = 20;
 			setNoAI(false);
 		}
 

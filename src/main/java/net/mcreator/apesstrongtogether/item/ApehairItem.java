@@ -12,11 +12,11 @@ import net.minecraft.block.BlockState;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
-public class MincedapeItem extends ApesStrongTogetherModElements.ModElement {
-	@ObjectHolder("apes_strong_together:mincedape")
+public class ApehairItem extends ApesStrongTogetherModElements.ModElement {
+	@ObjectHolder("apes_strong_together:apehair")
 	public static final Item block = null;
-	public MincedapeItem(ApesStrongTogetherModElements instance) {
-		super(instance, 9);
+	public ApehairItem(ApesStrongTogetherModElements instance) {
+		super(instance, 13);
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class MincedapeItem extends ApesStrongTogetherModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("mincedape");
+			setRegistryName("apehair");
 		}
 
 		@Override

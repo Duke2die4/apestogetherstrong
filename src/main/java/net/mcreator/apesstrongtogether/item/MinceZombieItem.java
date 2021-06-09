@@ -16,7 +16,7 @@ public class MinceZombieItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:mince_zombie")
 	public static final Item block = null;
 	public MinceZombieItem(ApesStrongTogetherModElements instance) {
-		super(instance, 20);
+		super(instance, 10);
 	}
 
 	@Override

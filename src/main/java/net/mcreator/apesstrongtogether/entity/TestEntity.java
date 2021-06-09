@@ -18,8 +18,11 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -34,17 +37,17 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.apesstrongtogether.entity.renderer.Mob2Renderer;
+import net.mcreator.apesstrongtogether.entity.renderer.TestRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
-public class Mob2Entity extends ApesStrongTogetherModElements.ModElement {
+public class TestEntity extends ApesStrongTogetherModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("mob_2").setRegistryName("mob_2");
-	public Mob2Entity(ApesStrongTogetherModElements instance) {
-		super(instance, 5);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new Mob2Renderer.ModelRegisterHandler());
+			.size(0.6f, 1.8f)).build("test").setRegistryName("test");
+	public TestEntity(ApesStrongTogetherModElements instance) {
+		super(instance, 27);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new TestRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 	}
@@ -52,7 +55,7 @@ public class Mob2Entity extends ApesStrongTogetherModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("mob_2_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("test_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -86,6 +89,7 @@ public class Mob2Entity extends ApesStrongTogetherModElements.ModElement {
 			super(type, world);
 			experienceValue = 0;
 			setNoAI(false);
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.IRON_SWORD, (int) (1)));
 		}
 
 		@Override

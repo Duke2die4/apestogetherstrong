@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bone_mesh",
+    "texture": "ape_hair",
     "customModelName": "Normal",
-    "name": "Minced ape",
+    "name": "Ape hair",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

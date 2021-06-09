@@ -54,7 +54,7 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(2f, 1.8f))
 					.build("gorilla").setRegistryName("gorilla");
 	public GorillaEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 2);
+		super(instance, 1);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new GorillaRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

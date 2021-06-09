@@ -47,7 +47,7 @@ public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("ape_2").setRegistryName("ape_2");
 	public Ape2Entity(ApesStrongTogetherModElements instance) {
-		super(instance, 3);
+		super(instance, 2);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new Ape2Renderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}
@@ -153,7 +153,6 @@ public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
