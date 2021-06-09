@@ -2,11 +2,15 @@
   "entity.apes_strong_together.ape": "Ape",
   "item.apes_strong_together.mincedape": "Mincedape",
   "item.apes_strong_together.apemeatcooked": "Apemeatcooked",
+  "item.apes_strong_together.syringex": "Syringex",
   "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
   "item.apes_strong_together.steak": "Steak",
+  "item.apes_strong_together.mince_zombie": "Mince Zombie",
   "item.apes_strong_together.coconut": "Coconut",
   "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
   "entity.apes_strong_together.gorilla": "Gorilla",
+  "item.apes_strong_together.syringe": "Syringe",
+  "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
   "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
   "item.apes_strong_together.mortar": "Mortar",
   "entity.apes_strong_together.mob_2": "Mob 2",
@@ -14,6 +18,7 @@
   "subtitles.gorilla_ambient": "",
   "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
   "item.apes_strong_together.apemeat": "Ape meat",
+  "entity.apes_strong_together.ape_3": "Ape 3",
   "entity.apes_strong_together.ape_2": "Ape 2",
   "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg"
 }

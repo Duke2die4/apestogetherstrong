@@ -1,0 +1,19 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apes_strong_together:mortar"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    }
+  ],
+  "result": {
+    "item": "apes_strong_together:mince_zombie",
+    "count": 1
+  }
+}

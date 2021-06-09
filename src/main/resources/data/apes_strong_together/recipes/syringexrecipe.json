@@ -1,0 +1,42 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:mince_zombie"
+    },
+    "1": {
+      "item": "apes_strong_together:mincedape"
+    },
+    "2": {
+      "item": "apes_strong_together:mince_zombie"
+    },
+    "3": {
+      "item": "apes_strong_together:mincedape"
+    },
+    "4": {
+      "item": "apes_strong_together:syringe"
+    },
+    "5": {
+      "item": "apes_strong_together:mincedape"
+    },
+    "6": {
+      "item": "apes_strong_together:mince_zombie"
+    },
+    "7": {
+      "item": "apes_strong_together:mincedape"
+    },
+    "8": {
+      "item": "apes_strong_together:mince_zombie"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:syringex",
+    "count": 1
+  }
+}
