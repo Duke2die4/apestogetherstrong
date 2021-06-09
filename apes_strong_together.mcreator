@@ -116,7 +116,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedure"
     },
     {
       "name": "Apemeat",
@@ -209,7 +210,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedure"
     },
     {
       "name": "Cookedapemeatrecipe",
@@ -318,7 +320,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedure"
     },
     {
       "name": "Apehair",
@@ -412,6 +415,10 @@
       },
       {
         "name": "tags",
+        "children": []
+      },
+      {
+        "name": "Procedure",
         "children": []
       }
     ]
