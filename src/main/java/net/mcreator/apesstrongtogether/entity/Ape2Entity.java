@@ -11,12 +11,15 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -32,6 +35,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.apesstrongtogether.procedures.Ape2chestProcedure;
 import net.mcreator.apesstrongtogether.procedures.Ape2ThisEntityKillsAnotherapeProcedure;
 import net.mcreator.apesstrongtogether.procedures.Ape2OnEntityTickUpdateProcedure;
 import net.mcreator.apesstrongtogether.item.ApemeatItem;
@@ -124,6 +128,28 @@ public class Ape2Entity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
+			super.func_230254_b_(sourceentity, hand);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				Ape2chestProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 
 		@Override

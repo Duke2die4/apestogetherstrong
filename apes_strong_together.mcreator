@@ -294,6 +294,62 @@
       "path": "~/Mobs"
     },
     {
+      "name": "Apehair",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apehair",
+      "path": "~/Items"
+    },
+    {
+      "name": "Test",
+      "type": "mob",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_soldier",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "PestleAndMortar",
+      "type": "tag",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pestle_and_mortar",
+      "path": "~/tags"
+    },
+    {
+      "name": "Apearmor",
+      "type": "armor",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apearmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "Chestape",
+      "type": "mob",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestape",
+      "path": "~/Mobs/Chestape"
+    },
+    {
       "name": "Ape2OnEntityTickUpdate",
       "type": "procedure",
       "sortid": 26,
@@ -324,34 +380,238 @@
       "path": "~/Procedure"
     },
     {
-      "name": "Apehair",
-      "type": "item",
-      "sortid": 13,
+      "name": "Guichestwood",
+      "type": "gui",
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "apehair",
-      "path": "~/Items"
+      "registry_name": "guichestwood",
+      "path": "~/Mobs/Chestape"
     },
     {
-      "name": "Test",
+      "name": "Guichestbronze",
+      "type": "gui",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guichestbronze",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestapecopper",
       "type": "mob",
-      "sortid": 27,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "test",
-      "path": "~/Mobs"
+      "registry_name": "chestapecopper",
+      "path": "~/Mobs/Chestape"
     },
     {
-      "name": "PestleAndMortar",
-      "type": "tag",
-      "sortid": 30,
+      "name": "Guichestiron",
+      "type": "gui",
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pestle_and_mortar",
+      "registry_name": "guichestiron",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestapeiron",
+      "type": "mob",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestapeiron",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestbox",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestbox",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestboxcopper",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestboxcopper",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestboxiron",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestboxiron",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Ape2chest",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_2chest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Ape2chestcopper",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_2chestcopper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Ape2chestiron",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ape_2chestiron",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Planks",
+      "type": "tag",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planks",
       "path": "~/tags"
+    },
+    {
+      "name": "Box",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "box",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Boxcopper",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boxcopper",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Boxiron",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boxiron",
+      "path": "~/Mobs/Chestape"
     }
   ],
   "variable_elements": [],
@@ -369,29 +629,42 @@
     "en_us": {
       "entity.apes_strong_together.ape": "Ape",
       "item.apes_strong_together.mincedape": "Minced ape",
+      "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.chestapecopper_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.chestboxiron": "Chestboxiron",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
       "item.apes_strong_together.steak": "Steak",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
+      "item.apes_strong_together.ape_soldier_spawn_egg": "Ape soldier Spawn Egg",
       "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
       "item.apes_strong_together.mortar": "Mortar",
       "entity.apes_strong_together.mob_2": "Mob 2",
       "item.apes_strong_together.banana": "Banana",
+      "entity.apes_strong_together.chestapeiron": "Chestape",
       "subtitles.gorilla_ambient": "",
+      "item.apes_strong_together.apearmor_helmet": "Apearmor Helmet",
       "item.apes_strong_together.apemeat": "Ape meat",
       "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg",
+      "item.apes_strong_together.chestboxcopper": "Chestboxcopper",
       "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
       "item.apes_strong_together.syringex": "Syringe X",
       "item.apes_strong_together.mince_zombie": "Mince Zombie",
+      "entity.apes_strong_together.ape_soldier": "Ape soldier",
       "item.apes_strong_together.apehair": "Ape hair",
       "item.apes_strong_together.coconut": "Coconut",
       "entity.apes_strong_together.gorilla": "Gorilla",
       "item.apes_strong_together.syringe": "Syringe",
       "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
-      "entity.apes_strong_together.test": "Test",
+      "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
+      "entity.apes_strong_together.chestape": "Chestape",
+      "entity.apes_strong_together.chestapecopper": "Chestape",
+      "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
       "entity.apes_strong_together.ape_3": "Ape 3",
       "entity.apes_strong_together.ape_2": "Ape 2",
-      "item.apes_strong_together.test_spawn_egg": "Test Spawn Egg"
+      "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
+      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
+      "item.apes_strong_together.chestbox": "Chestbox"
     }
   },
   "foldersRoot": {
@@ -399,7 +672,12 @@
     "children": [
       {
         "name": "Mobs",
-        "children": []
+        "children": [
+          {
+            "name": "Chestape",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Items",
@@ -419,6 +697,10 @@
       },
       {
         "name": "Procedure",
+        "children": []
+      },
+      {
+        "name": "Armor",
         "children": []
       }
     ]

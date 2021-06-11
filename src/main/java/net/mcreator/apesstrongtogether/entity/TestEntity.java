@@ -37,6 +37,7 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.apesstrongtogether.item.ApearmorItem;
 import net.mcreator.apesstrongtogether.entity.renderer.TestRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
@@ -44,7 +45,7 @@ import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 public class TestEntity extends ApesStrongTogetherModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("test").setRegistryName("test");
+			.size(0.6f, 1.8f)).build("ape_soldier").setRegistryName("ape_soldier");
 	public TestEntity(ApesStrongTogetherModElements instance) {
 		super(instance, 27);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TestRenderer.ModelRegisterHandler());
@@ -55,7 +56,8 @@ public class TestEntity extends ApesStrongTogetherModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("test_spawn_egg"));
+		elements.items
+				.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ape_soldier_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -90,6 +92,10 @@ public class TestEntity extends ApesStrongTogetherModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(false);
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(Items.IRON_SWORD, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.HEAD, new ItemStack(ApearmorItem.helmet, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.CHEST, new ItemStack(ApearmorItem.body, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.LEGS, new ItemStack(ApearmorItem.legs, (int) (1)));
+			this.setItemStackToSlot(EquipmentSlotType.FEET, new ItemStack(ApearmorItem.boots, (int) (1)));
 		}
 
 		@Override

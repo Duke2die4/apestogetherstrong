@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Test",
+    "mobName": "Ape soldier",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "knightape.png",
+    "mobModelTexture": "testbipedt.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -33,16 +33,16 @@
       "value": ""
     },
     "equipmentHelmet": {
-      "value": ""
+      "value": "CUSTOM:Apearmor.helmet"
     },
     "equipmentBody": {
-      "value": ""
+      "value": "CUSTOM:Apearmor.body"
     },
     "equipmentLeggings": {
-      "value": ""
+      "value": "CUSTOM:Apearmor.legs"
     },
     "equipmentBoots": {
-      "value": ""
+      "value": "CUSTOM:Apearmor.boots"
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",

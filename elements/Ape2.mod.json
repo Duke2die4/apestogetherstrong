@@ -98,6 +98,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "onRightClickedOn": {
+      "name": "Ape2chest"
+    },
     "whenThisMobKillsAnother": {
       "name": "Ape2ThisEntityKillsAnotherape"
     },
