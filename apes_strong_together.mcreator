@@ -612,6 +612,355 @@
       "ids": {},
       "registry_name": "boxiron",
       "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "GuiChestSilver",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_chest_silver",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeSilver",
+      "type": "mob",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_silver",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestboxsilver",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestboxsilver",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestapeironRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestapeiron_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Boxsilver",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boxsilver",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "GuiChestGold",
+      "type": "gui",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_chest_gold",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "GuiChestDiamond",
+      "type": "gui",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_chest_diamond",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "GuiChestEmerald",
+      "type": "gui",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gui_chest_emerald",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestboxgold",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestboxgold",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestboxdiamond",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestboxdiamond",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Chestboxemerald",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chestboxemerald",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Boxgold",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boxgold",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Boxdiamond",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boxdiamond",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "Boxemerald",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boxemerald",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeGold",
+      "type": "mob",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_gold",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeGoldRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_gold_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeSilverRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_silver_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeDiamond",
+      "type": "mob",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_diamond",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeEmerald",
+      "type": "mob",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_emerald",
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ChestApeDiamondRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chest_ape_diamond_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Chestape"
+    },
+    {
+      "name": "ApemeatFoodEaten",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apemeat_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bananabox",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bananabox",
+      "path": "~/Items"
+    },
+    {
+      "name": "Bananaboxrecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bananaboxrecipe",
+      "path": "~/recipe"
     }
   ],
   "variable_elements": [],
@@ -628,43 +977,56 @@
   "language_map": {
     "en_us": {
       "entity.apes_strong_together.ape": "Ape",
-      "item.apes_strong_together.mincedape": "Minced ape",
       "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.chestboxdiamond": "Diamond Chestbox",
       "item.apes_strong_together.chestapecopper_spawn_egg": "Chestape Spawn Egg",
-      "item.apes_strong_together.chestboxiron": "Chestboxiron",
+      "item.apes_strong_together.chestboxiron": "iron Chestbox",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
-      "item.apes_strong_together.steak": "Steak",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
+      "item.apes_strong_together.mortar": "Mortar",
+      "entity.apes_strong_together.chestapeiron": "Chestape",
+      "item.apes_strong_together.chestboxgold": "Gold Chestbox",
+      "entity.apes_strong_together.chest_ape_emerald": "Chestape",
+      "item.apes_strong_together.syringex": "Syringe X",
+      "item.apes_strong_together.chest_ape_emerald_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.mince_zombie": "Mince Zombie",
+      "item.apes_strong_together.apehair": "Ape hair",
+      "item.apes_strong_together.chest_ape_silver_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.chestboxemerald": "Emerald Chestbox",
+      "entity.apes_strong_together.gorilla": "Gorilla",
+      "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
+      "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
+      "entity.apes_strong_together.chestape": "Chestape",
+      "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
+      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
+      "item.apes_strong_together.chestbox": "Chestbox",
+      "entity.apes_strong_together.chest_ape_gold": "Chestape",
+      "item.apes_strong_together.mincedape": "Minced ape",
+      "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.bananabox": "Bananabox",
+      "entity.apes_strong_together.chest_ape_diamond": "Chestape",
+      "item.apes_strong_together.chestboxsilver": "Silver Chestbox",
+      "item.apes_strong_together.steak": "Steak",
+      "entity.apes_strong_together.chest_ape_silver": "Chestape",
       "item.apes_strong_together.ape_soldier_spawn_egg": "Ape soldier Spawn Egg",
       "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
-      "item.apes_strong_together.mortar": "Mortar",
       "entity.apes_strong_together.mob_2": "Mob 2",
       "item.apes_strong_together.banana": "Banana",
-      "entity.apes_strong_together.chestapeiron": "Chestape",
       "subtitles.gorilla_ambient": "",
       "item.apes_strong_together.apearmor_helmet": "Apearmor Helmet",
       "item.apes_strong_together.apemeat": "Ape meat",
       "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg",
-      "item.apes_strong_together.chestboxcopper": "Chestboxcopper",
+      "item.apes_strong_together.chestboxcopper": "copper Chestbox",
       "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
-      "item.apes_strong_together.syringex": "Syringe X",
-      "item.apes_strong_together.mince_zombie": "Mince Zombie",
       "entity.apes_strong_together.ape_soldier": "Ape soldier",
-      "item.apes_strong_together.apehair": "Ape hair",
       "item.apes_strong_together.coconut": "Coconut",
-      "entity.apes_strong_together.gorilla": "Gorilla",
       "item.apes_strong_together.syringe": "Syringe",
-      "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
-      "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
-      "entity.apes_strong_together.chestape": "Chestape",
       "entity.apes_strong_together.chestapecopper": "Chestape",
+      "item.apes_strong_together.chest_ape_gold_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
-      "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
       "entity.apes_strong_together.ape_3": "Ape 3",
       "entity.apes_strong_together.ape_2": "Ape 2",
-      "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
-      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
-      "item.apes_strong_together.chestbox": "Chestbox"
+      "item.apes_strong_together.apearmor_chestplate": "Apearmor Body"
     }
   },
   "foldersRoot": {

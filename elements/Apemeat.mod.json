@@ -12,15 +12,18 @@
       "value": "FOOD"
     },
     "stackSize": 64,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
-    "eatingSpeed": 32,
+    "nutritionalValue": 2,
+    "saturation": 1.2,
+    "eatingSpeed": 20,
     "resultItem": {
       "value": ""
     },
-    "forDogs": false,
+    "forDogs": true,
     "isAlwaysEdible": false,
     "animation": "eat",
-    "hasGlow": false
+    "hasGlow": false,
+    "onEaten": {
+      "name": "ApemeatFoodEaten"
+    }
   }
 }

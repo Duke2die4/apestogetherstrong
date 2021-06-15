@@ -91,7 +91,7 @@ public class ChestapeRenderer {
 			rightarm.setTextureOffset(6, 19).addBox(-1.0F, 2.3F, -1.0F, 1.0F, 4.0F, 1.0F, 0.991F, false);
 			leftarm = new ModelRenderer(this);
 			leftarm.setRotationPoint(2.0F, 16.6F, -1.2F);
-			setRotationAngle(leftarm, 2.8362F, 0.0F, 0.5236F);
+			setRotationAngle(leftarm, -0.0436F, 0.0F, -2.4871F);
 			leftarm.setTextureOffset(0, 0).addBox(0.0F, -1.0F, -1.5F, 1.0F, 4.0F, 2.0F, 1.0F, false);
 			leftarm.setTextureOffset(16, 11).addBox(0.0F, 2.3F, -1.0F, 1.0F, 4.0F, 1.0F, 0.991F, false);
 			leftarm.setTextureOffset(4, 0).addBox(0.0F, 5.9F, -1.2F, 1.0F, 1.0F, 1.0F, 1.2F, false);

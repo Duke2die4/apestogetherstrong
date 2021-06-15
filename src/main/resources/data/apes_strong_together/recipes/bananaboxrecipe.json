@@ -1,0 +1,42 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:banana"
+    },
+    "1": {
+      "item": "apes_strong_together:banana"
+    },
+    "2": {
+      "item": "apes_strong_together:banana"
+    },
+    "3": {
+      "item": "apes_strong_together:banana"
+    },
+    "4": {
+      "item": "apes_strong_together:banana"
+    },
+    "5": {
+      "item": "apes_strong_together:banana"
+    },
+    "6": {
+      "item": "apes_strong_together:banana"
+    },
+    "7": {
+      "item": "apes_strong_together:banana"
+    },
+    "8": {
+      "item": "apes_strong_together:banana"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:bananabox",
+    "count": 1
+  }
+}

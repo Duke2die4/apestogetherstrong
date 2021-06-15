@@ -27,7 +27,7 @@ public class ApemeatcookedItem extends ApesStrongTogetherModElements.ModElement 
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
+					.food((new Food.Builder()).hunger(6).saturation(7.2f).build()));
 			setRegistryName("apemeatcooked");
 		}
 

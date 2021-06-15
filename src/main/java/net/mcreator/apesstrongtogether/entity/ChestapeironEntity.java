@@ -49,6 +49,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 
+import net.mcreator.apesstrongtogether.procedures.ChestapeironRightClickedOnEntityProcedure;
 import net.mcreator.apesstrongtogether.gui.GuichestironGui;
 import net.mcreator.apesstrongtogether.entity.renderer.ChestapeironRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
@@ -56,13 +57,16 @@ import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
+import java.util.Map;
+import java.util.HashMap;
+
 import io.netty.buffer.Unpooled;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ChestapeironEntity extends ApesStrongTogetherModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("chestapeiron").setRegistryName("chestapeiron");
+			.size(0.4f, 0.3f)).build("chestapeiron").setRegistryName("chestapeiron");
 	public ChestapeironEntity(ApesStrongTogetherModElements instance) {
 		super(instance, 37);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ChestapeironRenderer.ModelRegisterHandler());
@@ -204,6 +208,16 @@ public class ChestapeironEntity extends ApesStrongTogetherModElements.ModElement
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ChestapeironRightClickedOnEntityProcedure.executeProcedure($_dependencies);
+			}
 			return retval;
 		}
 	}

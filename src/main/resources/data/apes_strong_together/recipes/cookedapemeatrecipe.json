@@ -1,7 +1,7 @@
 {
   "group": "apes_strong_together",
   "type": "minecraft:smelting",
-  "experience": 2,
+  "experience": 0.35,
   "cookingtime": 100,
   "ingredient": {
     "item": "apes_strong_together:apemeat"

@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "chest_box_iron",
     "customModelName": "Normal",
-    "name": "Chestboxiron",
+    "name": "iron Chestbox",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
