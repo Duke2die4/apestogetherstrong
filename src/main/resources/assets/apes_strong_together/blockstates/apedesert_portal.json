@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "apes_strong_together:block/apedesert_portal_ew"
+    },
+    "axis=x": {
+      "model": "apes_strong_together:block/apedesert_portal_ns"
+    }
+  }
+}

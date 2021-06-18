@@ -53,7 +53,7 @@
     "armorBaseValue": 4.0,
     "trackingRange": 64,
     "health": 20,
-    "xpAmount": 0,
+    "xpAmount": 2,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -66,7 +66,7 @@
     "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
-    "immuneToCactus": false,
+    "immuneToCactus": true,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
@@ -115,7 +115,32 @@
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 2,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "taiga"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "jungle_hills"
+      },
+      {
+        "value": "jungle_edge"
+      },
+      {
+        "value": "birch_forest"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

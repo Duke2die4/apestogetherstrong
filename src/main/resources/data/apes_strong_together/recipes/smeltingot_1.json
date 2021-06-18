@@ -1,0 +1,12 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:smelting",
+  "experience": 4,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "apes_strong_together:ore_01"
+  },
+  "result": {
+    "item": "apes_strong_together:ingot_1"
+  }
+}

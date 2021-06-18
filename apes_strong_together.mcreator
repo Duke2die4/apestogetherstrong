@@ -940,7 +940,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedure"
     },
     {
       "name": "Bananabox",
@@ -961,6 +962,129 @@
       "ids": {},
       "registry_name": "bananaboxrecipe",
       "path": "~/recipe"
+    },
+    {
+      "name": "Apedesert",
+      "type": "dimension",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apedesert",
+      "metadata": {
+        "ep": true
+      },
+      "path": "~/World"
+    },
+    {
+      "name": "Apeportal",
+      "type": "particle",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apeportal",
+      "path": "~/particals"
+    },
+    {
+      "name": "Dune",
+      "type": "biome",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dune",
+      "path": "~/World/Bioms"
+    },
+    {
+      "name": "DangerousSavanna",
+      "type": "biome",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dangerous_savanna",
+      "path": "~/World/Bioms"
+    },
+    {
+      "name": "Borderlands",
+      "type": "biome",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "borderlands",
+      "path": "~/World/Bioms"
+    },
+    {
+      "name": "Burningkingdom",
+      "type": "biome",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burningkingdom",
+      "path": "~/World/Bioms"
+    },
+    {
+      "name": "Bossape",
+      "type": "mob",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bossape",
+      "path": "~/Mobs/bossape"
+    },
+    {
+      "name": "Ore1",
+      "type": "particle",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_1",
+      "path": "~/particals"
+    },
+    {
+      "name": "Ore01",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_01",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Ingot1",
+      "type": "item",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingot_1",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Smeltingot1",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smeltingot_1",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Ingotblock1",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingotblock_1",
+      "path": "~/World/ores"
     }
   ],
   "variable_elements": [],
@@ -976,19 +1100,23 @@
   ],
   "language_map": {
     "en_us": {
-      "entity.apes_strong_together.ape": "Ape",
-      "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestboxdiamond": "Diamond Chestbox",
+      "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
+      "entity.apes_strong_together.ape": "Ape",
       "item.apes_strong_together.chestapecopper_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestboxiron": "iron Chestbox",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
+      "entity.apes_strong_together.bossape": "Bossape",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
       "item.apes_strong_together.mortar": "Mortar",
+      "biome.apes_strong_together.dune": "Dune",
       "entity.apes_strong_together.chestapeiron": "Chestape",
       "item.apes_strong_together.chestboxgold": "Gold Chestbox",
       "entity.apes_strong_together.chest_ape_emerald": "Chestape",
+      "biome.apes_strong_together.dangerous_savanna": "Dangerous Savanna",
       "item.apes_strong_together.syringex": "Syringe X",
       "item.apes_strong_together.chest_ape_emerald_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.ingotblock_1": "Ingotblock 1",
       "item.apes_strong_together.mince_zombie": "Mince Zombie",
       "item.apes_strong_together.apehair": "Ape hair",
       "item.apes_strong_together.chest_ape_silver_spawn_egg": "Chestape Spawn Egg",
@@ -997,10 +1125,12 @@
       "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
       "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
       "entity.apes_strong_together.chestape": "Chestape",
-      "item.apes_strong_together.ape_2_spawn_egg": "Ape 2 Spawn Egg",
+      "item.apes_strong_together.ape_2_spawn_egg": "Gen ape Spawn Egg",
       "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
       "item.apes_strong_together.chestbox": "Chestbox",
       "entity.apes_strong_together.chest_ape_gold": "Chestape",
+      "biome.apes_strong_together.borderlands": "Borderlands",
+      "item.apes_strong_together.bossape_spawn_egg": "Bossape Spawn Egg",
       "item.apes_strong_together.mincedape": "Minced ape",
       "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
       "block.apes_strong_together.bananabox": "Bananabox",
@@ -1010,22 +1140,26 @@
       "entity.apes_strong_together.chest_ape_silver": "Chestape",
       "item.apes_strong_together.ape_soldier_spawn_egg": "Ape soldier Spawn Egg",
       "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
+      "item.apes_strong_together.ingot_1": "Ingot 1",
       "entity.apes_strong_together.mob_2": "Mob 2",
       "item.apes_strong_together.banana": "Banana",
+      "biome.apes_strong_together.burningkingdom": "Burning Kingdom",
       "subtitles.gorilla_ambient": "",
       "item.apes_strong_together.apearmor_helmet": "Apearmor Helmet",
       "item.apes_strong_together.apemeat": "Ape meat",
       "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg",
       "item.apes_strong_together.chestboxcopper": "copper Chestbox",
+      "block.apes_strong_together.ore_01": "Ore 0 1",
       "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
       "entity.apes_strong_together.ape_soldier": "Ape soldier",
       "item.apes_strong_together.coconut": "Coconut",
       "item.apes_strong_together.syringe": "Syringe",
+      "item.apes_strong_together.apedesert": "Ape hair",
       "entity.apes_strong_together.chestapecopper": "Chestape",
       "item.apes_strong_together.chest_ape_gold_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
       "entity.apes_strong_together.ape_3": "Ape 3",
-      "entity.apes_strong_together.ape_2": "Ape 2",
+      "entity.apes_strong_together.ape_2": "Gen ape",
       "item.apes_strong_together.apearmor_chestplate": "Apearmor Body"
     }
   },
@@ -1037,6 +1171,10 @@
         "children": [
           {
             "name": "Chestape",
+            "children": []
+          },
+          {
+            "name": "bossape",
             "children": []
           }
         ]
@@ -1064,6 +1202,27 @@
       {
         "name": "Armor",
         "children": []
+      },
+      {
+        "name": "particals",
+        "children": []
+      },
+      {
+        "name": "World",
+        "children": [
+          {
+            "name": "Bioms",
+            "children": []
+          },
+          {
+            "name": "blocks",
+            "children": []
+          },
+          {
+            "name": "ores",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -1072,7 +1231,7 @@
     "modName": "apes strong together",
     "version": "1.0.0",
     "author": "Daniel Rosenberg, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/apes-strong-together",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -1081,6 +1240,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.apesstrongtogether",
     "lockBaseModFiles": false
   },

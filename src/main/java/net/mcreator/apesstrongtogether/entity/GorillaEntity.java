@@ -69,6 +69,25 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("plains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("taiga").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("wooded_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("jungle").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("jungle_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("jungle_edge").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("birch_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 5, 2, 4));
 	}
 
@@ -98,7 +117,7 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 0;
+			experienceValue = 2;
 			setNoAI(false);
 		}
 
@@ -147,6 +166,13 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.CACTUS)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 
 		@Override

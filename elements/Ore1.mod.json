@@ -1,0 +1,21 @@
+{
+  "_fv": 18,
+  "_type": "particle",
+  "definition": {
+    "texture": "ore1.png",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": 4.0,
+    "speedFactor": 0.001,
+    "gravity": 0.5,
+    "maxAge": 12,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "LIT"
+  }
+}

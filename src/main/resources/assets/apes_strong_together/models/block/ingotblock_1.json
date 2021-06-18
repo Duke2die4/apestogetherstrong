@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "apes_strong_together:blocks/ore1block",
+    "up": "apes_strong_together:blocks/ore1block",
+    "north": "apes_strong_together:blocks/ore1block",
+    "east": "apes_strong_together:blocks/ore1block",
+    "south": "apes_strong_together:blocks/ore1block",
+    "west": "apes_strong_together:blocks/ore1block",
+    "particle": "apes_strong_together:blocks/ore1block"
+  }
+}
