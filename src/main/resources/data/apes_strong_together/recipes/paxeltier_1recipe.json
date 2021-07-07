@@ -1,0 +1,36 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:pickaxetier_1"
+    },
+    "1": {
+      "item": "apes_strong_together:swordtier_1"
+    },
+    "2": {
+      "item": "apes_strong_together:axetier_1"
+    },
+    "3": {
+      "item": "apes_strong_together:shoveltier_1"
+    },
+    "4": {
+      "item": "apes_strong_together:toolrod_1"
+    },
+    "5": {
+      "item": "apes_strong_together:hoetier_1"
+    },
+    "7": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:paxeltier_1",
+    "count": 1
+  }
+}

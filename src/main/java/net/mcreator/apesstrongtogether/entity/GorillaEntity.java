@@ -14,6 +14,8 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
+import net.minecraft.world.IServerWorld;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
@@ -21,12 +23,12 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -35,18 +37,27 @@ import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
+import net.mcreator.apesstrongtogether.procedures.GorillaNaturalEntitySpawningConditionProcedure;
 import net.mcreator.apesstrongtogether.item.ApemeatItem;
 import net.mcreator.apesstrongtogether.entity.renderer.GorillaRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+
+import javax.annotation.Nullable;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
@@ -69,26 +80,7 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("plains").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("forest").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("taiga").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("wooded_hills").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("jungle").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("jungle_hills").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("jungle_edge").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("birch_forest").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 5, 2, 4));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 10, 1, 2));
 	}
 
 	@Override
@@ -110,7 +102,7 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -119,6 +111,7 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 			super(type, world);
 			experienceValue = 2;
 			setNoAI(false);
+			enablePersistence();
 		}
 
 		@Override
@@ -140,6 +133,11 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
 		}
 
 		@Override
@@ -173,6 +171,22 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 			if (source == DamageSource.CACTUS)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public ILivingEntityData onInitialSpawn(IServerWorld world, DifficultyInstance difficulty, SpawnReason reason,
+				@Nullable ILivingEntityData livingdata, @Nullable CompoundNBT tag) {
+			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				GorillaNaturalEntitySpawningConditionProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 
 		@Override

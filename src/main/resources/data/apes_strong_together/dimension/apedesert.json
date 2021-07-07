@@ -42,7 +42,7 @@
             "humidity": -1,
             "altitude": 0.75,
             "weirdness": -1.5,
-            "offset": 0
+            "offset": 0.7
           }
         },
         {
@@ -51,7 +51,7 @@
             "temperature": 0.5,
             "humidity": -0.5,
             "altitude": -0.75,
-            "weirdness": 1.5,
+            "weirdness": 0.5,
             "offset": 0
           }
         },
@@ -81,7 +81,7 @@
             "temperature": -1,
             "humidity": 1,
             "altitude": 0.75,
-            "weirdness": -1.5,
+            "weirdness": 0,
             "offset": 0
           }
         }
@@ -94,7 +94,7 @@
       "sea_level": 63,
       "disable_mob_generation": true,
       "default_block": {
-        "Name": "minecraft:sand"
+        "Name": "minecraft:smooth_sandstone"
       },
       "default_fluid": {
         "Name": "minecraft:lava",

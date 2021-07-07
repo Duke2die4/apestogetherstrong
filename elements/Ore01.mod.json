@@ -34,7 +34,7 @@
     ],
     "name": "Ore 0 1",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 10.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -54,7 +54,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -74,9 +74,9 @@
     "soundOnStep": {
       "value": "STONE"
     },
-    "luminance": 4,
+    "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "CUSTOM:Ore1"
@@ -111,7 +111,7 @@
       }
     ],
     "frequencyPerChunks": 2,
-    "frequencyOnChunk": 8,
+    "frequencyOnChunk": 12,
     "minGenerateHeight": 14,
     "maxGenerateHeight": 80
   }

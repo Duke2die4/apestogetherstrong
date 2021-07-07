@@ -10,31 +10,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
         "value": "CUSTOM:Chestbox"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       },
       {
-        "value": "TAG:ingots/iron"
+        "value": "TAG:ingots/copper"
       }
     ],
     "recipeReturnStack": {

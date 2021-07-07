@@ -1,0 +1,26 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:sandstone"
+    },
+    "1": {
+      "item": "apes_strong_together:ingot_1"
+    },
+    "2": {
+      "item": "apes_strong_together:ingot_1"
+    },
+    "3": {
+      "item": "minecraft:sandstone"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:dimentionblock_1",
+    "count": 1
+  }
+}

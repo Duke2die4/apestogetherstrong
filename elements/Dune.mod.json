@@ -32,12 +32,12 @@
       "value": "No parent"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
-    "baseHeight": 0.4,
+    "temperature": 2.0,
+    "baseHeight": 0.2,
     "heightVariation": 0.1,
     "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 20,
+    "biomeWeight": 60,
     "biomeDictionaryTypes": [
       "SANDY"
     ],

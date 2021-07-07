@@ -1,0 +1,30 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_ingot"
+    },
+    "1": {
+      "item": "apes_strong_together:ingot_1"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    },
+    "4": {
+      "item": "apes_strong_together:ingot_1"
+    },
+    "7": {
+      "item": "apes_strong_together:ingot_1"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:toolrod_1",
+    "count": 2
+  }
+}

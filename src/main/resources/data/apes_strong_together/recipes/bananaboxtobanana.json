@@ -1,0 +1,13 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apes_strong_together:bananabox"
+    }
+  ],
+  "result": {
+    "item": "apes_strong_together:banana",
+    "count": 9
+  }
+}

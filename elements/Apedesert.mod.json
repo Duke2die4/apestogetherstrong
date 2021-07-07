@@ -21,7 +21,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "Blocks.SMOOTH_SANDSTONE"
     },
     "fluidBlock": {
       "value": "Blocks.LAVA"
@@ -38,7 +38,7 @@
     "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
     "portalFrame": {
-      "value": "Blocks.SANDSTONE#0"
+      "value": "CUSTOM:Dimentionblock1"
     },
     "portalParticles": {
       "value": "CUSTOM:Apeportal"

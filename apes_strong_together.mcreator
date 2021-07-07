@@ -968,13 +968,13 @@
       "type": "dimension",
       "sortid": 71,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "apedesert",
       "metadata": {
         "ep": true
       },
-      "path": "~/World"
+      "path": "~/World/dimentions"
     },
     {
       "name": "Apeportal",
@@ -1074,7 +1074,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "smeltingot_1",
-      "path": "~/World/ores"
+      "path": "~/recipe"
     },
     {
       "name": "Ingotblock1",
@@ -1085,6 +1085,428 @@
       "ids": {},
       "registry_name": "ingotblock_1",
       "path": "~/World/ores"
+    },
+    {
+      "name": "Ingotblock1recipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingotblock_1recipe",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Ingot1recipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingot_1recipe",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Dimentionblock1",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dimentionblock_1",
+      "path": "~/World/dimentions"
+    },
+    {
+      "name": "Desertplant1",
+      "type": "plant",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertplant_1",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "DesertSandpile1",
+      "type": "plant",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_sandpile_1",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Desertplant2",
+      "type": "plant",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertplant_2",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Portalrecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portalrecipe",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Desertgrass",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertgrass",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Desserttre1",
+      "type": "structure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desserttre_1",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Desserttre2",
+      "type": "structure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desserttre_2",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Pickaxetier1",
+      "type": "tool",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxetier_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Toolrod1",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toolrod_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Toolrodtier1recipes",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toolrodtier_1recipes",
+      "path": "~/tools"
+    },
+    {
+      "name": "Pickaxetier1recipes",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxetier_1recipes",
+      "path": "~/tools"
+    },
+    {
+      "name": "Shoveltier1",
+      "type": "tool",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shoveltier_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Shoveltier1recipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shoveltier_1recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Axetier1",
+      "type": "tool",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "axetier_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Axetier1recipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "axetier_1recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Hoetier1",
+      "type": "tool",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hoetier_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Hoetier1recipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hoetier_1recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Swordtier1",
+      "type": "tool",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "swordtier_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Swordtier1recipe",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "swordtier_1recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Paxeltier1",
+      "type": "tool",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paxeltier_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Paxeltier1recipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paxeltier_1recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Oasis",
+      "type": "structure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oasis",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Bananatree",
+      "type": "plant",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bananatree",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Desertpearl",
+      "type": "item",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertpearl",
+      "path": "~/Items"
+    },
+    {
+      "name": "Desertplant3",
+      "type": "plant",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertplant_3",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Desertplant3GenerationCondition",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertplant_3_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": []
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "Ingot2",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingot_2",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Ore2",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_2",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Ingotblock2",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingotblock_2",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Ore2smelt",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_2smelt",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Ingot2block",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ingot_2block",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Block2ingot",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_2ingot",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Desertflower1glowstone",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desertflower_1glowstone",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Bananaboxtobanana",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bananaboxtobanana",
+      "path": "~/recipe"
+    },
+    {
+      "name": "GorillaNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gorilla_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "Ancientdebree",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ancientdebree",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Gemore2",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gemore_2",
+      "path": "~/World/ores"
+    },
+    {
+      "name": "Gem2",
+      "type": "item",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_2",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -1100,31 +1522,44 @@
   ],
   "language_map": {
     "en_us": {
+      "block.apes_strong_together.gemore_2": "Ore 2",
       "item.apes_strong_together.chestboxdiamond": "Diamond Chestbox",
       "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
       "entity.apes_strong_together.ape": "Ape",
       "item.apes_strong_together.chestapecopper_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.ore_2": "Ore 2",
       "item.apes_strong_together.chestboxiron": "iron Chestbox",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
       "entity.apes_strong_together.bossape": "Bossape",
+      "item.apes_strong_together.desertpearl": "Desertpearl",
+      "block.apes_strong_together.bananatree": "Bananatree",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
       "item.apes_strong_together.mortar": "Mortar",
       "biome.apes_strong_together.dune": "Dune",
+      "item.apes_strong_together.swordtier_1": "Swordtier 1",
       "entity.apes_strong_together.chestapeiron": "Chestape",
       "item.apes_strong_together.chestboxgold": "Gold Chestbox",
       "entity.apes_strong_together.chest_ape_emerald": "Chestape",
+      "item.apes_strong_together.hoetier_1": "Hoetier 1",
       "biome.apes_strong_together.dangerous_savanna": "Dangerous Savanna",
       "item.apes_strong_together.syringex": "Syringe X",
+      "block.apes_strong_together.dimentionblock_1": "Dimentionblock 1",
       "item.apes_strong_together.chest_ape_emerald_spawn_egg": "Chestape Spawn Egg",
       "block.apes_strong_together.ingotblock_1": "Ingotblock 1",
       "item.apes_strong_together.mince_zombie": "Mince Zombie",
       "item.apes_strong_together.apehair": "Ape hair",
+      "block.apes_strong_together.ingotblock_2": "Ingotblock 1",
       "item.apes_strong_together.chest_ape_silver_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestboxemerald": "Emerald Chestbox",
+      "item.apes_strong_together.gem_2": "Gem 2",
       "entity.apes_strong_together.gorilla": "Gorilla",
       "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
+      "block.apes_strong_together.desertplant_3": "Desertplant 3",
+      "block.apes_strong_together.desertplant_2": "Desertplant 1",
       "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
       "entity.apes_strong_together.chestape": "Chestape",
+      "block.apes_strong_together.desertplant_1": "Desertplant 1",
+      "block.apes_strong_together.ancientdebree": "Dessert Ancient Debris",
       "item.apes_strong_together.ape_2_spawn_egg": "Gen ape Spawn Egg",
       "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
       "item.apes_strong_together.chestbox": "Chestbox",
@@ -1135,14 +1570,19 @@
       "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
       "block.apes_strong_together.bananabox": "Bananabox",
       "entity.apes_strong_together.chest_ape_diamond": "Chestape",
+      "item.apes_strong_together.shoveltier_1": "Shoveltier 1",
       "item.apes_strong_together.chestboxsilver": "Silver Chestbox",
       "item.apes_strong_together.steak": "Steak",
       "entity.apes_strong_together.chest_ape_silver": "Chestape",
+      "block.apes_strong_together.desert_sandpile_1": "sandpile",
       "item.apes_strong_together.ape_soldier_spawn_egg": "Ape soldier Spawn Egg",
       "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
+      "item.apes_strong_together.ingot_2": "Ingot 2",
       "item.apes_strong_together.ingot_1": "Ingot 1",
+      "block.apes_strong_together.desertgrass": "Desertgrass",
       "entity.apes_strong_together.mob_2": "Mob 2",
       "item.apes_strong_together.banana": "Banana",
+      "item.apes_strong_together.paxeltier_1": "Paxeltier 1",
       "biome.apes_strong_together.burningkingdom": "Burning Kingdom",
       "subtitles.gorilla_ambient": "",
       "item.apes_strong_together.apearmor_helmet": "Apearmor Helmet",
@@ -1153,13 +1593,16 @@
       "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
       "entity.apes_strong_together.ape_soldier": "Ape soldier",
       "item.apes_strong_together.coconut": "Coconut",
+      "item.apes_strong_together.pickaxetier_1": "Pickaxetier 1",
       "item.apes_strong_together.syringe": "Syringe",
       "item.apes_strong_together.apedesert": "Ape hair",
       "entity.apes_strong_together.chestapecopper": "Chestape",
       "item.apes_strong_together.chest_ape_gold_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.toolrod_1": "Toolrod 1",
       "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
       "entity.apes_strong_together.ape_3": "Ape 3",
       "entity.apes_strong_together.ape_2": "Gen ape",
+      "item.apes_strong_together.axetier_1": "Axetier 1",
       "item.apes_strong_together.apearmor_chestplate": "Apearmor Body"
     }
   },
@@ -1221,6 +1664,18 @@
           {
             "name": "ores",
             "children": []
+          },
+          {
+            "name": "dimentions",
+            "children": []
+          },
+          {
+            "name": "plants",
+            "children": []
+          },
+          {
+            "name": "Struktion",
+            "children": []
           }
         ]
       }
@@ -1228,7 +1683,7 @@
   },
   "workspaceSettings": {
     "modid": "apes_strong_together",
-    "modName": "apes strong together",
+    "modName": "Apes Strong Together",
     "version": "1.0.0",
     "author": "Daniel Rosenberg, MCreator",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/apes-strong-together",

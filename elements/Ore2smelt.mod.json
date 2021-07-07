@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Ore2"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Ingot2"
+    },
+    "name": "ore_2smelt",
+    "namespace": "mod"
+  }
+}

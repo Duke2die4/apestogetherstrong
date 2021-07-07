@@ -8,31 +8,31 @@
   ],
   "key": {
     "0": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "1": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "2": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "3": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "4": {
       "item": "apes_strong_together:chestbox"
     },
     "5": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "6": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "7": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     },
     "8": {
-      "tag": "ingots/iron"
+      "tag": "ingots/copper"
     }
   },
   "result": {

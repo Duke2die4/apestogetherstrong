@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Pickaxetier1"
+      },
+      {
+        "value": "CUSTOM:Swordtier1"
+      },
+      {
+        "value": "CUSTOM:Axetier1"
+      },
+      {
+        "value": "CUSTOM:Shoveltier1"
+      },
+      {
+        "value": "CUSTOM:Toolrod1"
+      },
+      {
+        "value": "CUSTOM:Hoetier1"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Paxeltier1"
+    },
+    "name": "paxeltier_1recipe",
+    "namespace": "mod"
+  }
+}

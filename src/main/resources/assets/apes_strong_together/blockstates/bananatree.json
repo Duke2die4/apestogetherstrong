@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "apes_strong_together:block/bananatree"
+    },
+    "half=lower": {
+      "model": "apes_strong_together:block/bananatree_bottom"
+    }
+  }
+}

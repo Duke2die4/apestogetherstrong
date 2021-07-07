@@ -1,0 +1,13 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apes_strong_together:ingotblock_1"
+    }
+  ],
+  "result": {
+    "item": "apes_strong_together:ingot_1",
+    "count": 9
+  }
+}

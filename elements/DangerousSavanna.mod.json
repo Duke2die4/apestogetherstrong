@@ -27,13 +27,13 @@
       "value": "CUSTOM:Apeportal"
     },
     "particlesProbability": 0.4,
-    "biomeCategory": "NONE",
+    "biomeCategory": "DESERT",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:Dune"
     },
     "rainingPossibility": 0.0,
-    "temperature": 0.5,
-    "baseHeight": 0.7999999999999999,
+    "temperature": 2.0,
+    "baseHeight": 0.5,
     "heightVariation": 0.2,
     "biomeType": "DESERT",
     "spawnBiome": false,

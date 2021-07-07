@@ -54,6 +54,7 @@ import net.minecraft.block.AbstractBlock;
 
 import net.mcreator.apesstrongtogether.particle.ApeportalParticle;
 import net.mcreator.apesstrongtogether.item.ApedesertItem;
+import net.mcreator.apesstrongtogether.block.Dimentionblock1Block;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 import javax.annotation.Nullable;
@@ -85,10 +86,10 @@ public class ApedesertDimension extends ApesStrongTogetherModElements.ModElement
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CAVE, "field_222718_j"))
-						.add(Blocks.SAND.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(Blocks.SMOOTH_SANDSTONE.getDefaultState().getBlock()).build(), "field_222718_j");
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CANYON, new ImmutableSet.Builder<Block>()
 						.addAll((Set<Block>) ObfuscationReflectionHelper.getPrivateValue(WorldCarver.class, WorldCarver.CANYON, "field_222718_j"))
-						.add(Blocks.SAND.getDefaultState().getBlock()).build(), "field_222718_j");
+						.add(Blocks.SMOOTH_SANDSTONE.getDefaultState().getBlock()).build(), "field_222718_j");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -225,7 +226,7 @@ public class ApedesertDimension extends ApesStrongTogetherModElements.ModElement
 
 	public static class CustomPortalSize {
 		private static final AbstractBlock.IPositionPredicate POSITION_PREDICATE = (state, blockReader, pos) -> {
-			return state.getBlock() == Blocks.SANDSTONE.getDefaultState().getBlock();
+			return state.getBlock() == Dimentionblock1Block.block.getDefaultState().getBlock();
 		};
 		private final IWorld world;
 		private final Direction.Axis axis;
@@ -496,7 +497,7 @@ public class ApedesertDimension extends ApesStrongTogetherModElements.ModElement
 					for (int k2 = 0; k2 < 2; ++k2) {
 						for (int i3 = -1; i3 < 3; ++i3) {
 							BlockState blockstate1 = i3 < 0
-									? Blocks.SANDSTONE.getDefaultState().getBlock().getDefaultState()
+									? Dimentionblock1Block.block.getDefaultState().getBlock().getDefaultState()
 									: Blocks.AIR.getDefaultState();
 							blockpos$mutable.setAndOffset(blockpos, k2 * direction.getXOffset() + l1 * direction1.getXOffset(), i3,
 									k2 * direction.getZOffset() + l1 * direction1.getZOffset());
@@ -509,7 +510,7 @@ public class ApedesertDimension extends ApesStrongTogetherModElements.ModElement
 				for (int i2 = -1; i2 < 4; ++i2) {
 					if (k1 == -1 || k1 == 2 || i2 == -1 || i2 == 3) {
 						blockpos$mutable.setAndOffset(blockpos, k1 * direction.getXOffset(), i2, k1 * direction.getZOffset());
-						this.world.setBlockState(blockpos$mutable, Blocks.SANDSTONE.getDefaultState().getBlock().getDefaultState(), 3);
+						this.world.setBlockState(blockpos$mutable, Dimentionblock1Block.block.getDefaultState().getBlock().getDefaultState(), 3);
 					}
 				}
 			}

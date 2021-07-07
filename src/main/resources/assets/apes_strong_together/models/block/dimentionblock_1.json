@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "apes_strong_together:blocks/portalblock",
+    "up": "apes_strong_together:blocks/portalblock",
+    "north": "apes_strong_together:blocks/portalblock",
+    "east": "apes_strong_together:blocks/portalblock",
+    "south": "apes_strong_together:blocks/portalblock",
+    "west": "apes_strong_together:blocks/portalblock",
+    "particle": "apes_strong_together:blocks/portalblock"
+  }
+}

@@ -51,6 +51,7 @@ import net.mcreator.apesstrongtogether.particle.ApeportalParticle;
 import net.mcreator.apesstrongtogether.entity.TestEntity;
 import net.mcreator.apesstrongtogether.entity.GorillaEntity;
 import net.mcreator.apesstrongtogether.entity.ApeEntity;
+import net.mcreator.apesstrongtogether.block.DesertgrassBlock;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 import java.util.Set;
@@ -74,17 +75,17 @@ public class BurningkingdomBiome extends ApesStrongTogetherModElements.ModElemen
 								.getValue(new ResourceLocation("apes_strong_together:gorilla_ambient")), 6000, 8, 2))
 						.setParticle(new ParticleEffectAmbience(ApeportalParticle.particle, 0.004f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(DesertgrassBlock.block.getDefaultState(),
 								Blocks.SMOOTH_SANDSTONE.getDefaultState(), Blocks.SMOOTH_SANDSTONE.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
 				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.BONE_BLOCK.getDefaultState()),
-								new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.OAK_LOG.getDefaultState()),
+								new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()),
 								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1)))
+								new StraightTrunkPlacer(4, 2, 0), new TwoLayerFeature(1, 0, 1)))
 										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance))
-										.setMaxWaterDepth(0).build())
+										.build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
@@ -94,16 +95,22 @@ public class BurningkingdomBiome extends ApesStrongTogetherModElements.ModElemen
 						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
 								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
 								.func_242731_b(4));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.DISK
-								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
-										ImmutableList.of(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.SMOOTH_SANDSTONE.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(20));
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.DISK
-								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
-										ImmutableList.of(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.SMOOTH_SANDSTONE.getDefaultState())))
-								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(8));
+				biomeGenerationSettings
+						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+								Feature.DISK
+										.withConfiguration(
+												new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
+														ImmutableList.of(DesertgrassBlock.block.getDefaultState(),
+																Blocks.SMOOTH_SANDSTONE.getDefaultState())))
+										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(20));
+				biomeGenerationSettings
+						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+								Feature.DISK
+										.withConfiguration(
+												new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
+														ImmutableList.of(DesertgrassBlock.block.getDefaultState(),
+																Blocks.SMOOTH_SANDSTONE.getDefaultState())))
+										.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(8));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(
 								(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.CACTUS.getDefaultState()),
@@ -116,8 +123,8 @@ public class BurningkingdomBiome extends ApesStrongTogetherModElements.ModElemen
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ApeEntity.entity, 4, 1, 4));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(GorillaEntity.entity, 2, 1, 2));
-				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(TestEntity.entity, 20, 4, 8));
-				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.NONE).depth(2f).scale(0f).temperature(0.5f)
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(TestEntity.entity, 20, 4, 8));
+				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.DESERT).depth(1.4f).scale(0f).temperature(0.5f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("apes_strong_together:burningkingdom"));

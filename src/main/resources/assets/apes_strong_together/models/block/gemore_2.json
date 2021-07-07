@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "apes_strong_together:blocks/gem_block2",
+    "up": "apes_strong_together:blocks/gem_block2",
+    "north": "apes_strong_together:blocks/gem_block2",
+    "east": "apes_strong_together:blocks/gem_block2",
+    "south": "apes_strong_together:blocks/gem_block2",
+    "west": "apes_strong_together:blocks/gem_block2",
+    "particle": "apes_strong_together:blocks/gem_block2"
+  }
+}

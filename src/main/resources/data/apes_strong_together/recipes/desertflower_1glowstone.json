@@ -1,0 +1,13 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apes_strong_together:desertplant_1"
+    }
+  ],
+  "result": {
+    "item": "minecraft:glowstone_dust",
+    "count": 1
+  }
+}

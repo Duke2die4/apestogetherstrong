@@ -27,17 +27,17 @@
       "value": "CUSTOM:Apeportal"
     },
     "particlesProbability": 0.4,
-    "biomeCategory": "NONE",
+    "biomeCategory": "DESERT",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:DangerousSavanna"
     },
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 1.0,
-    "heightVariation": 0.2,
+    "heightVariation": 0.1,
     "biomeType": "DESERT",
     "spawnBiome": false,
-    "biomeWeight": 20,
+    "biomeWeight": 160,
     "biomeDictionaryTypes": [
       "SANDY"
     ],

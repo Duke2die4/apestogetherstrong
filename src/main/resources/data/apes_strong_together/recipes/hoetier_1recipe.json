@@ -1,0 +1,27 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "2 ",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "apes_strong_together:toolrod_1"
+    },
+    "4": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:hoetier_1",
+    "count": 1
+  }
+}
