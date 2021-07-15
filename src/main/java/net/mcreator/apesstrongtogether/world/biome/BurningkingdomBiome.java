@@ -32,7 +32,6 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MoodSoundAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.BiomeGenerationSettings;
 import net.minecraft.world.biome.BiomeAmbience;
 import net.minecraft.world.biome.Biome;
@@ -115,11 +114,6 @@ public class BurningkingdomBiome extends ApesStrongTogetherModElements.ModElemen
 						Feature.RANDOM_PATCH.withConfiguration(
 								(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.CACTUS.getDefaultState()),
 										new ColumnBlockPlacer(1, 2))).tries(4).func_227317_b_().build()));
-				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
-				DefaultBiomeFeatures.withFossils(biomeGenerationSettings);
-				DefaultBiomeFeatures.withDesertWells(biomeGenerationSettings);
-				DefaultBiomeFeatures.withDesertDeadBushes(biomeGenerationSettings);
-				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ApeEntity.entity, 4, 1, 4));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(GorillaEntity.entity, 2, 1, 2));

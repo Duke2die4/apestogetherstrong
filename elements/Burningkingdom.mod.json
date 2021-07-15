@@ -82,13 +82,7 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": true,
     "oceanRuinType": "NONE",
-    "defaultFeatures": [
-      "Ores",
-      "Fossils",
-      "DesertFeatures",
-      "DeadBushes",
-      "Lakes"
-    ],
+    "defaultFeatures": [],
     "spawnEntries": [
       {
         "entity": {
