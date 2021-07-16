@@ -2,24 +2,25 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "block3",
-    "textureTop": "block3",
-    "textureLeft": "block3",
-    "textureFront": "block3",
-    "textureRight": "block3",
-    "textureBack": "block3",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "doorbottom1",
+    "textureTop": "doortop_1",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Door",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -32,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Desertgrass",
+    "name": "Door 1",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -52,7 +53,7 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "GRASS"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -104,9 +105,9 @@
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],
-    "frequencyPerChunks": 12,
-    "frequencyOnChunk": 28,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 128
+    "maxGenerateHeight": 64
   }
 }

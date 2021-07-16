@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "apes_strong_together:blocks/door_1",
+    "top": "apes_strong_together:blocks/door_2"
+  }
+}
