@@ -54,7 +54,7 @@
     "material": {
       "value": "GRASS"
     },
-    "tickRate": 10,
+    "tickRate": 600,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -101,6 +101,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "Block2UpdateTick"
+    },
     "spawnWorldTypes": [
       "CUSTOM:Apedesert"
     ],

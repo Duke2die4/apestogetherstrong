@@ -1568,6 +1568,18 @@
         "ec": true
       },
       "path": "~/Armor"
+    },
+    {
+      "name": "Block2UpdateTick",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_2_update_tick",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
