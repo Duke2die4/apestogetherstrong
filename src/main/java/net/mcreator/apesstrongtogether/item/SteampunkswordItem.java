@@ -1,12 +1,20 @@
 
 package net.mcreator.apesstrongtogether.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SteampunkswordItem extends ApesStrongTogetherModElements.ModElement {
-
 	@ObjectHolder("apes_strong_together:steampunksword")
 	public static final Item block = null;
-
 	public SteampunkswordItem(ApesStrongTogetherModElements instance) {
 		super(instance, 127);
 	}
@@ -38,8 +46,6 @@ public class SteampunkswordItem extends ApesStrongTogetherModElements.ModElement
 				return Ingredient.EMPTY;
 			}
 		}, 3, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("steampunksword"));
 	}
-
 }
