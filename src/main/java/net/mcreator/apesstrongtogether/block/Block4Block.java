@@ -26,11 +26,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ApesStrongTogetherModElements.ModElement.Tag
-public class Block3Block extends ApesStrongTogetherModElements.ModElement {
-	@ObjectHolder("apes_strong_together:block_3")
+public class Block4Block extends ApesStrongTogetherModElements.ModElement {
+	@ObjectHolder("apes_strong_together:block_4")
 	public static final Block block = null;
-	public Block3Block(ApesStrongTogetherModElements instance) {
-		super(instance, 123);
+	public Block4Block(ApesStrongTogetherModElements instance) {
+		super(instance, 130);
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class Block3Block extends ApesStrongTogetherModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
-			setRegistryName("block_3");
+			setRegistryName("block_4");
 		}
 
 		@Override

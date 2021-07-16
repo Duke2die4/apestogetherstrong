@@ -1,0 +1,7 @@
+{
+  "parent": "apes_strong_together:custom/steampunk_gun",
+  "textures": {
+    "2": "apes_strong_together:blocks/steampunk_gun",
+    "particle": "apes_strong_together:items/steampunk_gun"
+  }
+}
