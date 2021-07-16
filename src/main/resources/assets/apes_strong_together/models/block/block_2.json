@@ -1,7 +1,12 @@
 {
-  "parent": "block/template_orientable_trapdoor_bottom",
+  "parent": "block/cube",
   "textures": {
-    "texture": "apes_strong_together:blocks/bricks-export",
-    "particle": "apes_strong_together:blocks/bricks-export"
+    "down": "apes_strong_together:blocks/block1t",
+    "up": "apes_strong_together:blocks/block1t",
+    "north": "apes_strong_together:blocks/block1t",
+    "east": "apes_strong_together:blocks/block1t",
+    "south": "apes_strong_together:blocks/block1t",
+    "west": "apes_strong_together:blocks/block1t",
+    "particle": "apes_strong_together:blocks/block1t"
   }
 }

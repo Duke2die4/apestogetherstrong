@@ -2,20 +2,19 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "bricks-export",
-    "textureTop": "bricks-export",
-    "textureLeft": "bricks-export",
-    "textureFront": "bricks-export",
-    "textureRight": "bricks-export",
-    "textureBack": "bricks-export",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "block1t",
+    "textureTop": "block1t",
+    "textureLeft": "block1t",
+    "textureFront": "block1t",
+    "textureRight": "block1t",
+    "textureBack": "block1t",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "TrapDoor",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -33,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Spawner",
+    "name": "Desertgrass",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -55,7 +54,7 @@
     "material": {
       "value": "GRASS"
     },
-    "tickRate": 10,
+    "tickRate": 600,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -63,7 +62,7 @@
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "OPEN",
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -71,9 +70,9 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "luminance": 0,
     "unbreakable": false,
@@ -102,9 +101,22 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "onTickUpdate": {
+      "name": "Block2UpdateTick"
+    },
+    "spawnWorldTypes": [
+      "CUSTOM:Apedesert"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Borderlands"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.SAND#0"
+      }
+    ],
     "frequencyPerChunks": 12,
     "frequencyOnChunk": 28,
     "minGenerateHeight": 0,

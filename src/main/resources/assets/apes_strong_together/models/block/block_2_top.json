@@ -1,7 +1,0 @@
-{
-  "parent": "block/template_orientable_trapdoor_top",
-  "textures": {
-    "texture": "apes_strong_together:blocks/bricks-export",
-    "particle": "apes_strong_together:blocks/bricks-export"
-  }
-}
