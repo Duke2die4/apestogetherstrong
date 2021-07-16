@@ -11,5 +11,6 @@ public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.Mod
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		double spawn_count = 0;
 	}
 }
