@@ -56,7 +56,7 @@
       "value": "GRASS"
     },
     "tickRate": 600,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
