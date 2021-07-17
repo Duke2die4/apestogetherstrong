@@ -2,19 +2,20 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "block1t",
+    "texture": "bricks-export",
     "textureTop": "block1t",
     "textureLeft": "block1t",
     "textureFront": "block1t",
     "textureRight": "block1t",
     "textureBack": "block1t",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "TrapDoor",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -70,7 +71,7 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "soundOnStep": {
       "value": "GROUND"
     },
@@ -104,19 +105,9 @@
     "onTickUpdate": {
       "name": "Block2UpdateTick"
     },
-    "spawnWorldTypes": [
-      "CUSTOM:Apedesert"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Borderlands"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.SAND#0"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "frequencyPerChunks": 12,
     "frequencyOnChunk": 28,
     "minGenerateHeight": 0,
