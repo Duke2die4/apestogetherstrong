@@ -62,7 +62,8 @@ public class Block2Block extends ApesStrongTogetherModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
+					.tickRandomly());
 			setRegistryName("block_2");
 		}
 
@@ -72,15 +73,6 @@ public class Block2Block extends ApesStrongTogetherModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(state, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 600);
 		}
 
 		@Override
@@ -97,7 +89,6 @@ public class Block2Block extends ApesStrongTogetherModElements.ModElement {
 				$_dependencies.put("world", world);
 				Block2UpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 600);
 		}
 	}
 	private static Feature<OreFeatureConfig> feature = null;
