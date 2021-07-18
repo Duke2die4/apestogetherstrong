@@ -13,19 +13,10 @@
         "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Gem2"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": ""
+        "value": "Items.NETHERITE_INGOT"
       },
       {
         "value": ""
@@ -34,13 +25,22 @@
         "value": "CUSTOM:Toolrod2"
       },
       {
+        "value": "Items.NETHERITE_INGOT"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Gem2"
+      },
+      {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Swordtier1"
+      "value": "CUSTOM:Axetier2"
     },
-    "name": "swordtier_1recipe",
+    "name": "axetier_2recipe",
     "namespace": "mod"
   }
 }

@@ -5,42 +5,42 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 2,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.GOLD_INGOT"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Ingot2"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
+        "value": "Items.GOLD_INGOT"
       },
       {
         "value": ""
       },
       {
+        "value": "CUSTOM:Ingot2"
+      },
+      {
         "value": ""
       },
       {
-        "value": "CUSTOM:Toolrod2"
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ingot2"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Swordtier1"
+      "value": "CUSTOM:Toolrod2"
     },
-    "name": "swordtier_1recipe",
+    "name": "toolrodtier_2recipe",
     "namespace": "mod"
   }
 }

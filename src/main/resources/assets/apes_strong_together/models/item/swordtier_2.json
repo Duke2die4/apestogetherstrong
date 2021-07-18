@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "apes_strong_together:items/sword2"
+  }
+}

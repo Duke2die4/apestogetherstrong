@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Pickaxetier2"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Swordtier2"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Axetier2"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:Shoveltier2"
       },
       {
         "value": "CUSTOM:Toolrod2"
+      },
+      {
+        "value": "CUSTOM:Hoetier2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Gem2"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Swordtier1"
+      "value": "CUSTOM:Paxeltier2"
     },
-    "name": "swordtier_1recipe",
+    "name": "paxeltier_2_recipe",
     "namespace": "mod"
   }
 }

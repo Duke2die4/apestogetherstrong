@@ -1578,7 +1578,24 @@
       "ids": {},
       "registry_name": "block_2_update_tick",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -1660,6 +1677,232 @@
       "ids": {},
       "registry_name": "steampunkmob_22",
       "path": "~/Mobs"
+    },
+    {
+      "name": "Steampunkmob3",
+      "type": "mob",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steampunkmob_3",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Junk1",
+      "type": "item",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "junk_1",
+      "path": "~/Items"
+    },
+    {
+      "name": "Junk2",
+      "type": "item",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "junk_2",
+      "path": "~/Items"
+    },
+    {
+      "name": "Junk3",
+      "type": "item",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "junk_3",
+      "path": "~/Items"
+    },
+    {
+      "name": "Pickaxetier2",
+      "type": "tool",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxetier_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Toolrod2",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toolrod_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Toolrodtier2recipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toolrodtier_2recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Pickaxetier2recipie",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pickaxetier_2recipie",
+      "path": "~/tools"
+    },
+    {
+      "name": "Shoveltier2",
+      "type": "tool",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shoveltier_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Shoveltier2recipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shoveltier_2recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Axetier2",
+      "type": "tool",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "axetier_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Axetier2recipe",
+      "type": "recipe",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "axetier_2recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Hoetier2",
+      "type": "tool",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hoetier_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Hoetier2recipe",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hoetier_2recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Swordtier2",
+      "type": "tool",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "swordtier_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Swordtier2recipe",
+      "type": "recipe",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "swordtier_2recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Paxeltier2",
+      "type": "tool",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paxeltier_2",
+      "path": "~/tools"
+    },
+    {
+      "name": "Paxeltier2Recipe",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paxeltier_2_recipe",
+      "path": "~/tools"
+    },
+    {
+      "name": "Steampunkmob1loot",
+      "type": "loottable",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steampunkmob_1loot",
+      "path": "~/loottabels"
+    },
+    {
+      "name": "Steampunkape",
+      "type": "mob",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steampunkape",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Steampunkaperanged",
+      "type": "mob",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steampunkaperanged",
+      "path": "~/Mobs"
+    },
+    {
+      "name": "Steampunkarmor2",
+      "type": "armor",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "steampunkarmor_2",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
     }
   ],
   "variable_elements": [],
@@ -1682,29 +1925,35 @@
       "item.apes_strong_together.steampunkarmor_boots": "Steampunkarmor Boots",
       "item.apes_strong_together.desertpearl": "Desertpearl",
       "block.apes_strong_together.bananatree": "Bananatree",
+      "item.apes_strong_together.steampunkarmor_2_boots": "Steampunkarmor 2 Boots",
       "item.apes_strong_together.steampunkmob_2_spawn_egg": "Steampunkmob 2 Spawn Egg",
       "item.apes_strong_together.mortar": "Mortar",
-      "item.apes_strong_together.swordtier_1": "Swordtier 1",
       "biome.apes_strong_together.dune": "Dune",
+      "item.apes_strong_together.swordtier_1": "Swordtier 1",
+      "item.apes_strong_together.swordtier_2": "Swordtier 1",
       "entity.apes_strong_together.chestapeiron": "Chestape",
       "item.apes_strong_together.chestboxgold": "Gold Chestbox",
       "entity.apes_strong_together.chest_ape_emerald": "Chestape",
       "item.apes_strong_together.hoetier_1": "Hoetier 1",
       "biome.apes_strong_together.dangerous_savanna": "Dangerous Savanna",
       "item.apes_strong_together.syringex": "Syringe X",
+      "item.apes_strong_together.steampunkarmor_2_leggings": "Steampunkarmor 2 Leggings",
       "block.apes_strong_together.dimentionblock_1": "Dimentionblock 1",
+      "item.apes_strong_together.hoetier_2": "Hoetier 1",
       "block.apes_strong_together.ingotblock_1": "Ingotblock 1",
       "block.apes_strong_together.ingotblock_2": "Ingotblock 1",
       "item.apes_strong_together.chest_ape_silver_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestboxemerald": "Emerald Chestbox",
       "block.apes_strong_together.block_2": "Desertgrass",
-      "block.apes_strong_together.block_4": "Desertgrass",
+      "item.apes_strong_together.steampunkape_spawn_egg": "Steampunk Ape Spawn Egg",
       "item.apes_strong_together.steampunkmob_1_spawn_egg": "Steampunkmob 1 Spawn Egg",
+      "block.apes_strong_together.block_4": "Desertgrass",
       "block.apes_strong_together.block_3": "Desertgrass",
       "entity.apes_strong_together.steampunkmob_1": "Steampunkmob 1",
-      "item.apes_strong_together.chestbox": "Chestbox",
-      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
       "entity.apes_strong_together.steampunkmob_2": "Steampunkmob 2",
+      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
+      "item.apes_strong_together.chestbox": "Chestbox",
+      "entity.apes_strong_together.steampunkmob_3": "Steampunkmob 2_2",
       "item.apes_strong_together.bossape_spawn_egg": "Bossape Spawn Egg",
       "block.apes_strong_together.bananabox": "Bananabox",
       "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
@@ -1714,15 +1963,21 @@
       "item.apes_strong_together.ingot_1": "Ingot 1",
       "block.apes_strong_together.desertgrass": "Desertgrass",
       "item.apes_strong_together.steampunkarmor_helmet": "Steampunkarmor Helmet",
+      "item.apes_strong_together.steampunkarmor_2_chestplate": "Steampunkarmor 2 Body",
       "item.apes_strong_together.banana": "Banana",
       "subtitles.gorilla_ambient": "",
       "item.apes_strong_together.faraoarmor_chestplate": "Faraoarmor Body",
+      "item.apes_strong_together.axetier_2": "Axetier 1",
       "item.apes_strong_together.steampunkgun": "Steampunkgun",
       "entity.apes_strong_together.ape_soldier": "Ape soldier",
       "item.apes_strong_together.pickaxetier_1": "Pickaxetier 1",
       "block.apes_strong_together.door_1": "Door 1",
+      "item.apes_strong_together.pickaxetier_2": "Pickaxetier 1",
       "block.apes_strong_together.door_2": "Door 1",
+      "entity.apes_strong_together.steampunkape": "Steampunk Ape",
+      "item.apes_strong_together.steampunkarmor_2_helmet": "Steampunkarmor 2 Helmet",
       "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.steampunkmob_3_spawn_egg": "Steampunkmob 2_2 Spawn Egg",
       "item.apes_strong_together.axetier_1": "Axetier 1",
       "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
       "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
@@ -1757,6 +2012,8 @@
       "entity.apes_strong_together.chest_ape_diamond": "Chestape",
       "enchantment.apes_strong_together.slippery": "Slippery",
       "item.apes_strong_together.shoveltier_1": "Shoveltier 1",
+      "item.apes_strong_together.paxeltier_2": "Paxeltier 1",
+      "item.apes_strong_together.shoveltier_2": "Shoveltier 1",
       "item.apes_strong_together.chestboxsilver": "Silver Chestbox",
       "item.apes_strong_together.steak": "Steak",
       "entity.apes_strong_together.chest_ape_silver": "Chestape",
@@ -1771,14 +2028,20 @@
       "block.apes_strong_together.ore_01": "Ore 0 1",
       "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
       "item.apes_strong_together.coconut": "Coconut",
+      "item.apes_strong_together.steampunkaperanged_spawn_egg": "Steampunk Ape Spawn Egg",
       "item.apes_strong_together.syringe": "Syringe",
       "item.apes_strong_together.apedesert": "Ape hair",
       "item.apes_strong_together.faraoarmor_boots": "Faraoarmor Boots",
+      "entity.apes_strong_together.steampunkaperanged": "Steampunk Ape",
       "entity.apes_strong_together.chestapecopper": "Chestape",
       "item.apes_strong_together.chest_ape_gold_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.toolrod_2": "Toolrod 1",
       "item.apes_strong_together.toolrod_1": "Toolrod 1",
       "entity.apes_strong_together.ape_3": "Ape 3",
-      "entity.apes_strong_together.ape_2": "Gen ape"
+      "entity.apes_strong_together.ape_2": "Gen ape",
+      "item.apes_strong_together.junk_1": "Junk 1",
+      "item.apes_strong_together.junk_2": "Junk 1",
+      "item.apes_strong_together.junk_3": "Junk 1"
     }
   },
   "foldersRoot": {
@@ -1856,6 +2119,10 @@
       },
       {
         "name": "wepons",
+        "children": []
+      },
+      {
+        "name": "loottabels",
         "children": []
       }
     ]

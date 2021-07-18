@@ -13,16 +13,7 @@
         "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
+        "value": "Items.NETHERITE_INGOT"
       },
       {
         "value": ""
@@ -35,12 +26,21 @@
       },
       {
         "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Gem2"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Swordtier1"
+      "value": "CUSTOM:Shoveltier2"
     },
-    "name": "swordtier_1recipe",
+    "name": "shoveltier_2recipe",
     "namespace": "mod"
   }
 }

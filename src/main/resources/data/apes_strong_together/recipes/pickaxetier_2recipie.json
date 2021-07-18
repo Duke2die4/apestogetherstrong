@@ -1,0 +1,30 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "1": {
+      "item": "apes_strong_together:gem_2"
+    },
+    "2": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "4": {
+      "item": "apes_strong_together:toolrod_2"
+    },
+    "7": {
+      "item": "apes_strong_together:gem_2"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:pickaxetier_2",
+    "count": 1
+  }
+}

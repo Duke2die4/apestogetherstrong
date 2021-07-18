@@ -54,7 +54,7 @@ public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.Mod
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double spawn_count = 0;
-		String playerpresent = "";
+		boolean playerpresent = false;
 		{
 			List<Entity> _entfound = world
 					.getEntitiesWithinAABB(Entity.class,
@@ -65,12 +65,10 @@ public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.Mod
 						}
 					}.compareDistOf(x, y, z)).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if ((entityiterator instanceof PlayerEntity)) {
-					playerpresent = (String) "true";
-				}
+				playerpresent = (boolean) (entityiterator instanceof PlayerEntity);
 			}
 		}
-		while ((((playerpresent)).equals("true"))) {
+		while ((playerpresent)) {
 			if (((spawn_count) < 3)) {
 				if (world instanceof ServerWorld) {
 					Entity entityToSpawn = new GorillaEntity.CustomEntity(GorillaEntity.entity, (World) world);
@@ -80,7 +78,8 @@ public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.Mod
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((spawn_count) >= 3)) {
+				spawn_count = (double) ((spawn_count) + 1);
+			} else {
 				world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 			}
 		}

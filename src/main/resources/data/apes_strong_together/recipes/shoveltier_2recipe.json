@@ -8,17 +8,17 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:netherite_ingot"
     },
     "1": {
-      "item": "minecraft:diamond"
+      "item": "apes_strong_together:toolrod_2"
     },
     "2": {
-      "item": "apes_strong_together:toolrod_2"
+      "item": "apes_strong_together:gem_2"
     }
   },
   "result": {
-    "item": "apes_strong_together:swordtier_1",
+    "item": "apes_strong_together:shoveltier_2",
     "count": 1
   }
 }
