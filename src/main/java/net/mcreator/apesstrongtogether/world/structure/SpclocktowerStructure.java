@@ -30,10 +30,13 @@ import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.apesstrongtogether.procedures.SpclocktowerAdditionalGenerationConditionProcedure;
 import net.mcreator.apesstrongtogether.block.DesertgrassBlock;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 import java.util.Random;
+
+import com.google.common.collect.ImmutableMap;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SpclocktowerStructure extends ApesStrongTogetherModElements.ModElement {
@@ -58,7 +61,7 @@ public class SpclocktowerStructure extends ApesStrongTogetherModElements.ModElem
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 10000) {
+					if ((random.nextInt(1000000) + 1) <= 100000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -73,10 +76,13 @@ public class SpclocktowerStructure extends ApesStrongTogetherModElements.ModElem
 								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + -13, j + -12, k + -12);
+							BlockPos spawnTo = new BlockPos(i + 0, j + -12, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!SpclocktowerAdditionalGenerationConditionProcedure
+									.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
 									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "sp_clocktower"));
 							if (template == null)
