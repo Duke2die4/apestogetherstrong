@@ -2203,6 +2203,36 @@
       "ids": {},
       "registry_name": "sphouse_2",
       "path": "~/World/Struktion"
+    },
+    {
+      "name": "Sppowerplant",
+      "type": "structure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplant",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Spfactory",
+      "type": "structure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactory",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Sphouse3",
+      "type": "structure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sphouse_3",
+      "path": "~/World/Struktion"
     }
   ],
   "variable_elements": [],
