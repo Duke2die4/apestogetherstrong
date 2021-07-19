@@ -2183,6 +2183,16 @@
       "ids": {},
       "registry_name": "spclocktower",
       "path": "~/World/Struktion"
+    },
+    {
+      "name": "Sphouse1",
+      "type": "structure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sphouse_1",
+      "path": "~/World/Struktion"
     }
   ],
   "variable_elements": [],
