@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      },
+      {
+        "value": "CUSTOM:Junk2"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Junk3"
+    },
+    "name": "junk_23",
+    "namespace": "mod"
+  }
+}

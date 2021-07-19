@@ -16,7 +16,7 @@ public class Gem2Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:gem_2")
 	public static final Item block = null;
 	public Gem2Item(ApesStrongTogetherModElements instance) {
-		super(instance, 120);
+		super(instance, 34);
 	}
 
 	@Override

@@ -16,7 +16,7 @@ public class SteampunkswordItem extends ApesStrongTogetherModElements.ModElement
 	@ObjectHolder("apes_strong_together:steampunksword")
 	public static final Item block = null;
 	public SteampunkswordItem(ApesStrongTogetherModElements instance) {
-		super(instance, 127);
+		super(instance, 95);
 	}
 
 	@Override

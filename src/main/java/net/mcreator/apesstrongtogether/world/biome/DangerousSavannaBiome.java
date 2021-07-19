@@ -61,7 +61,7 @@ import com.google.common.collect.ImmutableList;
 public class DangerousSavannaBiome extends ApesStrongTogetherModElements.ModElement {
 	public static Biome biome;
 	public DangerousSavannaBiome(ApesStrongTogetherModElements instance) {
-		super(instance, 74);
+		super(instance, 143);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

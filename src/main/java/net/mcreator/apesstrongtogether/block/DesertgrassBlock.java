@@ -45,7 +45,7 @@ public class DesertgrassBlock extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:desertgrass")
 	public static final Block block = null;
 	public DesertgrassBlock(ApesStrongTogetherModElements instance) {
-		super(instance, 90);
+		super(instance, 60);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

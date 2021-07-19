@@ -16,7 +16,7 @@ public class DesertpearlItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:desertpearl")
 	public static final Item block = null;
 	public DesertpearlItem(ApesStrongTogetherModElements instance) {
-		super(instance, 107);
+		super(instance, 32);
 	}
 
 	@Override

@@ -46,7 +46,7 @@ public class Ore01Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:ore_01")
 	public static final Block block = null;
 	public Ore01Block(ApesStrongTogetherModElements instance) {
-		super(instance, 79);
+		super(instance, 55);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -107,7 +107,7 @@ public class Ore01Block extends ApesStrongTogetherModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 12)).range(80)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(80)
 					.square().func_242731_b(2);
 			event.getRegistry().register(feature.setRegistryName("ore_01"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:ore_01"), configuredFeature);

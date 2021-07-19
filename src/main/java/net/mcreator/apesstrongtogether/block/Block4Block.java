@@ -30,7 +30,7 @@ public class Block4Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:block_4")
 	public static final Block block = null;
 	public Block4Block(ApesStrongTogetherModElements instance) {
-		super(instance, 130);
+		super(instance, 67);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class Axetier1Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:axetier_1")
 	public static final Item block = null;
 	public Axetier1Item(ApesStrongTogetherModElements instance) {
-		super(instance, 97);
+		super(instance, 91);
 	}
 
 	@Override

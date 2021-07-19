@@ -1,0 +1,27 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "2 ",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:gem_2"
+    },
+    "1": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "2": {
+      "item": "apes_strong_together:toolrod_2"
+    },
+    "4": {
+      "item": "apes_strong_together:gem_2"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:hoetier_2",
+    "count": 1
+  }
+}

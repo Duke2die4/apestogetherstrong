@@ -68,7 +68,7 @@ public class ChestapeironEntity extends ApesStrongTogetherModElements.ModElement
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.4f, 0.3f)).build("chestapeiron").setRegistryName("chestapeiron");
 	public ChestapeironEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 37);
+		super(instance, 17);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ChestapeironRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

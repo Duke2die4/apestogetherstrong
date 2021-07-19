@@ -23,7 +23,7 @@ public class ApemeatItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:apemeat")
 	public static final Item block = null;
 	public ApemeatItem(ApesStrongTogetherModElements instance) {
-		super(instance, 16);
+		super(instance, 47);
 	}
 
 	@Override

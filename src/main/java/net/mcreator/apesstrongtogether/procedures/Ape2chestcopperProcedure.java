@@ -26,7 +26,7 @@ import java.util.Map;
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Ape2chestcopperProcedure extends ApesStrongTogetherModElements.ModElement {
 	public Ape2chestcopperProcedure(ApesStrongTogetherModElements instance) {
-		super(instance, 42);
+		super(instance, 121);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

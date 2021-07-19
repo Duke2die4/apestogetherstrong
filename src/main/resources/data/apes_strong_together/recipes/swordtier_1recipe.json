@@ -11,10 +11,10 @@
       "item": "minecraft:iron_ingot"
     },
     "1": {
-      "item": "apes_strong_together:toolrod_1"
+      "item": "minecraft:diamond"
     },
     "2": {
-      "item": "minecraft:diamond"
+      "item": "apes_strong_together:toolrod_2"
     }
   },
   "result": {

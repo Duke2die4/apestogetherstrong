@@ -36,7 +36,7 @@ public class FaraoarmorItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:faraoarmor_boots")
 	public static final Item boots = null;
 	public FaraoarmorItem(ApesStrongTogetherModElements instance) {
-		super(instance, 121);
+		super(instance, 50);
 	}
 
 	@Override

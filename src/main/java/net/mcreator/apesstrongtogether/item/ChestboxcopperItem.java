@@ -16,7 +16,7 @@ public class ChestboxcopperItem extends ApesStrongTogetherModElements.ModElement
 	@ObjectHolder("apes_strong_together:chestboxcopper")
 	public static final Item block = null;
 	public ChestboxcopperItem(ApesStrongTogetherModElements instance) {
-		super(instance, 39);
+		super(instance, 19);
 	}
 
 	@Override

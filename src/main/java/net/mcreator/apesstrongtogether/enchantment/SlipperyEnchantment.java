@@ -14,7 +14,7 @@ public class SlipperyEnchantment extends ApesStrongTogetherModElements.ModElemen
 	@ObjectHolder("apes_strong_together:slippery")
 	public static final Enchantment enchantment = null;
 	public SlipperyEnchantment(ApesStrongTogetherModElements instance) {
-		super(instance, 124);
+		super(instance, 168);
 	}
 
 	@Override

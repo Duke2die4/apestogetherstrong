@@ -23,7 +23,7 @@ public class BananaboxBlock extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:bananabox")
 	public static final Block block = null;
 	public BananaboxBlock(ApesStrongTogetherModElements instance) {
-		super(instance, 69);
+		super(instance, 62);
 	}
 
 	@Override

@@ -44,7 +44,7 @@ public class SteampunkgunItem extends ApesStrongTogetherModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
 			.size(0.5f, 0.5f)).build("entitybulletsteampunkgun").setRegistryName("entitybulletsteampunkgun");
 	public SteampunkgunItem(ApesStrongTogetherModElements instance) {
-		super(instance, 126);
+		super(instance, 52);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SteampunkgunRenderer.ModelRegisterHandler());
 	}
 

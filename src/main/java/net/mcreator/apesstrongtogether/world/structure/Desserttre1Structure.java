@@ -40,7 +40,7 @@ public class Desserttre1Structure extends ApesStrongTogetherModElements.ModEleme
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public Desserttre1Structure(ApesStrongTogetherModElements instance) {
-		super(instance, 91);
+		super(instance, 151);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

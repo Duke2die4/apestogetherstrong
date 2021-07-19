@@ -57,7 +57,7 @@ public class BananatreeBlock extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:bananatree")
 	public static final Block block = null;
 	public BananatreeBlock(ApesStrongTogetherModElements instance) {
-		super(instance, 106);
+		super(instance, 105);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

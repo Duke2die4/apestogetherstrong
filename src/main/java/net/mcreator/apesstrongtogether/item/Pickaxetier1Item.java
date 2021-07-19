@@ -17,7 +17,7 @@ public class Pickaxetier1Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:pickaxetier_1")
 	public static final Item block = null;
 	public Pickaxetier1Item(ApesStrongTogetherModElements instance) {
-		super(instance, 93);
+		super(instance, 89);
 	}
 
 	@Override
