@@ -24,7 +24,7 @@ public class Block2Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:block_2")
 	public static final Block block = null;
 	public Block2Block(ApesStrongTogetherModElements instance) {
-		super(instance, 64);
+		super(instance, 122);
 	}
 
 	@Override
