@@ -1,0 +1,30 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "sp_clocktower",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 10000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -12,
+    "spawnXOffset": -13,
+    "spawnZOffset": -12,
+    "spawnWorldTypes": [
+      "CUSTOM:Apedesert"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:Desertgrass"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Burningkingdom"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

@@ -2173,6 +2173,16 @@
       "ids": {},
       "registry_name": "block_24",
       "path": "~/World/blocks"
+    },
+    {
+      "name": "Spclocktower",
+      "type": "structure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spclocktower",
+      "path": "~/World/Struktion"
     }
   ],
   "variable_elements": [],
