@@ -25,7 +25,7 @@ public class Paxeltier2Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:paxeltier_2")
 	public static final Item block = null;
 	public Paxeltier2Item(ApesStrongTogetherModElements instance) {
-		super(instance, 150);
+		super(instance, 101);
 	}
 
 	@Override

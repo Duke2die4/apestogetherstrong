@@ -36,7 +36,7 @@ public class SteampunkarmorItem extends ApesStrongTogetherModElements.ModElement
 	@ObjectHolder("apes_strong_together:steampunkarmor_boots")
 	public static final Item boots = null;
 	public SteampunkarmorItem(ApesStrongTogetherModElements instance) {
-		super(instance, 125);
+		super(instance, 51);
 	}
 
 	@Override
@@ -173,22 +173,21 @@ public class SteampunkarmorItem extends ApesStrongTogetherModElements.ModElement
 			textureHeight = 64;
 			Head = new ModelRenderer(this);
 			Head.setRotationPoint(0.0F, 0.0F, 0.0F);
-			Head.setTextureOffset(0, 13).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
 			Head.setTextureOffset(0, 0).addBox(-5.0F, -6.0F, -6.0F, 10.0F, 2.0F, 11.0F, -0.1F, false);
 			Body = new ModelRenderer(this);
 			Body.setRotationPoint(0.0F, 0.0F, 0.0F);
 			Body.setTextureOffset(0, 45).addBox(-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.25F, false);
 			RightArm = new ModelRenderer(this);
 			RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
-			RightArm.setTextureOffset(12, 36).addBox(-3.0F, 7.0F, -2.0F, 4.0F, 3.0F, 4.0F, 0.25F, false);
+			RightArm.setTextureOffset(12, 36).addBox(-3.0F, 7.0F, -2.0F, 4.0F, 3.0F, 4.0F, 0.25F, true);
 			RightArm.setTextureOffset(31, 0).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 4.0F, 4.0F, 0.25F, false);
 			LeftArm = new ModelRenderer(this);
 			LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
-			LeftArm.setTextureOffset(31, 0).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 4.0F, 4.0F, 0.25F, false);
+			LeftArm.setTextureOffset(31, 0).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 4.0F, 4.0F, 0.25F, true);
 			LeftArm.setTextureOffset(12, 36).addBox(-1.0F, 7.0F, -2.0F, 4.0F, 3.0F, 4.0F, 0.25F, false);
 			RightLeg = new ModelRenderer(this);
 			RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
-			RightLeg.setTextureOffset(0, 29).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.25F, false);
+			RightLeg.setTextureOffset(0, 29).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.25F, true);
 			LeftLeg = new ModelRenderer(this);
 			LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
 			LeftLeg.setTextureOffset(0, 29).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 7.0F, 4.0F, 0.25F, false);

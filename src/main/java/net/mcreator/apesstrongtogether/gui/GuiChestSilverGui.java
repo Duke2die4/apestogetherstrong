@@ -40,7 +40,7 @@ public class GuiChestSilverGui extends ApesStrongTogetherModElements.ModElement 
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public GuiChestSilverGui(ApesStrongTogetherModElements instance) {
-		super(instance, 48);
+		super(instance, 127);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

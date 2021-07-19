@@ -64,7 +64,7 @@ public class ChestApeEmeraldEntity extends ApesStrongTogetherModElements.ModElem
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.4f, 0.3f)).build("chest_ape_emerald").setRegistryName("chest_ape_emerald");
 	public ChestApeEmeraldEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 66);
+		super(instance, 28);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ChestApeEmeraldRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

@@ -36,7 +36,7 @@ public class Steampunkarmor2Item extends ApesStrongTogetherModElements.ModElemen
 	@ObjectHolder("apes_strong_together:steampunkarmor_2_boots")
 	public static final Item boots = null;
 	public Steampunkarmor2Item(ApesStrongTogetherModElements instance) {
-		super(instance, 155);
+		super(instance, 53);
 	}
 
 	@Override

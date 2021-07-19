@@ -22,7 +22,7 @@ import java.util.Map;
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ChestapeironRightClickedOnEntityProcedure extends ApesStrongTogetherModElements.ModElement {
 	public ChestapeironRightClickedOnEntityProcedure(ApesStrongTogetherModElements instance) {
-		super(instance, 51);
+		super(instance, 128);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

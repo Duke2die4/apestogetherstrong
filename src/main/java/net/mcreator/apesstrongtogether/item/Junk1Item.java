@@ -16,7 +16,7 @@ public class Junk1Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:junk_1")
 	public static final Item block = null;
 	public Junk1Item(ApesStrongTogetherModElements instance) {
-		super(instance, 135);
+		super(instance, 39);
 	}
 
 	@Override

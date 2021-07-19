@@ -14,9 +14,12 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
+import net.minecraft.world.IServerWorld;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -31,16 +34,25 @@ import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.BreakDoorGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
+import net.mcreator.apesstrongtogether.procedures.SteampunkapeOnInitialEntitySpawnProcedure;
 import net.mcreator.apesstrongtogether.item.SteampunkswordItem;
 import net.mcreator.apesstrongtogether.item.Steampunkarmor2Item;
 import net.mcreator.apesstrongtogether.entity.renderer.SteampunkapeRenderer;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+
+import javax.annotation.Nullable;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SteampunkapeEntity extends ApesStrongTogetherModElements.ModElement {
@@ -48,7 +60,7 @@ public class SteampunkapeEntity extends ApesStrongTogetherModElements.ModElement
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("steampunkape").setRegistryName("steampunkape");
 	public SteampunkapeEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 153);
+		super(instance, 43);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SteampunkapeRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -64,11 +76,11 @@ public class SteampunkapeEntity extends ApesStrongTogetherModElements.ModElement
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("plains").equals(event.getName()))
+		if (new ResourceLocation("apes_strong_together:burningkingdom").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 1, 5));
 	}
 
 	@Override
@@ -132,6 +144,25 @@ public class SteampunkapeEntity extends ApesStrongTogetherModElements.ModElement
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public ILivingEntityData onInitialSpawn(IServerWorld world, DifficultyInstance difficulty, SpawnReason reason,
+				@Nullable ILivingEntityData livingdata, @Nullable CompoundNBT tag) {
+			ILivingEntityData retval = super.onInitialSpawn(world, difficulty, reason, livingdata, tag);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				SteampunkapeOnInitialEntitySpawnProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

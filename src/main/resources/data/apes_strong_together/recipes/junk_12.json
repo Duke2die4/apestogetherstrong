@@ -1,0 +1,42 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "1": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "2": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "3": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "4": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "5": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "6": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "7": {
+      "item": "apes_strong_together:junk_1"
+    },
+    "8": {
+      "item": "apes_strong_together:junk_1"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:junk_2",
+    "count": 1
+  }
+}

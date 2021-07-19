@@ -13,7 +13,7 @@ import java.util.Map;
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApemeatFoodEatenProcedure extends ApesStrongTogetherModElements.ModElement {
 	public ApemeatFoodEatenProcedure(ApesStrongTogetherModElements instance) {
-		super(instance, 68);
+		super(instance, 139);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

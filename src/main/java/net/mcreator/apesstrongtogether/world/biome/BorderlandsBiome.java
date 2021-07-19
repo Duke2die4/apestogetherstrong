@@ -61,7 +61,7 @@ import com.google.common.collect.ImmutableList;
 public class BorderlandsBiome extends ApesStrongTogetherModElements.ModElement {
 	public static Biome biome;
 	public BorderlandsBiome(ApesStrongTogetherModElements instance) {
-		super(instance, 75);
+		super(instance, 144);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

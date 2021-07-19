@@ -59,7 +59,7 @@ public class DesertSandpile1Block extends ApesStrongTogetherModElements.ModEleme
 	@ObjectHolder("apes_strong_together:desert_sandpile_1")
 	public static final Block block = null;
 	public DesertSandpile1Block(ApesStrongTogetherModElements instance) {
-		super(instance, 87);
+		super(instance, 103);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

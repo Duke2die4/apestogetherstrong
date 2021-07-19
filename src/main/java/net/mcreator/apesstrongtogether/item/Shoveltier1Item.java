@@ -17,7 +17,7 @@ public class Shoveltier1Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:shoveltier_1")
 	public static final Item block = null;
 	public Shoveltier1Item(ApesStrongTogetherModElements instance) {
-		super(instance, 95);
+		super(instance, 90);
 	}
 
 	@Override

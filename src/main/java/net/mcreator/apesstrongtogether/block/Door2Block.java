@@ -33,7 +33,7 @@ public class Door2Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:door_2")
 	public static final Block block = null;
 	public Door2Block(ApesStrongTogetherModElements instance) {
-		super(instance, 129);
+		super(instance, 66);
 	}
 
 	@Override

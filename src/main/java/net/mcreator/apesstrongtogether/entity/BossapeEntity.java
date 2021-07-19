@@ -48,7 +48,7 @@ public class BossapeEntity extends ApesStrongTogetherModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(3f, 3f))
 					.build("bossape").setRegistryName("bossape");
 	public BossapeEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 77);
+		super(instance, 29);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BossapeRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

@@ -50,7 +50,7 @@ import com.google.common.collect.ImmutableList;
 public class DuneBiome extends ApesStrongTogetherModElements.ModElement {
 	public static Biome biome;
 	public DuneBiome(ApesStrongTogetherModElements instance) {
-		super(instance, 73);
+		super(instance, 142);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

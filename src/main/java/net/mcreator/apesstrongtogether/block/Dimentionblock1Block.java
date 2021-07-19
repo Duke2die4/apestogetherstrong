@@ -23,7 +23,7 @@ public class Dimentionblock1Block extends ApesStrongTogetherModElements.ModEleme
 	@ObjectHolder("apes_strong_together:dimentionblock_1")
 	public static final Block block = null;
 	public Dimentionblock1Block(ApesStrongTogetherModElements instance) {
-		super(instance, 85);
+		super(instance, 61);
 	}
 
 	@Override

@@ -68,7 +68,7 @@ public class ChestapecopperEntity extends ApesStrongTogetherModElements.ModEleme
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.4f, 0.3f)).build("chestapecopper").setRegistryName("chestapecopper");
 	public ChestapecopperEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 35);
+		super(instance, 16);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ChestapecopperRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

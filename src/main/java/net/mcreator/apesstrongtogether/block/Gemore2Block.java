@@ -47,7 +47,7 @@ public class Gemore2Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:gemore_2")
 	public static final Block block = null;
 	public Gemore2Block(ApesStrongTogetherModElements instance) {
-		super(instance, 119);
+		super(instance, 54);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

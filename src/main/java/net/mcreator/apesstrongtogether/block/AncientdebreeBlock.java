@@ -46,7 +46,7 @@ public class AncientdebreeBlock extends ApesStrongTogetherModElements.ModElement
 	@ObjectHolder("apes_strong_together:ancientdebree")
 	public static final Block block = null;
 	public AncientdebreeBlock(ApesStrongTogetherModElements instance) {
-		super(instance, 118);
+		super(instance, 57);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

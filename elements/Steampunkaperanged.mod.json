@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "mob",
   "definition": {
-    "mobName": "Steampunk Ape",
+    "mobName": "Steampunk Ape ranged",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "testbipedt.png",
@@ -109,17 +109,13 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [
-      {
-        "value": "plains"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

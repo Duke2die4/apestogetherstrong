@@ -16,7 +16,7 @@ public class ChestboxgoldItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:chestboxgold")
 	public static final Item block = null;
 	public ChestboxgoldItem(ApesStrongTogetherModElements instance) {
-		super(instance, 56);
+		super(instance, 23);
 	}
 
 	@Override

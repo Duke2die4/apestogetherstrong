@@ -24,7 +24,7 @@ import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 public class Ore1Particle extends ApesStrongTogetherModElements.ModElement {
 	public static final BasicParticleType particle = new BasicParticleType(true);
 	public Ore1Particle(ApesStrongTogetherModElements instance) {
-		super(instance, 78);
+		super(instance, 146);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

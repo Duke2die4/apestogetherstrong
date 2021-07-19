@@ -40,7 +40,7 @@ public class GuichestironGui extends ApesStrongTogetherModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
 	public GuichestironGui(ApesStrongTogetherModElements instance) {
-		super(instance, 36);
+		super(instance, 119);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,

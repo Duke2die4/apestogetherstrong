@@ -58,7 +58,7 @@ public class Desertplant1Block extends ApesStrongTogetherModElements.ModElement 
 	@ObjectHolder("apes_strong_together:desertplant_1")
 	public static final Block block = null;
 	public Desertplant1Block(ApesStrongTogetherModElements instance) {
-		super(instance, 86);
+		super(instance, 102);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

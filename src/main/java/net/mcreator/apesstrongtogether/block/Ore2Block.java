@@ -46,7 +46,7 @@ public class Ore2Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:ore_2")
 	public static final Block block = null;
 	public Ore2Block(ApesStrongTogetherModElements instance) {
-		super(instance, 110);
+		super(instance, 56);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

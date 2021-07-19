@@ -16,7 +16,7 @@ public class Toolrod2Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:toolrod_2")
 	public static final Item block = null;
 	public Toolrod2Item(ApesStrongTogetherModElements instance) {
-		super(instance, 139);
+		super(instance, 42);
 	}
 
 	@Override

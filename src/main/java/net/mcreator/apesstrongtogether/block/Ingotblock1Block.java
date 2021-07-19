@@ -24,7 +24,7 @@ public class Ingotblock1Block extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:ingotblock_1")
 	public static final Block block = null;
 	public Ingotblock1Block(ApesStrongTogetherModElements instance) {
-		super(instance, 82);
+		super(instance, 58);
 	}
 
 	@Override

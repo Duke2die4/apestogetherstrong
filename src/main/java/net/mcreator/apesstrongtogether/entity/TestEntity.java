@@ -47,7 +47,7 @@ public class TestEntity extends ApesStrongTogetherModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("ape_soldier").setRegistryName("ape_soldier");
 	public TestEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 27);
+		super(instance, 14);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TestRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);

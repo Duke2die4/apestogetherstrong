@@ -29,7 +29,7 @@ public class ApearmorItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:apearmor_boots")
 	public static final Item boots = null;
 	public ApearmorItem(ApesStrongTogetherModElements instance) {
-		super(instance, 31);
+		super(instance, 49);
 	}
 
 	@Override

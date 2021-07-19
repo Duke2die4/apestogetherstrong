@@ -40,7 +40,7 @@ public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	public OasisStructure(ApesStrongTogetherModElements instance) {
-		super(instance, 105);
+		super(instance, 160);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

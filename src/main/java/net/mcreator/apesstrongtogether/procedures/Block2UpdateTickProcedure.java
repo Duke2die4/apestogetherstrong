@@ -25,7 +25,7 @@ import java.util.Comparator;
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.ModElement {
 	public Block2UpdateTickProcedure(ApesStrongTogetherModElements instance) {
-		super(instance, 126);
+		super(instance, 169);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

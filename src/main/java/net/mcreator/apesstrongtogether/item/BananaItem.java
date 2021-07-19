@@ -17,7 +17,7 @@ public class BananaItem extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:banana")
 	public static final Item block = null;
 	public BananaItem(ApesStrongTogetherModElements instance) {
-		super(instance, 15);
+		super(instance, 46);
 	}
 
 	@Override

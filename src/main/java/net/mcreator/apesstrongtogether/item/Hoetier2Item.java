@@ -17,7 +17,7 @@ public class Hoetier2Item extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:hoetier_2")
 	public static final Item block = null;
 	public Hoetier2Item(ApesStrongTogetherModElements instance) {
-		super(instance, 146);
+		super(instance, 99);
 	}
 
 	@Override

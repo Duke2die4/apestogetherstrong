@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Desertgrass",
+    "name": "spawner_test",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -102,9 +102,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "Block2UpdateTick"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

@@ -68,7 +68,7 @@ public class ChestApeGoldEntity extends ApesStrongTogetherModElements.ModElement
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.4f, 0.3f)).build("chest_ape_gold").setRegistryName("chest_ape_gold");
 	public ChestApeGoldEntity(ApesStrongTogetherModElements instance) {
-		super(instance, 62);
+		super(instance, 26);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ChestApeGoldRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

@@ -2,7 +2,7 @@
   "_fv": 18,
   "_type": "loottable",
   "definition": {
-    "type": "Generic",
+    "type": "Entity",
     "pools": [
       {
         "minrolls": 1,
@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:Junk1"
             },
-            "weight": 3,
+            "weight": 4,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -32,7 +32,7 @@
             },
             "weight": 2,
             "minCount": 1,
-            "maxCount": 3,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
