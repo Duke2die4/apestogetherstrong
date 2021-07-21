@@ -47,11 +47,11 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Ape hair",
+    "igniterName": "tool rod1",
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "ape_hair",
+    "texture": "tool_rod",
     "portalTexture": "portal",
     "enablePortal": true
   }

@@ -76,7 +76,7 @@ public class ApedesertDimension extends ApesStrongTogetherModElements.ModElement
 	@ObjectHolder("apes_strong_together:apedesert_portal")
 	public static final CustomPortalBlock portal = null;
 	public ApedesertDimension(ApesStrongTogetherModElements instance) {
-		super(instance, 71);
+		super(instance, 88);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new POIRegisterHandler());
 	}
 

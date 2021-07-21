@@ -30,7 +30,7 @@ import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apesstrongtogether.procedures.SpclocktowerAdditionalGenerationConditionProcedure;
+import net.mcreator.apesstrongtogether.procedures.SppowerplantstartProcedure;
 import net.mcreator.apesstrongtogether.block.DesertgrassBlock;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
@@ -39,11 +39,11 @@ import java.util.Random;
 import com.google.common.collect.ImmutableMap;
 
 @ApesStrongTogetherModElements.ModElement.Tag
-public class SpclocktowerStructure extends ApesStrongTogetherModElements.ModElement {
+public class SppowerplantoneStructure extends ApesStrongTogetherModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public SpclocktowerStructure(ApesStrongTogetherModElements instance) {
-		super(instance, 183);
+	public SppowerplantoneStructure(ApesStrongTogetherModElements instance) {
+		super(instance, 200);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -74,17 +74,16 @@ public class SpclocktowerStructure extends ApesStrongTogetherModElements.ModElem
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
-							Rotation rotation = Rotation.values()[random.nextInt(3)];
-							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + 0, j + -12, k + 0);
+							Rotation rotation = Rotation.NONE;
+							Mirror mirror = Mirror.NONE;
+							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
-							if (!SpclocktowerAdditionalGenerationConditionProcedure
-									.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+							if (!SppowerplantstartProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
 								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "sp_clocktower"));
+									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "sp_powerplantsmall"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -98,8 +97,8 @@ public class SpclocktowerStructure extends ApesStrongTogetherModElements.ModElem
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("spclocktower"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:spclocktower"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("sppowerplantone"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:sppowerplantone"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

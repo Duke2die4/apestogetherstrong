@@ -28,19 +28,22 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.apesstrongtogether.procedures.SpfactorystartProcedure;
+import net.mcreator.apesstrongtogether.block.DesertgrassBlock;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 import java.util.Random;
 
+import com.google.common.collect.ImmutableMap;
+
 @ApesStrongTogetherModElements.ModElement.Tag
-public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
+public class SpfactoryoneStructure extends ApesStrongTogetherModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public OasisStructure(ApesStrongTogetherModElements instance) {
-		super(instance, 160);
+	public SpfactoryoneStructure(ApesStrongTogetherModElements instance) {
+		super(instance, 199);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -58,7 +61,7 @@ public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					if ((random.nextInt(1000000) + 1) <= 10000) {
+					if ((random.nextInt(1000000) + 1) <= 100000) {
 						int count = random.nextInt(1) + 1;
 						for (int a = 0; a < count; a++) {
 							int i = ci + random.nextInt(16);
@@ -67,18 +70,20 @@ public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
 							j -= 1;
 							BlockState blockAt = world.getBlockState(new BlockPos(i, j, k));
 							boolean blockCriteria = false;
-							if (blockAt.getBlock() == Blocks.SAND.getDefaultState().getBlock())
+							if (blockAt.getBlock() == DesertgrassBlock.block.getDefaultState().getBlock())
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
-							Rotation rotation = Rotation.values()[random.nextInt(3)];
-							Mirror mirror = Mirror.values()[random.nextInt(2)];
+							Rotation rotation = Rotation.NONE;
+							Mirror mirror = Mirror.NONE;
 							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!SpfactorystartProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "oasis1"));
+									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "sp_factorysmall"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -92,14 +97,14 @@ public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("oasis"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:oasis"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("spfactoryone"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:spfactoryone"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("apes_strong_together:dune").equals(event.getName()))
+		if (new ResourceLocation("apes_strong_together:burningkingdom").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;

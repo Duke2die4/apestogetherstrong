@@ -42,7 +42,7 @@
             "humidity": -1,
             "altitude": 0.75,
             "weirdness": -1.5,
-            "offset": 0.7
+            "offset": 0
           }
         },
         {
@@ -51,7 +51,7 @@
             "temperature": 0.5,
             "humidity": -0.5,
             "altitude": -0.75,
-            "weirdness": 0.5,
+            "weirdness": 1.5,
             "offset": 0
           }
         },
@@ -81,7 +81,7 @@
             "temperature": -1,
             "humidity": 1,
             "altitude": 0.75,
-            "weirdness": 0,
+            "weirdness": -1.5,
             "offset": 0
           }
         }

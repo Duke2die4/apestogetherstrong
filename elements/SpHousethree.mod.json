@@ -2,16 +2,16 @@
   "_fv": 18,
   "_type": "structure",
   "definition": {
-    "structure": "sp_house3",
-    "randomlyRotateStructure": true,
+    "structure": "sp_house3small",
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "spawnProbability": 100000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -12,
-    "spawnXOffset": -12,
-    "spawnZOffset": -10,
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
     "spawnWorldTypes": [
       "CUSTOM:Apedesert"
     ],
@@ -25,6 +25,9 @@
         "value": "CUSTOM:Burningkingdom"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "SpHouse3start"
+    }
   }
 }

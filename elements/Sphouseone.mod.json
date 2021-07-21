@@ -2,10 +2,10 @@
   "_fv": 18,
   "_type": "structure",
   "definition": {
-    "structure": "oasis1",
-    "randomlyRotateStructure": true,
+    "structure": "sp_house1small",
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "spawnProbability": 100000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -17,14 +17,17 @@
     ],
     "restrictionBlocks": [
       {
-        "value": "Blocks.SAND#0"
+        "value": "CUSTOM:Desertgrass"
       }
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:Dune"
+        "value": "CUSTOM:Burningkingdom"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "SpHouse1start"
+    }
   }
 }

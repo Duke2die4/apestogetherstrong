@@ -30,17 +30,20 @@ import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Mirror;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.apesstrongtogether.procedures.SpHouse2startProcedure;
 import net.mcreator.apesstrongtogether.block.DesertgrassBlock;
 import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
 
 import java.util.Random;
 
+import com.google.common.collect.ImmutableMap;
+
 @ApesStrongTogetherModElements.ModElement.Tag
-public class Sphouse2Structure extends ApesStrongTogetherModElements.ModElement {
+public class SpHousetwoStructure extends ApesStrongTogetherModElements.ModElement {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
-	public Sphouse2Structure(ApesStrongTogetherModElements instance) {
-		super(instance, 185);
+	public SpHousetwoStructure(ApesStrongTogetherModElements instance) {
+		super(instance, 197);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -71,14 +74,16 @@ public class Sphouse2Structure extends ApesStrongTogetherModElements.ModElement 
 								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
-							Rotation rotation = Rotation.values()[random.nextInt(3)];
-							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + -12, j + -12, k + -12);
+							Rotation rotation = Rotation.NONE;
+							Mirror mirror = Mirror.NONE;
+							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
+							if (!SpHouse2startProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
+								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "sp_house2"));
+									.getTemplateDefaulted(new ResourceLocation("apes_strong_together", "sp_house2small"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -92,8 +97,8 @@ public class Sphouse2Structure extends ApesStrongTogetherModElements.ModElement 
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("sphouse_2"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:sphouse_2"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("sp_housetwo"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("apes_strong_together:sp_housetwo"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

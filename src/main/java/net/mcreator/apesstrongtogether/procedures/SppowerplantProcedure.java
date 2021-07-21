@@ -16,30 +16,30 @@ import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
 import java.util.Map;
 
 @ApesStrongTogetherModElements.ModElement.Tag
-public class SpclocktowerAdditionalGenerationConditionProcedure extends ApesStrongTogetherModElements.ModElement {
-	public SpclocktowerAdditionalGenerationConditionProcedure(ApesStrongTogetherModElements instance) {
-		super(instance, 189);
+public class SppowerplantProcedure extends ApesStrongTogetherModElements.ModElement {
+	public SppowerplantProcedure(ApesStrongTogetherModElements instance) {
+		super(instance, 193);
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency x for procedure SpclocktowerAdditionalGenerationCondition!");
+				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency x for procedure Sppowerplant!");
 			return false;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency y for procedure SpclocktowerAdditionalGenerationCondition!");
+				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency y for procedure Sppowerplant!");
 			return false;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency z for procedure SpclocktowerAdditionalGenerationCondition!");
+				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency z for procedure Sppowerplant!");
 			return false;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency world for procedure SpclocktowerAdditionalGenerationCondition!");
+				ApesStrongTogetherMod.LOGGER.warn("Failed to load dependency world for procedure Sppowerplant!");
 			return false;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
@@ -70,10 +70,10 @@ public class SpclocktowerAdditionalGenerationConditionProcedure extends ApesStro
 		TopSoil = new ItemStack(DesertgrassBlock.block, (int) (1));
 		UnderSoil = new ItemStack(Blocks.SMOOTH_SANDSTONE, (int) (1));
 		Air = new ItemStack(Blocks.AIR, (int) (1));
-		PositionOffsetX = (double) (x + 13);
-		PositionOffsetZ = (double) (z + 12);
+		PositionOffsetX = (double) (x + 2);
+		PositionOffsetZ = (double) (z + 2);
 		StructureSizeX = (double) 8;
-		StructureSizeZ = (double) 10;
+		StructureSizeZ = (double) 9;
 		PositionX = (double) 0;
 		PositionZ = (double) 0;
 		PositionX2 = (double) (PositionX);

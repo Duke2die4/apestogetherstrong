@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "apes_strong_together:items/kings_armor"
+  }
+}

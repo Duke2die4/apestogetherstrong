@@ -11,7 +11,7 @@ public class Desertplant3GenerationConditionProcedure extends ApesStrongTogether
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
-		if ((Math.random() > 0.9)) {
+		if ((Math.random() > 0.95)) {
 			return (true);
 		}
 		return (false);

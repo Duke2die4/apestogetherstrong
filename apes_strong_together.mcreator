@@ -968,7 +968,7 @@
       "type": "dimension",
       "sortid": 88,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "apedesert",
       "metadata": {
@@ -2175,73 +2175,13 @@
       "path": "~/World/blocks"
     },
     {
-      "name": "Spclocktower",
-      "type": "structure",
+      "name": "SpclocktowersmallAdditionalGenerationCondition",
+      "type": "procedure",
       "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spclocktower",
-      "path": "~/World/Struktion"
-    },
-    {
-      "name": "Sphouse1",
-      "type": "structure",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sphouse_1",
-      "path": "~/World/Struktion"
-    },
-    {
-      "name": "Sphouse2",
-      "type": "structure",
-      "sortid": 185,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sphouse_2",
-      "path": "~/World/Struktion"
-    },
-    {
-      "name": "Sppowerplant",
-      "type": "structure",
-      "sortid": 186,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sppowerplant",
-      "path": "~/World/Struktion"
-    },
-    {
-      "name": "Spfactory",
-      "type": "structure",
-      "sortid": 187,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spfactory",
-      "path": "~/World/Struktion"
-    },
-    {
-      "name": "Sphouse3",
-      "type": "structure",
-      "sortid": 188,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sphouse_3",
-      "path": "~/World/Struktion"
-    },
-    {
-      "name": "SpclocktowerAdditionalGenerationCondition",
-      "type": "procedure",
-      "sortid": 189,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spclocktower_additional_generation_condition",
+      "registry_name": "spclocktowersmall_additional_generation_condition",
       "metadata": {
         "return_type": "LOGIC",
         "dependencies": [
@@ -2262,7 +2202,435 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Spclocktowersmall",
+      "type": "structure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spclocktowersmall",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "SpclocktowersmallAdditionalGeneration2",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spclocktowersmall_additional_generation_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse1",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_1",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse1start",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_1start",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Sphouseone",
+      "type": "structure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sphouseone",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "SpHouse2",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse2start",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_2start",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse3",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_3",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse3start",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_3start",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Sppowerplant",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplant",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Sppowerplantstart",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplantstart",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Spfactory",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactory",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Spfactorystart",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactorystart",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHousetwo",
+      "type": "structure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_housetwo",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "SpHousethree",
+      "type": "structure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_housethree",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Spfactoryone",
+      "type": "structure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactoryone",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Sppowerplantone",
+      "type": "structure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplantone",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Apeking",
+      "type": "armor",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apeking",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "Openportal1",
+      "type": "recipe",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "openportal_1",
+      "path": "~/tools"
     }
   ],
   "variable_elements": [],
@@ -2291,6 +2659,7 @@
       "biome.apes_strong_together.dune": "Dune",
       "item.apes_strong_together.swordtier_1": "Swordtier 1",
       "item.apes_strong_together.swordtier_2": "Swordtier 1",
+      "item.apes_strong_together.apeking_boots": "Steampunkarmor 2 Boots",
       "entity.apes_strong_together.chestapeiron": "Chestape",
       "item.apes_strong_together.chestboxgold": "Gold Chestbox",
       "entity.apes_strong_together.chest_ape_emerald": "Chestape",
@@ -2360,13 +2729,16 @@
       "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
       "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
       "entity.apes_strong_together.ape": "Ape",
+      "item.apes_strong_together.apeking_chestplate": "Steampunkarmor 2 Body",
       "block.apes_strong_together.ore_2": "Ore 2",
       "item.apes_strong_together.chestboxiron": "iron Chestbox",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
       "item.apes_strong_together.faraoarmor_leggings": "Faraoarmor Leggings",
       "item.apes_strong_together.steampunkarmor_leggings": "Steampunkarmor Leggings",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
+      "item.apes_strong_together.apeking_leggings": "Steampunkarmor 2 Leggings",
       "block.apes_strong_together.block_23": "metal cage2",
+      "item.apes_strong_together.apeking_helmet": "Steampunkarmor 2 Helmet",
       "block.apes_strong_together.block_24": "metal cage2",
       "item.apes_strong_together.steampunkmob_22_spawn_egg": "Steampunkmob 2_2 Spawn Egg",
       "item.apes_strong_together.steampunksword": "Steampunksword",
@@ -2410,7 +2782,7 @@
       "item.apes_strong_together.coconut": "Coconut",
       "item.apes_strong_together.steampunkaperanged_spawn_egg": "Steampunk Ape ranged Spawn Egg",
       "item.apes_strong_together.syringe": "Syringe",
-      "item.apes_strong_together.apedesert": "Ape hair",
+      "item.apes_strong_together.apedesert": "tool rod1",
       "item.apes_strong_together.faraoarmor_boots": "Faraoarmor Boots",
       "entity.apes_strong_together.steampunkaperanged": "Steampunk Ape ranged",
       "entity.apes_strong_together.chestapecopper": "Chestape",
@@ -2474,7 +2846,12 @@
       },
       {
         "name": "Procedure",
-        "children": []
+        "children": [
+          {
+            "name": "struckor",
+            "children": []
+          }
+        ]
       },
       {
         "name": "tags",
