@@ -1,0 +1,27 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "apes_strong_together:kingsjewl"
+    },
+    "4": {
+      "item": "apes_strong_together:toolrod_1"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "6": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:apedesert",
+    "count": 1
+  }
+}

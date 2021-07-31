@@ -74,7 +74,7 @@
     "soundOnStep": {
       "value": "STONE"
     },
-    "luminance": 4,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 4,
     "spawnParticles": false,

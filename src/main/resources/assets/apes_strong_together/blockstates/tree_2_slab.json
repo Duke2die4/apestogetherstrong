@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "apes_strong_together:block/tree_2_slab"
+    },
+    "type=top": {
+      "model": "apes_strong_together:block/tree_2_slab_top"
+    },
+    "type=double": {
+      "model": "apes_strong_together:block/tree_2_slab_full"
+    }
+  }
+}

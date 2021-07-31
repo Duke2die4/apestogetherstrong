@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_glass_pane_noside_alt",
+  "textures": {
+    "pane": "apes_strong_together:blocks/custom_sandblock1_2"
+  }
+}

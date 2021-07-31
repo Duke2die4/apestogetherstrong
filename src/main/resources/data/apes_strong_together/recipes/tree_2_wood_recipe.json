@@ -1,0 +1,26 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:tree_2_log"
+    },
+    "1": {
+      "item": "apes_strong_together:tree_2_log"
+    },
+    "2": {
+      "item": "apes_strong_together:tree_2_log"
+    },
+    "3": {
+      "item": "apes_strong_together:tree_2_log"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:tree_2_wood",
+    "count": 3
+  }
+}

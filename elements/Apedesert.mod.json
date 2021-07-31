@@ -17,6 +17,12 @@
       },
       {
         "value": "CUSTOM:Burningkingdom"
+      },
+      {
+        "value": "CUSTOM:ForbiddingFlatlands"
+      },
+      {
+        "value": "CUSTOM:BurnedFlatlands"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -47,11 +53,11 @@
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "tool rod1",
+    "igniterName": "Kings Septer",
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "tool_rod",
+    "texture": "secpter_1",
     "portalTexture": "portal",
     "enablePortal": true
   }

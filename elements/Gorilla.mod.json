@@ -98,6 +98,9 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
+    "onRightClickedOn": {
+      "name": "GorillaRightClickedOnEntity"
+    },
     "onInitialSpawn": {
       "name": "GorillaNaturalEntitySpawningCondition"
     },
@@ -114,7 +117,7 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": false,
-    "spawningProbability": 10,
+    "spawningProbability": 14,
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 2,

@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gem2",
+    "texture": "gem2_2",
     "customModelName": "Normal",
     "name": "Gem 2",
     "rarity": "COMMON",

@@ -3,17 +3,17 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "ape_armor_head",
+    "textureHelmet": "ape_bandit_head",
     "enableBody": true,
-    "textureBody": "ape_armor_body",
+    "textureBody": "ape_bandit_body",
     "enableLeggings": true,
-    "textureLeggings": "ape_armor_leggings",
+    "textureLeggings": "ape_bandit_leggings",
     "enableBoots": true,
-    "textureBoots": "ape_armor_boots",
+    "textureBoots": "ape_bandit_boots",
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "ape_armor",
+    "armorTextureFile": "ape_bandit",
     "helmetName": "Apearmor Helmet",
     "bodyName": "Apearmor Body",
     "leggingsName": "Apearmor Leggings",

@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "apes_strong_together:blocks/blockset1_7",
-    "particle": "apes_strong_together:blocks/blockset1_7"
+    "down": "apes_strong_together:blocks/blockset1_1",
+    "up": "apes_strong_together:blocks/blockset1_1",
+    "north": "apes_strong_together:blocks/blockset1_7",
+    "east": "apes_strong_together:blocks/blockset1_7",
+    "south": "apes_strong_together:blocks/blockset1_7",
+    "west": "apes_strong_together:blocks/blockset1_7",
+    "particle": "apes_strong_together:blocks/blockset1_1"
   }
 }
