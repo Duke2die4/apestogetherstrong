@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "apes_strong_together:blocks/palisade_stone",
+    "particle": "apes_strong_together:blocks/palisade_stone"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "apes_strong_together:blocks/pallisade_wood_mossy2",
+    "particle": "apes_strong_together:blocks/pallisade_wood_mossy2"
+  }
+}

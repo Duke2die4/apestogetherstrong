@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "apes_strong_together:blocks/pallisade_wood",
+    "particle": "apes_strong_together:blocks/pallisade_wood"
+  }
+}

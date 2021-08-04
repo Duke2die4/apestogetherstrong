@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "apes_strong_together:block/palisade_3slab"
+    },
+    "type=top": {
+      "model": "apes_strong_together:block/palisade_3slab_top"
+    },
+    "type=double": {
+      "model": "apes_strong_together:block/palisade_3slab_full"
+    }
+  }
+}

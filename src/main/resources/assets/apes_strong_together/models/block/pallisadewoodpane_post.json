@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "edge": "apes_strong_together:blocks/pallisade_wood",
+    "pane": "apes_strong_together:blocks/pallisade_wood"
+  }
+}

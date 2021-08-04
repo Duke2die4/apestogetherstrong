@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "apes_strong_together:blocks/palisade_stone",
+    "top": "apes_strong_together:blocks/palisade_stone",
+    "side": "apes_strong_together:blocks/palisade_stone"
+  }
+}
