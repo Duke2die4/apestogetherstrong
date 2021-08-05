@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,7 +16,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApearmorItem extends ApesStrongTogetherModElements.ModElement {
@@ -79,25 +79,25 @@ public class ApearmorItem extends ApesStrongTogetherModElements.ModElement {
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "apes_strong_together:textures/models/armor/ape_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "apes_strong_together:textures/models/armor/ape_bandit_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("apearmor_helmet"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "apes_strong_together:textures/models/armor/ape_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "apes_strong_together:textures/models/armor/ape_bandit_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("apearmor_chestplate"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "apes_strong_together:textures/models/armor/ape_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "apes_strong_together:textures/models/armor/ape_bandit_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("apearmor_leggings"));
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
-				return "apes_strong_together:textures/models/armor/ape_armor_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
+				return "apes_strong_together:textures/models/armor/ape_bandit_layer_" + (slot == EquipmentSlotType.LEGS ? "2" : "1") + ".png";
 			}
 		}.setRegistryName("apearmor_boots"));
 	}

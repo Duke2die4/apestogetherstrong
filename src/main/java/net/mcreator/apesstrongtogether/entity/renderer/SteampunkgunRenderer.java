@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.entity.renderer;
+package apesstrongtogether.entity.renderer;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -9,7 +9,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.apesstrongtogether.item.SteampunkgunItem;
+import apesstrongtogether.item.SteampunkgunItem;
 
 @OnlyIn(Dist.CLIENT)
 public class SteampunkgunRenderer {

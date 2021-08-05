@@ -9,7 +9,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "gorilla",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage1"
     },
     {
       "name": "Ape2",
@@ -19,7 +19,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ape_2",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage1"
     },
     {
       "name": "Ape",
@@ -29,7 +29,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ape",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage1"
     },
     {
       "name": "Steak",
@@ -284,16 +284,6 @@
       "path": "~/recipe"
     },
     {
-      "name": "Ape3",
-      "type": "mob",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ape_3",
-      "path": "~/Mobs"
-    },
-    {
       "name": "Apehair",
       "type": "item",
       "sortid": 13,
@@ -302,16 +292,6 @@
       "ids": {},
       "registry_name": "apehair",
       "path": "~/Items"
-    },
-    {
-      "name": "Test",
-      "type": "mob",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ape_soldier",
-      "path": "~/Mobs"
     },
     {
       "name": "PestleAndMortar",
@@ -968,7 +948,7 @@
       "type": "dimension",
       "sortid": 88,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "ids": {},
       "registry_name": "apedesert",
       "metadata": {
@@ -1025,16 +1005,6 @@
       "ids": {},
       "registry_name": "burningkingdom",
       "path": "~/World/Bioms"
-    },
-    {
-      "name": "Bossape",
-      "type": "mob",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bossape",
-      "path": "~/Mobs/bossape"
     },
     {
       "name": "Ore1",
@@ -1596,7 +1566,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Procedure"
     },
     {
       "name": "Door1",
@@ -1616,16 +1587,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "block_4",
-      "path": "~/World/blocks"
-    },
-    {
-      "name": "Door2",
-      "type": "block",
-      "sortid": 66,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "door_2",
       "path": "~/World/blocks"
     },
     {
@@ -1656,7 +1617,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "steampunkmob_1",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage2"
     },
     {
       "name": "Steampunkmob2",
@@ -1666,17 +1627,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "steampunkmob_2",
-      "path": "~/Mobs"
-    },
-    {
-      "name": "Steampunkmob22",
-      "type": "mob",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "steampunkmob_22",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage2"
     },
     {
       "name": "Steampunkmob3",
@@ -1686,7 +1637,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "steampunkmob_3",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage2"
     },
     {
       "name": "Junk1",
@@ -1876,7 +1827,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "steampunkape",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage2"
     },
     {
       "name": "Steampunkaperanged",
@@ -1886,7 +1837,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "steampunkaperanged",
-      "path": "~/Mobs"
+      "path": "~/Mobs/Stage2"
     },
     {
       "name": "Steampunkarmor2",
@@ -2173,6 +2124,1638 @@
       "ids": {},
       "registry_name": "block_24",
       "path": "~/World/blocks"
+    },
+    {
+      "name": "SpclocktowersmallAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spclocktowersmall_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Spclocktowersmall",
+      "type": "structure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spclocktowersmall",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "SpclocktowersmallAdditionalGeneration2",
+      "type": "procedure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spclocktowersmall_additional_generation_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse1",
+      "type": "procedure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_1",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse1start",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_1start",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Sphouseone",
+      "type": "structure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sphouseone",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "SpHouse2",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_2",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse2start",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_2start",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse3",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_3",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHouse3start",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_house_3start",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Sppowerplant",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplant",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Sppowerplantstart",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplantstart",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Spfactory",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactory",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "Spfactorystart",
+      "type": "procedure",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactorystart",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure/struckor"
+    },
+    {
+      "name": "SpHousetwo",
+      "type": "structure",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_housetwo",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "SpHousethree",
+      "type": "structure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sp_housethree",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Spfactoryone",
+      "type": "structure",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spfactoryone",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Sppowerplantone",
+      "type": "structure",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sppowerplantone",
+      "path": "~/World/Struktion"
+    },
+    {
+      "name": "Apeking",
+      "type": "armor",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apeking",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "Openportal1",
+      "type": "recipe",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "openportal_1",
+      "path": "~/tools"
+    },
+    {
+      "name": "Customsand1",
+      "type": "block",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "customsand_1",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand2",
+      "type": "block",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_2",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand3",
+      "type": "block",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_3",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand4",
+      "type": "block",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_4",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand5",
+      "type": "block",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_5",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand6",
+      "type": "block",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_6",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand7",
+      "type": "block",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_7",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand8",
+      "type": "block",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_8",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand9",
+      "type": "block",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_9",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand10",
+      "type": "block",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_10",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand11",
+      "type": "block",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_11",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand12",
+      "type": "block",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_12",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand13",
+      "type": "block",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_13",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Stone1",
+      "type": "block",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone_1",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Stone2",
+      "type": "block",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone_2",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "ForbiddingFlatlands",
+      "type": "biome",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forbidding_flatlands",
+      "path": "~/World/Bioms"
+    },
+    {
+      "name": "Dessertpile2",
+      "type": "plant",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessertpile_2",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Dessertplant4",
+      "type": "plant",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessertplant_4",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Dessertplant5",
+      "type": "plant",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessertplant_5",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "Dessertbanana",
+      "type": "plant",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessertbanana",
+      "path": "~/World/plants"
+    },
+    {
+      "name": "BurnedFlatlands",
+      "type": "biome",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "burned_flatlands",
+      "path": "~/World/Bioms"
+    },
+    {
+      "name": "Customsand2stairs",
+      "type": "block",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "customsand_2stairs",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Customsand2slab",
+      "type": "block",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "customsand_2slab",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand2wall",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_2wall",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "CustomSand2pane",
+      "type": "block",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "custom_sand_2pane",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Tree1Wood",
+      "type": "block",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_wood",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1Log",
+      "type": "block",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_log",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1Planks",
+      "type": "block",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_planks",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1Stairs",
+      "type": "block",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_stairs",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1Slab",
+      "type": "block",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_slab",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1Fence",
+      "type": "block",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_fence",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1FenceGate",
+      "type": "block",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_fence_gate",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1ItemsTag",
+      "type": "tag",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_items_tag",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1WoodRecipe",
+      "type": "recipe",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_wood_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1PlanksRecipe",
+      "type": "recipe",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_planks_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1StairsRecipe",
+      "type": "recipe",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_stairs_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1SlabRecipe",
+      "type": "recipe",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_slab_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1FenceRecipe",
+      "type": "recipe",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_fence_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1FenceGateRecipe",
+      "type": "recipe",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_fence_gate_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree1StickRecipe",
+      "type": "recipe",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1_stick_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Doorwood1",
+      "type": "block",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "doorwood_1",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Trapdoorwood1",
+      "type": "block",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trapdoorwood_1",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Banana2",
+      "type": "food",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "banana_2",
+      "path": "~/Items"
+    },
+    {
+      "name": "Battery1",
+      "type": "item",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_1",
+      "path": "~/Items"
+    },
+    {
+      "name": "Battery2",
+      "type": "item",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_2",
+      "path": "~/Items"
+    },
+    {
+      "name": "Battery3",
+      "type": "item",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_3",
+      "path": "~/Items"
+    },
+    {
+      "name": "Kingsguard",
+      "type": "armor",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingsguard",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "Battery12",
+      "type": "recipe",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_12",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Gem2charged",
+      "type": "item",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_2charged",
+      "path": "~/Items"
+    },
+    {
+      "name": "Chargedgem2",
+      "type": "recipe",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "chargedgem_2",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Battery23",
+      "type": "recipe",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_23",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Bossape1",
+      "type": "mob",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bossape_1",
+      "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Kingssoldier",
+      "type": "mob",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingssoldier",
+      "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Bossape2",
+      "type": "mob",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bossape_2",
+      "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Tree1planks2",
+      "type": "block",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_1planks_2",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Wood",
+      "type": "block",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_wood",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Log",
+      "type": "block",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_log",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Planks",
+      "type": "block",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_planks",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Stairs",
+      "type": "block",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_stairs",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Slab",
+      "type": "block",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_slab",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Fence",
+      "type": "block",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_fence",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2FenceGate",
+      "type": "block",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_fence_gate",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2ItemsTag",
+      "type": "tag",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_items_tag",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2WoodRecipe",
+      "type": "recipe",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_wood_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2PlanksRecipe",
+      "type": "recipe",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_planks_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2StairsRecipe",
+      "type": "recipe",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_stairs_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2SlabRecipe",
+      "type": "recipe",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_slab_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2FenceRecipe",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_fence_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2FenceGateRecipe",
+      "type": "recipe",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_fence_gate_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2StickRecipe",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_stick_recipe",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Tree2Planks2",
+      "type": "block",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tree_2_planks_2",
+      "path": "~/World/blocks/Trees"
+    },
+    {
+      "name": "Soldierape",
+      "type": "mob",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "soldierape",
+      "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Kingape",
+      "type": "mob",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingape",
+      "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Kingsjewl",
+      "type": "item",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingsjewl",
+      "path": "~/Items"
+    },
+    {
+      "name": "Kingssepter",
+      "type": "recipe",
+      "sortid": 279,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingssepter",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Kingscalling",
+      "type": "item",
+      "sortid": 280,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingscalling",
+      "path": "~/Items"
+    },
+    {
+      "name": "Brickwindow",
+      "type": "block",
+      "sortid": 281,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brickwindow",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Customsandtrapdoor",
+      "type": "block",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "customsandtrapdoor",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "GorillaRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gorilla_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedure"
+    },
+    {
+      "name": "Palisadeblock",
+      "type": "block",
+      "sortid": 284,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadeblock",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisadecrackedstone",
+      "type": "block",
+      "sortid": 285,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadecrackedstone",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisademossy",
+      "type": "block",
+      "sortid": 286,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisademossy",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "GemI",
+      "type": "item",
+      "sortid": 287,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_i",
+      "path": "~/Items"
+    },
+    {
+      "name": "GemII",
+      "type": "item",
+      "sortid": 288,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_ii",
+      "path": "~/Items"
+    },
+    {
+      "name": "GemIII",
+      "type": "item",
+      "sortid": 289,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_iii",
+      "path": "~/Items"
+    },
+    {
+      "name": "GemIX",
+      "type": "item",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_ix",
+      "path": "~/Items"
+    },
+    {
+      "name": "GemX",
+      "type": "item",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_x",
+      "path": "~/Items"
+    },
+    {
+      "name": "GemXI",
+      "type": "item",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gem_xi",
+      "path": "~/Items"
+    },
+    {
+      "name": "Kingscallingrecipe",
+      "type": "recipe",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kingscallingrecipe",
+      "path": "~/recipe"
+    },
+    {
+      "name": "Palisadestair",
+      "type": "block",
+      "sortid": 294,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadestair",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisadeslab",
+      "type": "block",
+      "sortid": 295,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadeslab",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisadewall",
+      "type": "block",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadewall",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisadepane",
+      "type": "block",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadepane",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisadewood",
+      "type": "block",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisadewood",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Woodpalisade2",
+      "type": "block",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "woodpalisade_2",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisade3",
+      "type": "block",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisade_3",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisade3stairs",
+      "type": "block",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisade_3stairs",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisade3wall",
+      "type": "block",
+      "sortid": 302,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisade_3wall",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisade3pane",
+      "type": "block",
+      "sortid": 303,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisade_3pane",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisade3fence",
+      "type": "block",
+      "sortid": 304,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisade_3fence",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Palisade3slab",
+      "type": "block",
+      "sortid": 305,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "palisade_3slab",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadewoodpane",
+      "type": "block",
+      "sortid": 306,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadewoodpane",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadewall",
+      "type": "block",
+      "sortid": 307,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadewall",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadewfence",
+      "type": "block",
+      "sortid": 308,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadewfence",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadewindow",
+      "type": "block",
+      "sortid": 309,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadewindow",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisademossy",
+      "type": "block",
+      "sortid": 310,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisademossy",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisademossytest",
+      "type": "block",
+      "sortid": 311,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisademossytest",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisade3mossy",
+      "type": "block",
+      "sortid": 312,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisade_3mossy",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadewallmossy",
+      "type": "block",
+      "sortid": 313,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadewallmossy",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisade3wallmossy",
+      "type": "block",
+      "sortid": 314,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisade_3wallmossy",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadecracked",
+      "type": "block",
+      "sortid": 315,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadecracked",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Pallisadecrackedwall",
+      "type": "block",
+      "sortid": 316,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pallisadecrackedwall",
+      "path": "~/World/blocks"
+    },
+    {
+      "name": "Gorillabrute",
+      "type": "mob",
+      "sortid": 317,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gorillabrute",
+      "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Apestanding",
+      "type": "mob",
+      "sortid": 318,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apestanding",
+      "path": "~/Mobs/Stage1"
     }
   ],
   "variable_elements": [],
@@ -2189,149 +3772,246 @@
   "language_map": {
     "en_us": {
       "block.apes_strong_together.gemore_2": "Ore 2",
-      "item.apes_strong_together.chestboxdiamond": "Diamond Chestbox",
       "item.apes_strong_together.chestapecopper_spawn_egg": "Chestape Spawn Egg",
-      "entity.apes_strong_together.bossape": "Bossape",
-      "item.apes_strong_together.steampunkarmor_boots": "Steampunkarmor Boots",
+      "block.apes_strong_together.tree_2_planks_2": "Tree1 Planks",
+      "block.apes_strong_together.custom_sand_10": "metal cage2",
+      "block.apes_strong_together.custom_sand_12": "metal cage2",
+      "block.apes_strong_together.custom_sand_11": "metal cage2",
       "item.apes_strong_together.desertpearl": "Desertpearl",
       "block.apes_strong_together.bananatree": "Bananatree",
-      "item.apes_strong_together.steampunkarmor_2_boots": "Steampunkarmor 2 Boots",
-      "item.apes_strong_together.steampunkmob_2_spawn_egg": "Steampunkmob 2 Spawn Egg",
+      "block.apes_strong_together.custom_sand_13": "metal cage2",
+      "biome.apes_strong_together.burned_flatlands": "Forbidding Flatlands",
       "item.apes_strong_together.mortar": "Mortar",
       "biome.apes_strong_together.dune": "Dune",
-      "item.apes_strong_together.swordtier_1": "Swordtier 1",
-      "item.apes_strong_together.swordtier_2": "Swordtier 1",
+      "block.apes_strong_together.pallisademossy": "PalisadeStone",
       "entity.apes_strong_together.chestapeiron": "Chestape",
-      "item.apes_strong_together.chestboxgold": "Gold Chestbox",
-      "entity.apes_strong_together.chest_ape_emerald": "Chestape",
       "item.apes_strong_together.hoetier_1": "Hoetier 1",
+      "block.apes_strong_together.custom_sand_2wall": "metal cage2",
+      "item.apes_strong_together.gem_xi": "Gem XI",
       "biome.apes_strong_together.dangerous_savanna": "Dangerous Savanna",
-      "item.apes_strong_together.syringex": "Syringe X",
       "item.apes_strong_together.steampunkarmor_2_leggings": "Steampunkarmor 2 Leggings",
       "block.apes_strong_together.dimentionblock_1": "Dimentionblock 1",
       "item.apes_strong_together.hoetier_2": "Hoetier 1",
       "block.apes_strong_together.ingotblock_1": "Ingotblock 1",
       "block.apes_strong_together.ingotblock_2": "Ingotblock 1",
+      "block.apes_strong_together.pallisade_3mossy": "PalisadeStone",
       "item.apes_strong_together.chest_ape_silver_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.chestboxemerald": "Emerald Chestbox",
-      "block.apes_strong_together.block_2": "spawner_test",
+      "block.apes_strong_together.palisade_3wall": "PalisadeStone",
       "item.apes_strong_together.steampunkape_spawn_egg": "Steampunk Ape Spawn Egg",
+      "entity.apes_strong_together.steampunkmob_1": "Steampunkmob 1",
+      "block.apes_strong_together.palisadewall": "PalisadeStone",
+      "block.apes_strong_together.pallisadewindow": "PalisadeStone",
+      "entity.apes_strong_together.steampunkmob_2": "Steampunkmob 2",
+      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
+      "item.apes_strong_together.chestbox": "Chestbox",
+      "entity.apes_strong_together.steampunkmob_3": "Steampunkmob 2_2",
+      "block.apes_strong_together.bananabox": "Bananabox",
+      "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.tree_2_stairs": "Tree2 Stairs",
+      "item.apes_strong_together.kingsguard_helmet": "Steampunkarmor 2 Helmet",
+      "item.apes_strong_together.steampunkarmor_2_chestplate": "Steampunkarmor 2 Body",
+      "item.apes_strong_together.steampunkarmor_helmet": "Steampunkarmor Helmet",
+      "block.apes_strong_together.desertgrass": "Desertgrass",
+      "item.apes_strong_together.banana": "Banana",
+      "block.apes_strong_together.customsand_2slab": "metal cage2",
+      "item.apes_strong_together.faraoarmor_chestplate": "Faraoarmor Body",
+      "item.apes_strong_together.axetier_2": "Axetier 1",
+      "item.apes_strong_together.gorillabrute_spawn_egg": "Gorilla brute Spawn Egg",
+      "block.apes_strong_together.doorwood_1": "Tree1 Planks",
+      "block.apes_strong_together.door_1": "Door 1",
+      "item.apes_strong_together.soldierape_spawn_egg": "Ape rouge Spawn Egg",
+      "block.apes_strong_together.custom_sand_2pane": "metal cage2",
+      "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.trapdoorwood_1": "Tree1 Planks",
+      "item.apes_strong_together.kingsguard_boots": "Steampunkarmor 2 Boots",
+      "item.apes_strong_together.axetier_1": "Axetier 1",
+      "block.apes_strong_together.palisadecrackedstone": "PalisadeStone",
+      "biome.apes_strong_together.forbidding_flatlands": "Forbidding Flatlands",
+      "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
+      "entity.apes_strong_together.gorillabrute": "Gorilla brute",
+      "block.apes_strong_together.ore_2": "Ore 2",
+      "block.apes_strong_together.dessertplant_5": "Dessertplant 4",
+      "item.apes_strong_together.chestboxiron": "iron Chestbox",
+      "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
+      "block.apes_strong_together.dessertplant_4": "Dessertplant 4",
+      "item.apes_strong_together.apeking_leggings": "Steampunkarmor 2 Leggings",
+      "block.apes_strong_together.block_23": "metal cage2",
+      "block.apes_strong_together.block_24": "metal cage2",
+      "item.apes_strong_together.steampunksword": "Steampunksword",
+      "item.apes_strong_together.kingsguard_chestplate": "Steampunkarmor 2 Body",
+      "block.apes_strong_together.customsandtrapdoor": "metal cage2",
+      "block.apes_strong_together.palisadeslab": "PalisadeStone",
+      "entity.apes_strong_together.soldierape": "Ape rouge",
+      "entity.apes_strong_together.kingssoldier": "Ape soldier",
+      "item.apes_strong_together.apehair": "Ape hair",
+      "block.apes_strong_together.dessertpile_2": "sandpile",
+      "block.apes_strong_together.tree_1planks_2": "Tree1 Planks",
+      "block.apes_strong_together.customsand_1": "metal cage2",
+      "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
+      "entity.apes_strong_together.chestape": "Chestape",
+      "block.apes_strong_together.pallisade_3wallmossy": "PalisadeStone",
+      "item.apes_strong_together.bossape_1_spawn_egg": "Bossape Spawn Egg",
+      "biome.apes_strong_together.borderlands": "Borderlands",
+      "block.apes_strong_together.tree_2_wood": "Tree2 Wood",
+      "entity.apes_strong_together.chest_ape_diamond": "Chestape",
+      "item.apes_strong_together.shoveltier_1": "Shoveltier 1",
+      "item.apes_strong_together.paxeltier_2": "Paxeltier 1",
+      "item.apes_strong_together.shoveltier_2": "Shoveltier 1",
+      "item.apes_strong_together.steak": "Steak",
+      "item.apes_strong_together.gem_ii": "Gem II",
+      "block.apes_strong_together.woodpalisade_2": "PalisadeStone",
+      "block.apes_strong_together.pallisadecracked": "PalisadeStone",
+      "item.apes_strong_together.paxeltier_1": "Paxeltier 1",
+      "block.apes_strong_together.palisadewood": "PalisadeStone",
+      "item.apes_strong_together.apearmor_helmet": "Apearmor Helmet",
+      "item.apes_strong_together.apemeat": "Ape meat",
+      "item.apes_strong_together.kingsjewl": "Kingsjewl",
+      "item.apes_strong_together.chestboxcopper": "copper Chestbox",
+      "item.apes_strong_together.gem_ix": "Gem IX",
+      "block.apes_strong_together.palisade_3slab": "PalisadeStone",
+      "item.apes_strong_together.bossape_2_spawn_egg": "Ape 3 Spawn Egg",
+      "block.apes_strong_together.ore_01": "Ore 0 1",
+      "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
+      "block.apes_strong_together.pallisademossytest": "PalisadeStone",
+      "block.apes_strong_together.palisade_3fence": "PalisadeStone",
+      "item.apes_strong_together.coconut": "Coconut",
+      "block.apes_strong_together.tree_1_planks": "Tree1 Planks",
+      "item.apes_strong_together.faraoarmor_boots": "Faraoarmor Boots",
+      "entity.apes_strong_together.chestapecopper": "Chestape",
+      "item.apes_strong_together.chest_ape_gold_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.stone_2": "metal cage2",
+      "item.apes_strong_together.junk_1": "Junk 1",
+      "entity.apes_strong_together.ape_2": "Gen ape",
+      "block.apes_strong_together.stone_1": "metal cage2",
+      "item.apes_strong_together.junk_2": "Junk 2",
+      "item.apes_strong_together.junk_3": "Junk 2",
+      "item.apes_strong_together.chestboxdiamond": "Diamond Chestbox",
+      "item.apes_strong_together.steampunkarmor_boots": "Steampunkarmor Boots",
+      "item.apes_strong_together.steampunkarmor_2_boots": "Steampunkarmor 2 Boots",
+      "entity.apes_strong_together.kingape": "Ape soldier",
+      "item.apes_strong_together.steampunkmob_2_spawn_egg": "Steampunkmob 2 Spawn Egg",
+      "item.apes_strong_together.swordtier_1": "Swordtier 1",
+      "item.apes_strong_together.swordtier_2": "Swordtier 1",
+      "item.apes_strong_together.apeking_boots": "Steampunkarmor 2 Boots",
+      "entity.apes_strong_together.chest_ape_emerald": "Chestape",
+      "item.apes_strong_together.chestboxgold": "Gold Chestbox",
+      "item.apes_strong_together.kingape_spawn_egg": "Ape soldier Spawn Egg",
+      "block.apes_strong_together.palisademossy": "PalisadeStone",
+      "block.apes_strong_together.tree_2_fence": "Tree2 Fence",
+      "item.apes_strong_together.syringex": "Syringe X",
+      "block.apes_strong_together.tree_2_log": "Tree2 Log",
+      "block.apes_strong_together.pallisadewallmossy": "PalisadeStone",
+      "block.apes_strong_together.block_2": "spawner_test",
       "item.apes_strong_together.steampunkmob_1_spawn_egg": "Steampunkmob 1 Spawn Egg",
       "block.apes_strong_together.block_4": "ape box",
       "block.apes_strong_together.block_3": "block",
       "block.apes_strong_together.block_6": "metal cage2",
       "block.apes_strong_together.block_5": "metal cage1",
       "block.apes_strong_together.block_8": "metal cage2",
-      "entity.apes_strong_together.steampunkmob_1": "Steampunkmob 1",
       "block.apes_strong_together.block_7": "metal cage2",
+      "block.apes_strong_together.tree_1_wood": "Tree1 Wood",
       "block.apes_strong_together.block_9": "metal cage2",
-      "entity.apes_strong_together.steampunkmob_2": "Steampunkmob 2",
-      "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
-      "item.apes_strong_together.chestbox": "Chestbox",
-      "entity.apes_strong_together.steampunkmob_3": "Steampunkmob 2_2",
-      "item.apes_strong_together.bossape_spawn_egg": "Bossape Spawn Egg",
-      "block.apes_strong_together.bananabox": "Bananabox",
-      "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
+      "block.apes_strong_together.tree_1_stairs": "Tree1 Stairs",
       "block.apes_strong_together.block_10": "metal cage2",
       "block.apes_strong_together.block_11": "metal cage2",
-      "item.apes_strong_together.ape_soldier_spawn_egg": "Ape soldier Spawn Egg",
-      "item.apes_strong_together.ape_3_spawn_egg": "Ape 3 Spawn Egg",
       "item.apes_strong_together.ingot_2": "Ingot 2",
       "item.apes_strong_together.ingot_1": "Ingot 1",
-      "block.apes_strong_together.desertgrass": "Desertgrass",
-      "item.apes_strong_together.steampunkarmor_helmet": "Steampunkarmor Helmet",
-      "item.apes_strong_together.steampunkarmor_2_chestplate": "Steampunkarmor 2 Body",
-      "item.apes_strong_together.banana": "Banana",
+      "block.apes_strong_together.tree_2_slab": "Tree2 Slab",
+      "block.apes_strong_together.pallisadecrackedwall": "PalisadeStone",
+      "item.apes_strong_together.banana_2": "Banana",
+      "item.apes_strong_together.gem_iii": "Gem III",
       "subtitles.gorilla_ambient": "",
-      "item.apes_strong_together.faraoarmor_chestplate": "Faraoarmor Body",
-      "item.apes_strong_together.axetier_2": "Axetier 1",
+      "block.apes_strong_together.customsand_2stairs": "metal cage2",
+      "block.apes_strong_together.palisadestair": "PalisadeStone",
+      "block.apes_strong_together.tree_1_fence_gate": "Tree1 Fence Gate",
+      "item.apes_strong_together.gem_i": "Gem I",
       "item.apes_strong_together.steampunkgun": "Steampunkgun",
       "block.apes_strong_together.block_21": "metal cage2",
-      "entity.apes_strong_together.ape_soldier": "Ape soldier",
       "block.apes_strong_together.block_22": "metal cage2",
       "block.apes_strong_together.block_20": "metal cage2",
       "item.apes_strong_together.pickaxetier_1": "Pickaxetier 1",
-      "block.apes_strong_together.door_1": "Door 1",
       "item.apes_strong_together.pickaxetier_2": "Pickaxetier 1",
-      "block.apes_strong_together.door_2": "Door 1",
+      "item.apes_strong_together.apestanding_spawn_egg": "Ape Standing Spawn Egg",
+      "block.apes_strong_together.palisade_3": "PalisadeStone",
       "entity.apes_strong_together.steampunkape": "Steampunk Ape",
       "block.apes_strong_together.block_18": "metal cage2",
       "block.apes_strong_together.block_19": "metal cage2",
       "block.apes_strong_together.block_16": "metal cage2",
       "block.apes_strong_together.block_17": "metal cage2",
+      "block.apes_strong_together.brickwindow": "Brick Window",
       "block.apes_strong_together.block_14": "metal cage2",
       "block.apes_strong_together.block_15": "metal cage2",
       "block.apes_strong_together.block_12": "metal cage2",
       "block.apes_strong_together.block_13": "metal cage2",
+      "item.apes_strong_together.gem_x": "Gem X",
       "item.apes_strong_together.steampunkarmor_2_helmet": "Steampunkarmor 2 Helmet",
-      "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
+      "item.apes_strong_together.gem_2charged": "Gem 2",
+      "block.apes_strong_together.pallisadewall": "PalisadeStone",
       "item.apes_strong_together.steampunkmob_3_spawn_egg": "Steampunkmob 2_2 Spawn Egg",
-      "item.apes_strong_together.axetier_1": "Axetier 1",
-      "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
       "item.apes_strong_together.chestape_spawn_egg": "Chestape Spawn Egg",
       "entity.apes_strong_together.ape": "Ape",
-      "block.apes_strong_together.ore_2": "Ore 2",
-      "item.apes_strong_together.chestboxiron": "iron Chestbox",
-      "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
+      "item.apes_strong_together.apeking_chestplate": "Steampunkarmor 2 Body",
+      "block.apes_strong_together.palisade_3pane": "PalisadeStone",
+      "block.apes_strong_together.tree_1_fence": "Tree1 Fence",
       "item.apes_strong_together.faraoarmor_leggings": "Faraoarmor Leggings",
       "item.apes_strong_together.steampunkarmor_leggings": "Steampunkarmor Leggings",
       "item.apes_strong_together.cracked_coconut": "Cracked Coconut",
-      "block.apes_strong_together.block_23": "metal cage2",
-      "block.apes_strong_together.block_24": "metal cage2",
-      "item.apes_strong_together.steampunkmob_22_spawn_egg": "Steampunkmob 2_2 Spawn Egg",
-      "item.apes_strong_together.steampunksword": "Steampunksword",
+      "block.apes_strong_together.tree_2_fence_gate": "Tree2 Fence Gate",
+      "item.apes_strong_together.apeking_helmet": "Steampunkarmor 2 Helmet",
+      "block.apes_strong_together.palisadepane": "PalisadeStone",
       "item.apes_strong_together.chest_ape_emerald_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.mince_zombie": "Mince Zombie",
-      "item.apes_strong_together.apehair": "Ape hair",
+      "item.apes_strong_together.battery_3": "Battery 3",
+      "item.apes_strong_together.battery_2": "Battery 2",
+      "entity.apes_strong_together.apestanding": "Ape Standing",
+      "item.apes_strong_together.battery_1": "Battery 1",
       "item.apes_strong_together.gem_2": "Gem 2",
       "entity.apes_strong_together.gorilla": "Gorilla",
+      "block.apes_strong_together.tree_1_slab": "Tree1 Slab",
       "block.apes_strong_together.desertplant_3": "Desertplant 3",
       "item.apes_strong_together.ape_spawn_egg": "Ape Spawn Egg",
       "block.apes_strong_together.desertplant_2": "Desertplant 1",
       "item.apes_strong_together.steampunkarmor_chestplate": "Steampunkarmor Body",
-      "item.apes_strong_together.apearmor_leggings": "Apearmor Leggings",
-      "entity.apes_strong_together.chestape": "Chestape",
       "block.apes_strong_together.desertplant_1": "Desertplant 1",
-      "entity.apes_strong_together.steampunkmob_22": "Steampunkmob 2_2",
       "block.apes_strong_together.ancientdebree": "Dessert Ancient Debris",
       "item.apes_strong_together.faraoarmor_helmet": "Faraoarmor Helmet",
+      "item.apes_strong_together.kingssoldier_spawn_egg": "Ape soldier Spawn Egg",
       "item.apes_strong_together.ape_2_spawn_egg": "Gen ape Spawn Egg",
+      "block.apes_strong_together.pallisadewfence": "PalisadeStone",
       "entity.apes_strong_together.chest_ape_gold": "Chestape",
-      "biome.apes_strong_together.borderlands": "Borderlands",
       "item.apes_strong_together.mincedape": "Minced ape",
-      "entity.apes_strong_together.chest_ape_diamond": "Chestape",
+      "block.apes_strong_together.dessertbanana": "Dessertplant 4",
       "enchantment.apes_strong_together.slippery": "Slippery",
-      "item.apes_strong_together.shoveltier_1": "Shoveltier 1",
-      "item.apes_strong_together.paxeltier_2": "Paxeltier 1",
-      "item.apes_strong_together.shoveltier_2": "Shoveltier 1",
+      "block.apes_strong_together.palisade_3stairs": "PalisadeStone",
       "item.apes_strong_together.chestboxsilver": "Silver Chestbox",
-      "item.apes_strong_together.steak": "Steak",
       "entity.apes_strong_together.chest_ape_silver": "Chestape",
       "block.apes_strong_together.desert_sandpile_1": "sandpile",
+      "item.apes_strong_together.kingscalling": "Kingscalling",
+      "block.apes_strong_together.pallisadewoodpane": "PalisadeStone",
+      "block.apes_strong_together.tree_2_planks": "Tree2 Planks",
       "entity.apes_strong_together.mob_2": "Mob 2",
-      "item.apes_strong_together.paxeltier_1": "Paxeltier 1",
       "biome.apes_strong_together.burningkingdom": "Burning Kingdom",
-      "item.apes_strong_together.apearmor_helmet": "Apearmor Helmet",
-      "item.apes_strong_together.apemeat": "Ape meat",
-      "item.apes_strong_together.chestboxcopper": "copper Chestbox",
+      "block.apes_strong_together.tree_1_log": "Tree1 Log",
       "item.apes_strong_together.gorilla_spawn_egg": "Gorilla Spawn Egg",
-      "block.apes_strong_together.ore_01": "Ore 0 1",
-      "item.apes_strong_together.apemeatcooked": "cooked Ape meat",
-      "item.apes_strong_together.coconut": "Coconut",
+      "entity.apes_strong_together.bossape_2": "Ape 3",
+      "entity.apes_strong_together.bossape_1": "Bossape",
+      "item.apes_strong_together.kingsguard_leggings": "Steampunkarmor 2 Leggings",
       "item.apes_strong_together.steampunkaperanged_spawn_egg": "Steampunk Ape ranged Spawn Egg",
       "item.apes_strong_together.syringe": "Syringe",
-      "item.apes_strong_together.apedesert": "Ape hair",
-      "item.apes_strong_together.faraoarmor_boots": "Faraoarmor Boots",
+      "item.apes_strong_together.apedesert": "Kings Septer",
+      "block.apes_strong_together.palisadeblock": "PalisadeStone",
       "entity.apes_strong_together.steampunkaperanged": "Steampunk Ape ranged",
-      "entity.apes_strong_together.chestapecopper": "Chestape",
-      "item.apes_strong_together.chest_ape_gold_spawn_egg": "Chestape Spawn Egg",
       "item.apes_strong_together.toolrod_2": "Toolrod 1",
+      "block.apes_strong_together.custom_sand_8": "metal cage2",
       "item.apes_strong_together.toolrod_1": "Toolrod 1",
-      "entity.apes_strong_together.ape_3": "Ape 3",
-      "entity.apes_strong_together.ape_2": "Gen ape",
-      "item.apes_strong_together.junk_1": "Junk 1",
-      "item.apes_strong_together.junk_2": "Junk 2",
-      "item.apes_strong_together.junk_3": "Junk 2"
+      "block.apes_strong_together.custom_sand_9": "metal cage2",
+      "block.apes_strong_together.custom_sand_6": "metal cage2",
+      "block.apes_strong_together.custom_sand_7": "metal cage2",
+      "block.apes_strong_together.custom_sand_4": "metal cage2",
+      "block.apes_strong_together.custom_sand_5": "metal cage2",
+      "block.apes_strong_together.custom_sand_2": "metal cage2",
+      "block.apes_strong_together.custom_sand_3": "metal cage2"
     }
   },
   "foldersRoot": {
@@ -2370,7 +4050,12 @@
           },
           {
             "name": "blocks",
-            "children": []
+            "children": [
+              {
+                "name": "Trees",
+                "children": []
+              }
+            ]
           },
           {
             "name": "plants",
@@ -2384,7 +4069,12 @@
       },
       {
         "name": "Procedure",
-        "children": []
+        "children": [
+          {
+            "name": "struckor",
+            "children": []
+          }
+        ]
       },
       {
         "name": "tags",
@@ -2398,11 +4088,15 @@
         "name": "Mobs",
         "children": [
           {
-            "name": "bossape",
+            "name": "Chestape",
             "children": []
           },
           {
-            "name": "Chestape",
+            "name": "Stage1",
+            "children": []
+          },
+          {
+            "name": "Stage2",
             "children": []
           }
         ]
@@ -2431,8 +4125,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.apesstrongtogether",
+    "modElementsPackage": "apesstrongtogether",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202100118117

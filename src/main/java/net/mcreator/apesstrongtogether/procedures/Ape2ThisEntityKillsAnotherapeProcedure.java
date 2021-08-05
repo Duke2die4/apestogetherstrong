@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -9,12 +9,14 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.entity.ApeEntity;
-import net.mcreator.apesstrongtogether.entity.Ape2Entity;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.Map;
+
+import apesstrongtogether.entity.ApeEntity;
+import apesstrongtogether.entity.Ape2Entity;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Ape2ThisEntityKillsAnotherapeProcedure extends ApesStrongTogetherModElements.ModElement {

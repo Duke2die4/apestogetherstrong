@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.world.structure;
+package apesstrongtogether.world.structure;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,9 +31,9 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Random;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
@@ -73,7 +73,7 @@ public class OasisStructure extends ApesStrongTogetherModElements.ModElement {
 								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + 0, j + -1, k + 0);
+							BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();

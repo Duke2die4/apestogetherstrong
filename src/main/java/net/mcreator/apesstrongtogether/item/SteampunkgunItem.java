@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -31,10 +31,11 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.apesstrongtogether.entity.renderer.SteampunkgunRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Random;
+
+import apesstrongtogether.entity.renderer.SteampunkgunRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SteampunkgunItem extends ApesStrongTogetherModElements.ModElement {

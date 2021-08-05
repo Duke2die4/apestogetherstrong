@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,10 +20,10 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SteampunkarmorItem extends ApesStrongTogetherModElements.ModElement {

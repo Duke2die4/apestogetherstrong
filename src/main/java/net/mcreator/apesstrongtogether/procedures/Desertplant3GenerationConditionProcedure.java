@@ -1,8 +1,8 @@
-package net.mcreator.apesstrongtogether.procedures;
-
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+package apesstrongtogether.procedures;
 
 import java.util.Map;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Desertplant3GenerationConditionProcedure extends ApesStrongTogetherModElements.ModElement {

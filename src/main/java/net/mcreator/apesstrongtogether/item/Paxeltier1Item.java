@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -15,10 +15,10 @@ import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Paxeltier1Item extends ApesStrongTogetherModElements.ModElement {
@@ -35,7 +35,7 @@ public class Paxeltier1Item extends ApesStrongTogetherModElements.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(9600));
+			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(23400));
 		}
 
 		@Override
@@ -44,7 +44,7 @@ public class Paxeltier1Item extends ApesStrongTogetherModElements.ModElement {
 				ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 				builder.putAll(super.getAttributeModifiers(equipmentSlot));
 				builder.put(Attributes.ATTACK_DAMAGE,
-						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 6f, AttributeModifier.Operation.ADDITION));
+						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Tool modifier", 7f, AttributeModifier.Operation.ADDITION));
 				builder.put(Attributes.ATTACK_SPEED,
 						new AttributeModifier(ATTACK_SPEED_MODIFIER, "Tool modifier", -3, AttributeModifier.Operation.ADDITION));
 				return builder.build();

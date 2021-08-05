@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -15,10 +15,10 @@ import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Paxeltier2Item extends ApesStrongTogetherModElements.ModElement {

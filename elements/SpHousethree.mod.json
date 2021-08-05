@@ -1,0 +1,33 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "sp_house3small",
+    "randomlyRotateStructure": false,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 100000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Apedesert"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "CUSTOM:Desertgrass"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Burningkingdom"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "SpHouse3start"
+    }
+  }
+}

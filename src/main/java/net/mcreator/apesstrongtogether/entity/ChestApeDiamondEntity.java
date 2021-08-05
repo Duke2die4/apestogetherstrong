@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
@@ -49,11 +49,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 
-import net.mcreator.apesstrongtogether.procedures.ChestApeDiamondRightClickedOnEntityProcedure;
-import net.mcreator.apesstrongtogether.gui.GuiChestDiamondGui;
-import net.mcreator.apesstrongtogether.entity.renderer.ChestApeDiamondRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
@@ -61,6 +56,14 @@ import java.util.Map;
 import java.util.HashMap;
 
 import io.netty.buffer.Unpooled;
+
+import apesstrongtogether.procedures.ChestApeDiamondRightClickedOnEntityProcedure;
+
+import apesstrongtogether.gui.GuiChestDiamondGui;
+
+import apesstrongtogether.entity.renderer.ChestApeDiamondRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ChestApeDiamondEntity extends ApesStrongTogetherModElements.ModElement {

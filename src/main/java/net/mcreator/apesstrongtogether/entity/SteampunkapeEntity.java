@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -43,16 +43,19 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.apesstrongtogether.procedures.SteampunkapeOnInitialEntitySpawnProcedure;
-import net.mcreator.apesstrongtogether.item.SteampunkswordItem;
-import net.mcreator.apesstrongtogether.item.Steampunkarmor2Item;
-import net.mcreator.apesstrongtogether.entity.renderer.SteampunkapeRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import javax.annotation.Nullable;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import apesstrongtogether.procedures.SteampunkapeOnInitialEntitySpawnProcedure;
+
+import apesstrongtogether.item.SteampunkswordItem;
+import apesstrongtogether.item.Steampunkarmor2Item;
+
+import apesstrongtogether.entity.renderer.SteampunkapeRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SteampunkapeEntity extends ApesStrongTogetherModElements.ModElement {

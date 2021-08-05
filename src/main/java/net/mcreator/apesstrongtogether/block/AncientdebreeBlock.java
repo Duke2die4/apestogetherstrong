@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.block;
+package apesstrongtogether.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -35,11 +35,11 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class AncientdebreeBlock extends ApesStrongTogetherModElements.ModElement {
@@ -59,7 +59,7 @@ public class AncientdebreeBlock extends ApesStrongTogetherModElements.ModElement
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(30f, 10f).setLightLevel(s -> 4).harvestLevel(4)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(30f, 10f).setLightLevel(s -> 0).harvestLevel(4)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("ancientdebree");
 		}

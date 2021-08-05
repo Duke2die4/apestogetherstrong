@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Tree1Wood"
+      },
+      {
+        "value": "CUSTOM:Tree1Log"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "tree1_log",
+    "namespace": "forge"
+  }
+}

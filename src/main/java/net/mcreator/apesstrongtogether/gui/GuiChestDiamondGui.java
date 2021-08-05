@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.gui;
+package apesstrongtogether.gui;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -28,12 +28,13 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class GuiChestDiamondGui extends ApesStrongTogetherModElements.ModElement {

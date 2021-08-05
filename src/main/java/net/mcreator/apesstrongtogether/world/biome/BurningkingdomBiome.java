@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.world.biome;
+package apesstrongtogether.world.biome;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -46,16 +46,18 @@ import net.minecraft.state.BooleanProperty;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.apesstrongtogether.particle.ApeportalParticle;
-import net.mcreator.apesstrongtogether.entity.TestEntity;
-import net.mcreator.apesstrongtogether.entity.GorillaEntity;
-import net.mcreator.apesstrongtogether.entity.ApeEntity;
-import net.mcreator.apesstrongtogether.block.DesertgrassBlock;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Set;
 
 import com.google.common.collect.ImmutableList;
+
+import apesstrongtogether.particle.ApeportalParticle;
+
+import apesstrongtogether.entity.GorillaEntity;
+import apesstrongtogether.entity.ApeEntity;
+
+import apesstrongtogether.block.DesertgrassBlock;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class BurningkingdomBiome extends ApesStrongTogetherModElements.ModElement {
@@ -117,7 +119,7 @@ public class BurningkingdomBiome extends ApesStrongTogetherModElements.ModElemen
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(ApeEntity.entity, 4, 1, 4));
 				mobSpawnInfo.withSpawner(EntityClassification.CREATURE, new MobSpawnInfo.Spawners(GorillaEntity.entity, 2, 1, 2));
-				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(TestEntity.entity, 20, 4, 8));
+				mobSpawnInfo.withSpawner(EntityClassification.MONSTER, new MobSpawnInfo.Spawners(GorillaEntity.entity, 20, 4, 8));
 				biome = new Biome.Builder().precipitation(Biome.RainType.NONE).category(Biome.Category.DESERT).depth(1.4f).scale(0f).temperature(0.5f)
 						.downfall(0f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();

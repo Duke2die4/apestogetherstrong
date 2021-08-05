@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -10,7 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Hoetier1Item extends ApesStrongTogetherModElements.ModElement {

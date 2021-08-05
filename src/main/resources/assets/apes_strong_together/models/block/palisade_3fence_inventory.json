@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "apes_strong_together:blocks/pallisade_wood1_2",
+    "particle": "apes_strong_together:blocks/pallisade_wood1_2"
+  }
+}

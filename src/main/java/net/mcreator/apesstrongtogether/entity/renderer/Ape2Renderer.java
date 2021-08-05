@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.entity.renderer;
+package apesstrongtogether.entity.renderer;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,10 +13,10 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.apesstrongtogether.entity.Ape2Entity;
-
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
+
+import apesstrongtogether.entity.Ape2Entity;
 
 @OnlyIn(Dist.CLIENT)
 public class Ape2Renderer {

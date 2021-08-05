@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "apes_strong_together:blocks/pallisade_wood_mossy2",
+    "particle": "apes_strong_together:blocks/pallisade_wood_mossy2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "apes_strong_together:blocks/wood1_plank_door2",
+    "top": "apes_strong_together:blocks/wood1_plank_door1"
+  }
+}

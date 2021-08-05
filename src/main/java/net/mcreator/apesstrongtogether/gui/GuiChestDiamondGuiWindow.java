@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.gui;
+package apesstrongtogether.gui;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;

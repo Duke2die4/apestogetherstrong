@@ -1,0 +1,22 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "apes_strong_together:tree_1_planks"
+    },
+    "1": {
+      "item": "apes_strong_together:tree_1_planks"
+    },
+    "2": {
+      "item": "apes_strong_together:tree_1_planks"
+    }
+  },
+  "result": {
+    "item": "apes_strong_together:tree_1_slab",
+    "count": 6
+  }
+}

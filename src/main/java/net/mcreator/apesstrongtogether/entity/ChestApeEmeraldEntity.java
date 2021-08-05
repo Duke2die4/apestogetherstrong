@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
@@ -49,14 +49,16 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 
-import net.mcreator.apesstrongtogether.gui.GuiChestEmeraldGui;
-import net.mcreator.apesstrongtogether.entity.renderer.ChestApeEmeraldRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
 import io.netty.buffer.Unpooled;
+
+import apesstrongtogether.gui.GuiChestEmeraldGui;
+
+import apesstrongtogether.entity.renderer.ChestApeEmeraldRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ChestApeEmeraldEntity extends ApesStrongTogetherModElements.ModElement {

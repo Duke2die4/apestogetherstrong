@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.block;
+package apesstrongtogether.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -23,10 +23,10 @@ import net.minecraft.block.DoorBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.List;
 import java.util.Collections;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Door1Block extends ApesStrongTogetherModElements.ModElement {

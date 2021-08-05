@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -29,8 +29,9 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.apesstrongtogether.entity.renderer.Mob2Renderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+import apesstrongtogether.entity.renderer.Mob2Renderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Mob2Entity extends ApesStrongTogetherModElements.ModElement {

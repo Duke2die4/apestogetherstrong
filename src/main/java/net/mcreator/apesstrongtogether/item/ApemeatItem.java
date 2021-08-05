@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -12,11 +12,12 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
-import net.mcreator.apesstrongtogether.procedures.ApemeatFoodEatenProcedure;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Map;
 import java.util.HashMap;
+
+import apesstrongtogether.procedures.ApemeatFoodEatenProcedure;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApemeatItem extends ApesStrongTogetherModElements.ModElement {

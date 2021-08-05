@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.entity.renderer;
+package apesstrongtogether.entity.renderer;
 
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -12,7 +12,7 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
-import net.mcreator.apesstrongtogether.entity.SteampunkapeEntity;
+import apesstrongtogether.entity.SteampunkapeEntity;
 
 @OnlyIn(Dist.CLIENT)
 public class SteampunkapeRenderer {
@@ -24,7 +24,7 @@ public class SteampunkapeRenderer {
 				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("apes_strong_together:textures/testbipedt.png");
+						return new ResourceLocation("apes_strong_together:textures/bipedape.png");
 					}
 				};
 				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));

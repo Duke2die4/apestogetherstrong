@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
@@ -49,11 +49,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 
-import net.mcreator.apesstrongtogether.procedures.Ape2chestironProcedure;
-import net.mcreator.apesstrongtogether.gui.GuichestbronzeGui;
-import net.mcreator.apesstrongtogether.entity.renderer.ChestapecopperRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
@@ -61,6 +56,14 @@ import java.util.Map;
 import java.util.HashMap;
 
 import io.netty.buffer.Unpooled;
+
+import apesstrongtogether.procedures.Ape2chestironProcedure;
+
+import apesstrongtogether.gui.GuichestbronzeGui;
+
+import apesstrongtogether.entity.renderer.ChestapecopperRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ChestapecopperEntity extends ApesStrongTogetherModElements.ModElement {

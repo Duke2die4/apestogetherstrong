@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -49,15 +49,19 @@ import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
-import net.mcreator.apesstrongtogether.procedures.GorillaNaturalEntitySpawningConditionProcedure;
-import net.mcreator.apesstrongtogether.item.ApemeatItem;
-import net.mcreator.apesstrongtogether.entity.renderer.GorillaRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import javax.annotation.Nullable;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import apesstrongtogether.procedures.GorillaRightClickedOnEntityProcedure;
+import apesstrongtogether.procedures.GorillaNaturalEntitySpawningConditionProcedure;
+
+import apesstrongtogether.item.ApemeatItem;
+
+import apesstrongtogether.entity.renderer.GorillaRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
@@ -80,7 +84,7 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 10, 1, 2));
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 14, 1, 2));
 	}
 
 	@Override
@@ -199,6 +203,16 @@ public class GorillaEntity extends ApesStrongTogetherModElements.ModElement {
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("sourceentity", sourceentity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GorillaRightClickedOnEntityProcedure.executeProcedure($_dependencies);
+			}
 			return retval;
 		}
 

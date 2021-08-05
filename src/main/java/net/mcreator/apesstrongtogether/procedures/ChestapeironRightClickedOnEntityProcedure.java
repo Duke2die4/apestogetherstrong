@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -12,12 +12,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.item.ChestboxsilverItem;
-import net.mcreator.apesstrongtogether.entity.ChestApeSilverEntity;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.Map;
+
+import apesstrongtogether.item.ChestboxsilverItem;
+
+import apesstrongtogether.entity.ChestApeSilverEntity;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ChestapeironRightClickedOnEntityProcedure extends ApesStrongTogetherModElements.ModElement {

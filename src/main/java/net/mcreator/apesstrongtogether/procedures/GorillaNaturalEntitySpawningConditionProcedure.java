@@ -1,12 +1,13 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraft.world.World;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.Map;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class GorillaNaturalEntitySpawningConditionProcedure extends ApesStrongTogetherModElements.ModElement {

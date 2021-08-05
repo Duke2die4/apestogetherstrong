@@ -1,0 +1,13 @@
+{
+  "group": "apes_strong_together",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:tree2_log"
+    }
+  ],
+  "result": {
+    "item": "apes_strong_together:tree_2_planks",
+    "count": 4
+  }
+}

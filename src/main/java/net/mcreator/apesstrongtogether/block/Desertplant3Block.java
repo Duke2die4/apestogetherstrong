@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.block;
+package apesstrongtogether.block;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -48,15 +48,17 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.apesstrongtogether.procedures.Desertplant3GenerationConditionProcedure;
-import net.mcreator.apesstrongtogether.item.DesertpearlItem;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 import com.google.common.collect.ImmutableMap;
+
+import apesstrongtogether.procedures.Desertplant3GenerationConditionProcedure;
+
+import apesstrongtogether.item.DesertpearlItem;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Desertplant3Block extends ApesStrongTogetherModElements.ModElement {

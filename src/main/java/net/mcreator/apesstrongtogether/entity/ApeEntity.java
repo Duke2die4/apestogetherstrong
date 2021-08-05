@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.entity;
+package apesstrongtogether.entity;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -51,14 +51,17 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.block.material.Material;
 
-import net.mcreator.apesstrongtogether.procedures.ApeRightClickedOnEntityProcedure;
-import net.mcreator.apesstrongtogether.item.BananaItem;
-import net.mcreator.apesstrongtogether.item.ApemeatItem;
-import net.mcreator.apesstrongtogether.entity.renderer.ApeRenderer;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Map;
 import java.util.HashMap;
+
+import apesstrongtogether.procedures.ApeRightClickedOnEntityProcedure;
+
+import apesstrongtogether.item.BananaItem;
+import apesstrongtogether.item.ApemeatItem;
+
+import apesstrongtogether.entity.renderer.ApeRenderer;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApeEntity extends ApesStrongTogetherModElements.ModElement {

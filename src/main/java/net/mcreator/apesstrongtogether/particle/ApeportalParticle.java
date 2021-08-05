@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.particle;
+package apesstrongtogether.particle;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -18,7 +18,7 @@ import net.minecraft.client.particle.IParticleFactory;
 import net.minecraft.client.particle.IAnimatedSprite;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApeportalParticle extends ApesStrongTogetherModElements.ModElement {

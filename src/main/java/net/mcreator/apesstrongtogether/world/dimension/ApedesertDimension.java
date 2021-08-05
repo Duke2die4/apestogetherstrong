@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.world.dimension;
+package apesstrongtogether.world.dimension;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -52,11 +52,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 
-import net.mcreator.apesstrongtogether.particle.ApeportalParticle;
-import net.mcreator.apesstrongtogether.item.ApedesertItem;
-import net.mcreator.apesstrongtogether.block.Dimentionblock1Block;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import javax.annotation.Nullable;
 
 import java.util.function.Predicate;
@@ -71,12 +66,20 @@ import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 
+import apesstrongtogether.particle.ApeportalParticle;
+
+import apesstrongtogether.item.ApedesertItem;
+
+import apesstrongtogether.block.Dimentionblock1Block;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApedesertDimension extends ApesStrongTogetherModElements.ModElement {
 	@ObjectHolder("apes_strong_together:apedesert_portal")
 	public static final CustomPortalBlock portal = null;
 	public ApedesertDimension(ApesStrongTogetherModElements instance) {
-		super(instance, 71);
+		super(instance, 88);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new POIRegisterHandler());
 	}
 

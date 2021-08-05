@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "apes_strong_together:blocks/dessertgrass2",
+    "particle": "apes_strong_together:blocks/dessertgrass2"
+  }
+}

@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.item;
+package apesstrongtogether.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -12,7 +12,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
-import net.mcreator.apesstrongtogether.world.dimension.ApedesertDimension;
+import apesstrongtogether.world.dimension.ApedesertDimension;
 
 public class ApedesertItem extends Item {
 	@ObjectHolder("apes_strong_together:apedesert")

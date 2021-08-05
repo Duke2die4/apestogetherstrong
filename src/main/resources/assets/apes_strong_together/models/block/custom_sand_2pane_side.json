@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "apes_strong_together:blocks/custom_sandblock1_2",
+    "pane": "apes_strong_together:blocks/custom_sandblock1_2"
+  }
+}

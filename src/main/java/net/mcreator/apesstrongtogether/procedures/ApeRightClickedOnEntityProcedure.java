@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -12,12 +12,15 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.item.SyringexItem;
-import net.mcreator.apesstrongtogether.entity.Ape2Entity;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.Map;
+
+import apesstrongtogether.item.SyringexItem;
+
+import apesstrongtogether.entity.Ape2Entity;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class ApeRightClickedOnEntityProcedure extends ApesStrongTogetherModElements.ModElement {

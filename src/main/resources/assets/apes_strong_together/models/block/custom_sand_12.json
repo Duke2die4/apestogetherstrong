@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "apes_strong_together:blocks/custom_sandblock2_4",
+    "particle": "apes_strong_together:blocks/custom_sandblock2_4"
+  }
+}

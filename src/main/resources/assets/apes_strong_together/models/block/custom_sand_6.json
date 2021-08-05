@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "apes_strong_together:blocks/custom_sandblock1_2",
+    "up": "apes_strong_together:blocks/custom_sandblock1_2",
+    "north": "apes_strong_together:blocks/custom_sandblock1_6",
+    "east": "apes_strong_together:blocks/custom_sandblock1_6",
+    "south": "apes_strong_together:blocks/custom_sandblock1_6",
+    "west": "apes_strong_together:blocks/custom_sandblock1_6",
+    "particle": "apes_strong_together:blocks/custom_sandblock1_2"
+  }
+}

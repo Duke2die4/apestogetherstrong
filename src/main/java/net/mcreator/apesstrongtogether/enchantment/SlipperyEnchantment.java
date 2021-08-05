@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.enchantment;
+package apesstrongtogether.enchantment;
 
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -7,7 +7,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.enchantment.Enchantment;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class SlipperyEnchantment extends ApesStrongTogetherModElements.ModElement {

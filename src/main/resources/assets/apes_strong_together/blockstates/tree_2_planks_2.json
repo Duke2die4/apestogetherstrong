@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "apes_strong_together:block/tree_2_planks_2"
+    },
+    "facing=north": {
+      "model": "apes_strong_together:block/tree_2_planks_2"
+    },
+    "facing=east": {
+      "model": "apes_strong_together:block/tree_2_planks_2",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "apes_strong_together:block/tree_2_planks_2",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "apes_strong_together:block/tree_2_planks_2",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "apes_strong_together:block/tree_2_planks_2",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

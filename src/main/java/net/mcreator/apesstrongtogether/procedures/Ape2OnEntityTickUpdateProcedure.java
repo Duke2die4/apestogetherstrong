@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
@@ -11,16 +11,18 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.entity.Ape3Entity;
-import net.mcreator.apesstrongtogether.entity.Ape2Entity;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.stream.Collectors;
 import java.util.function.Function;
 import java.util.Map;
 import java.util.List;
 import java.util.Comparator;
+
+import apesstrongtogether.entity.Bossape2Entity;
+import apesstrongtogether.entity.Ape2Entity;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Ape2OnEntityTickUpdateProcedure extends ApesStrongTogetherModElements.ModElement {
@@ -77,7 +79,7 @@ public class Ape2OnEntityTickUpdateProcedure extends ApesStrongTogetherModElemen
 			}
 			if (((ape_count) >= 6)) {
 				if (world instanceof ServerWorld) {
-					Entity entityToSpawn = new Ape3Entity.CustomEntity(Ape3Entity.entity, (World) world);
+					Entity entityToSpawn = new Bossape2Entity.CustomEntity(Bossape2Entity.entity, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),

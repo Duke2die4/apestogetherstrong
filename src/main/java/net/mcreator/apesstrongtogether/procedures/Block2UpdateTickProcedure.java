@@ -1,29 +1,34 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
-
-import net.mcreator.apesstrongtogether.entity.GorillaEntity;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
+import net.minecraft.block.BlockState;
 
 import java.util.function.Function;
 import java.util.Map;
 import java.util.Comparator;
 
+import apesstrongtogether.entity.SteampunkapeEntity;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
+
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.ModElement {
 	public Block2UpdateTickProcedure(ApesStrongTogetherModElements instance) {
-		super(instance, 126);
+		super(instance, 169);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -51,13 +56,6 @@ public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.Mod
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		double spawn_count = 0;
-		double count = 0;
-		for (int index0 = 0; index0 < (int) (1); index0++) {
-			if (((count) != 0)) {
-				count = (double) 0;
-			}
-		}
 		if ((((Entity) world
 				.getEntitiesWithinAABB(PlayerEntity.class,
 						new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
@@ -66,38 +64,84 @@ public class Block2UpdateTickProcedure extends ApesStrongTogetherModElements.Mod
 						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 					}
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
-			if (((count) == 0)) {
+			if (((new Object() {
+				public double getValue(IWorld world, BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "counttest")) == 0)) {
 				if (world instanceof ServerWorld) {
-					Entity entityToSpawn = new GorillaEntity.CustomEntity(GorillaEntity.entity, (World) world);
+					Entity entityToSpawn = new SteampunkapeEntity.CustomEntity(SteampunkapeEntity.entity, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
-				count = (double) ((count) + 1);
-			} else if (((count) == 1)) {
+				if (!world.isRemote()) {
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					TileEntity _tileEntity = world.getTileEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_tileEntity != null)
+						_tileEntity.getTileData().putDouble("counttest", 1);
+					if (world instanceof World)
+						((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+				}
+			} else if (((new Object() {
+				public double getValue(IWorld world, BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "counttest")) == 1)) {
 				if (world instanceof ServerWorld) {
-					Entity entityToSpawn = new GorillaEntity.CustomEntity(GorillaEntity.entity, (World) world);
+					Entity entityToSpawn = new SteampunkapeEntity.CustomEntity(SteampunkapeEntity.entity, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
-				count = (double) ((count) + 1);
-			} else if (((count) == 2)) {
+				if (!world.isRemote()) {
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					TileEntity _tileEntity = world.getTileEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_tileEntity != null)
+						_tileEntity.getTileData().putDouble("counttest", 2);
+					if (world instanceof World)
+						((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+				}
+			} else if (((new Object() {
+				public double getValue(IWorld world, BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "counttest")) == 2)) {
 				if (world instanceof ServerWorld) {
-					Entity entityToSpawn = new GorillaEntity.CustomEntity(GorillaEntity.entity, (World) world);
+					Entity entityToSpawn = new SteampunkapeEntity.CustomEntity(SteampunkapeEntity.entity, (World) world);
 					entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof MobEntity)
 						((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
-				count = (double) ((count) + 1);
-				world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
-			} else if (((count) == 3)) {
+				if (!world.isRemote()) {
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					TileEntity _tileEntity = world.getTileEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_tileEntity != null)
+						_tileEntity.getTileData().putDouble("counttest", 3);
+					if (world instanceof World)
+						((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+				}
+				if (world instanceof ServerWorld) {
+					((ServerWorld) world).spawnParticle(ParticleTypes.EXPLOSION, x, y, z, (int) 5, 3, 3, 3, 1);
+				}
 				world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 			}
 		}

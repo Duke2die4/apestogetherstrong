@@ -1,4 +1,4 @@
-package net.mcreator.apesstrongtogether.procedures;
+package apesstrongtogether.procedures;
 
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -15,13 +15,16 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.apesstrongtogether.item.ChestboxcopperItem;
-import net.mcreator.apesstrongtogether.entity.ChestapecopperEntity;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-import net.mcreator.apesstrongtogether.ApesStrongTogetherMod;
-
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
+
+import apesstrongtogether.item.ChestboxcopperItem;
+
+import apesstrongtogether.entity.ChestapecopperEntity;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
+
+import apesstrongtogether.ApesStrongTogetherMod;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Ape2chestcopperProcedure extends ApesStrongTogetherModElements.ModElement {

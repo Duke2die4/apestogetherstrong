@@ -1,5 +1,5 @@
 
-package net.mcreator.apesstrongtogether.world.structure;
+package apesstrongtogether.world.structure;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,9 +31,9 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apesstrongtogether.ApesStrongTogetherModElements;
-
 import java.util.Random;
+
+import apesstrongtogether.ApesStrongTogetherModElements;
 
 @ApesStrongTogetherModElements.ModElement.Tag
 public class Desserttre1Structure extends ApesStrongTogetherModElements.ModElement {

@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_bottom",
+  "textures": {
+    "texture": "apes_strong_together:blocks/wood1_plank_trapdoor",
+    "particle": "apes_strong_together:blocks/wood1_plank_trapdoor"
+  }
+}

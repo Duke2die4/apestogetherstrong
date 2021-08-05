@@ -5,7 +5,7 @@
     "mobName": "Steampunk Ape",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "testbipedt.png",
+    "mobModelTexture": "bipedape.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,

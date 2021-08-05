@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "apes_strong_together:blocks/pallisade_wood1_2",
+    "top": "apes_strong_together:blocks/pallisade_wood1_2",
+    "side": "apes_strong_together:blocks/pallisade_wood1_2"
+  }
+}
