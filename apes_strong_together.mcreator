@@ -3756,6 +3756,84 @@
       "ids": {},
       "registry_name": "apestanding",
       "path": "~/Mobs/Stage1"
+    },
+    {
+      "name": "Lantern",
+      "type": "block",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lantern",
+      "path": "~/World/blocks/special"
+    },
+    {
+      "name": "Lanterndark",
+      "type": "block",
+      "sortid": 320,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lanterndark",
+      "path": "~/World/blocks/special"
+    },
+    {
+      "name": "LanternUpdateTick",
+      "type": "procedure",
+      "sortid": 319,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lantern_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LanterndarkUpdateTick",
+      "type": "procedure",
+      "sortid": 321,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lanterndark_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3776,8 +3854,8 @@
       "block.apes_strong_together.tree_2_planks_2": "Tree1 Planks",
       "block.apes_strong_together.custom_sand_10": "metal cage2",
       "block.apes_strong_together.custom_sand_12": "metal cage2",
-      "item.apes_strong_together.desertpearl": "Desertpearl",
       "block.apes_strong_together.custom_sand_11": "metal cage2",
+      "item.apes_strong_together.desertpearl": "Desertpearl",
       "block.apes_strong_together.bananatree": "Bananatree",
       "block.apes_strong_together.custom_sand_13": "metal cage2",
       "biome.apes_strong_together.burned_flatlands": "Forbidding Flatlands",
@@ -3806,13 +3884,13 @@
       "item.apes_strong_together.apearmor_boots": "Apearmor Boots",
       "item.apes_strong_together.chestbox": "Chestbox",
       "entity.apes_strong_together.steampunkmob_3": "Steampunkmob 2_2",
-      "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
       "block.apes_strong_together.bananabox": "Bananabox",
+      "item.apes_strong_together.chest_ape_diamond_spawn_egg": "Chestape Spawn Egg",
       "block.apes_strong_together.tree_2_stairs": "Tree2 Stairs",
       "item.apes_strong_together.kingsguard_helmet": "Steampunkarmor 2 Helmet",
-      "block.apes_strong_together.desertgrass": "Desertgrass",
-      "item.apes_strong_together.steampunkarmor_helmet": "Steampunkarmor Helmet",
       "item.apes_strong_together.steampunkarmor_2_chestplate": "Steampunkarmor 2 Body",
+      "item.apes_strong_together.steampunkarmor_helmet": "Steampunkarmor Helmet",
+      "block.apes_strong_together.desertgrass": "Desertgrass",
       "item.apes_strong_together.banana": "Banana",
       "block.apes_strong_together.customsand_2slab": "metal cage2",
       "item.apes_strong_together.faraoarmor_chestplate": "Faraoarmor Body",
@@ -3820,8 +3898,8 @@
       "item.apes_strong_together.gorillabrute_spawn_egg": "Gorilla brute Spawn Egg",
       "block.apes_strong_together.doorwood_1": "Tree1 Planks",
       "block.apes_strong_together.door_1": "Door 1",
-      "block.apes_strong_together.custom_sand_2pane": "metal cage2",
       "item.apes_strong_together.soldierape_spawn_egg": "Ape rouge Spawn Egg",
+      "block.apes_strong_together.custom_sand_2pane": "metal cage2",
       "item.apes_strong_together.chestapeiron_spawn_egg": "Chestape Spawn Egg",
       "block.apes_strong_together.trapdoorwood_1": "Tree1 Planks",
       "item.apes_strong_together.kingsguard_boots": "Steampunkarmor 2 Boots",
@@ -3830,8 +3908,8 @@
       "biome.apes_strong_together.forbidding_flatlands": "Forbidding Flatlands",
       "item.apes_strong_together.apearmor_chestplate": "Apearmor Body",
       "entity.apes_strong_together.gorillabrute": "Gorilla brute",
-      "block.apes_strong_together.dessertplant_5": "Dessertplant 4",
       "block.apes_strong_together.ore_2": "Ore 2",
+      "block.apes_strong_together.dessertplant_5": "Dessertplant 4",
       "item.apes_strong_together.chestboxiron": "iron Chestbox",
       "item.apes_strong_together.mob_2_spawn_egg": "Mob 2 Spawn Egg",
       "block.apes_strong_together.dessertplant_4": "Dessertplant 4",
@@ -3845,6 +3923,7 @@
       "entity.apes_strong_together.soldierape": "Ape rouge",
       "entity.apes_strong_together.kingssoldier": "Ape soldier",
       "item.apes_strong_together.apehair": "Ape hair",
+      "block.apes_strong_together.lanterndark": "Lantern",
       "block.apes_strong_together.dessertpile_2": "sandpile",
       "block.apes_strong_together.tree_1planks_2": "Tree1 Planks",
       "block.apes_strong_together.customsand_1": "metal cage2",
@@ -3861,6 +3940,7 @@
       "item.apes_strong_together.steak": "Steak",
       "item.apes_strong_together.gem_ii": "Gem II",
       "block.apes_strong_together.woodpalisade_2": "PalisadeStone",
+      "block.apes_strong_together.lantern": "Lantern",
       "block.apes_strong_together.pallisadecracked": "PalisadeStone",
       "item.apes_strong_together.paxeltier_1": "Paxeltier 1",
       "block.apes_strong_together.palisadewood": "PalisadeStone",
@@ -4053,6 +4133,10 @@
             "children": [
               {
                 "name": "Trees",
+                "children": []
+              },
+              {
+                "name": "special",
                 "children": []
               }
             ]

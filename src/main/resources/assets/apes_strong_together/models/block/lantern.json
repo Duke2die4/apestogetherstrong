@@ -1,0 +1,8 @@
+{
+  "parent": "apes_strong_together:custom/lantern",
+  "textures": {
+    "all": "apes_strong_together:blocks/lantern",
+    "particle": "apes_strong_together:blocks/lantern",
+    "1": "apes_strong_together:blocks/lantern"
+  }
+}
